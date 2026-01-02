@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lions Clube de Tatuí</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="theme/theme.css">
+    <link rel="stylesheet" href="home/home.css">
+
+    <!-- JavaScript -->
+    <script src="index.js" defer></script>
+    <script src="theme/theme.js" defer></script>
+    <script src="home/home.js"></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="src/img/logo.png">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#home" class="logo-link">
+                    <img src="src/img/logo.png" alt="Lions Clube Internacional" class="logo-img">
+                    <div class="logo-text">Lions Clube <span>de Tatuí</span></div>
+                </a>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav" id="mainNav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#home" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="#causes" class="nav-link">Quem Somos</a></li>
+                    <li class="nav-item"><a href="#mission" class="nav-link">Nossa Missão</a></li>
+                    <li class="nav-item"><a href="#atividades" class="nav-link">Eventos</a></li>
+                    <li class="nav-item"><a href="#envolva-se" class="nav-link">Envolva-se</a></li>
+                    <li class="nav-item"><a href="https://lionsclubetatui.blogspot.com/" target="_blank"
+                            class="nav-link">Blog</a></li>
+                </ul>
+
+                <!-- Links sociais no header - lado do tema -->
+                <div class="nav-social-links">
+                    <a href="https://www.facebook.com/lionsclubedetatui.org.br" target="_blank" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/lionsclubedetatui" target="_blank" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@lionsclubedetatui336" target="_blank" aria-label="YouTube"><i
+                            class="fab fa-youtube"></i></a>
+                </div>
+
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                        <span class="toggle-slider">
+                            <i class="fas fa-sun toggle-icon sun-icon"></i>
+                            <i class="fas fa-moon toggle-icon moon-icon"></i>
+                        </span>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- Banner -->
+        <section class="hero" id="home">
+            <div class="container">
+                <h1>Bem-vindo ao Lions Clube de Tatuí</h1>
+                <p>O Lions Clube de Tatuí é uma Associação que atua na cidade desde 1955. Fazemos parte do Lions Clube
+                    Internacional, a maior associação de voluntários do mundo.</p>
+                <a href="#envolva-se" class="btn">Junte-se a nós</a>
+            </div>
+        </section>
+
+        <!-- Missão, Visão e Valores -->
+        <section class="mission-vision-values" id="missao-visao-valores">
+            <div class="container">
+                <div class="mvv-container">
+                    <div class="mvv-header">
+                        <h2>Missão, Visão e Valores</h2>
+                        <p>Os pilares que guiam o trabalho do Lions Clubs International em todo o mundo</p>
+                    </div>
+
+                    <div class="mvv-grid">
+                        <!-- Missão -->
+                        <div class="mvv-card">
+                            <div class="mvv-card-icon">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <h3>Nossa Missão</h3>
+                            <p>A nossa missão é de impulsionar os Lions clubes, voluntários e parceiros para melhorar a
+                                saúde e o bem-estar, fortalecer as comunidades e apoiar os necessitados por meio de
+                                serviços humanitários que impactam vidas em todo o mundo e promover a paz e
+                                a compreensão internacional.</p>
+
+                            <!-- Citação da Missão -->
+                            <div class="mvv-quote">
+                                <p class="quote-text">"E nós a cumprimos todos os dias, em todos os lugares em que
+                                    servimos"
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Visão -->
+                        <div class="mvv-card">
+                            <div class="mvv-card-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <h3>Nossa Visão</h3>
+                            <p>Ser o líder global em serviços comunitários e humanitários. Trabalhamos incansavelmente
+                                para criar um mundo onde as comunidades sejam mais fortes, as pessoas mais saudáveis e
+                                onde cada indivíduo tenha a oportunidade de prosperar através do serviço voluntário.</p>
+
+                            <!-- Citação da Visão -->
+                            <div class="mvv-quote">
+                                <p class="quote-text">"Servimos a um mundo carente com um ato de bondade de cada vez."
+                                </p>
+                            </div>
+                        </div>
+
+                        <!-- Valores -->
+                        <div class="mvv-card">
+                            <div class="mvv-card-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h3>Nossos Valores</h3>
+                            <p>Nossos valores fundamentais orientam todas as nossas ações e decisões:</p>
+                            <ul class="mvv-values-list">
+                                <li><i class="fas fa-angle-double-right"></i> Comprometimento com o SERVIÇO</li>
+                                <li><i class="fas fa-angle-double-right"></i> Dedicação à EXCELÊNCIA</li>
+                                <li><i class="fas fa-angle-double-right"></i> Apreciação da DIVERSIDADE</li>
+                                <li><i class="fas fa-angle-double-right"></i> COLABORAÇÃO dinâmica</li>
+                                <li><i class="fas fa-angle-double-right"></i> INTEGRIDADE pessoal e profissional</li>
+                                <li><i class="fas fa-angle-double-right"></i> Espírito de INOVAÇÃO</li>
+                            </ul>
+                            <a href="https://www.lionsclubs.org/pt/about-us/our-organization/core-values"
+                                target="_blank" class="btn btn-outline btn-small">
+                                Conheça mais sobre nossos valores
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Causas Globais -->
+        <section class="causes" id="causes">
+            <div class="container">
+                <h2 class="section-title">Causas Globais do Lions</h2>
+                <div class="causes-grid">
+                    <div class="cause-card">
+                        <div class="cause-icon"><i class="fas fa-child"></i></div>
+                        <h3>Câncer infantil</h3>
+                        <p>Prestamos apoio quanto às necessidades de crianças e famílias que enfrentam o câncer
+                            infantil.</p>
+                        <a href="causes/child-cancer/child-cancer.html" class="cause-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="cause-card">
+                        <div class="cause-icon"><i class="fas fa-heartbeat"></i></div>
+                        <h3>Diabetes</h3>
+                        <p>Trabalhamos para reduzir a prevalência do diabetes e melhorar a qualidade de vida das pessoas
+                            que vivem com diabetes.</p>
+                        <a href="causes/diabetes/diabetes.html" class="cause-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="cause-card">
+                        <div class="cause-icon"><i class="fas fa-home"></i></div>
+                        <h3>Socorro após catástrofes</h3>
+                        <p>Tomamos medidas para atender às necessidades imediatas e prestar assistência de longo prazo
+                            às comunidades devastadas por catástrofes naturais.</p>
+                        <a href="causes/help-after-disasters/help-after-disasters.html" class="cause-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="cause-card">
+                        <div class="cause-icon"><i class="fas fa-leaf"></i></div>
+                        <h3>Meio ambiente</h3>
+                        <p>Encontramos maneiras de proteger o meio ambiente para criar comunidades mais saudáveis e um
+                            mundo mais sustentável.</p>
+                        <a href="causes/environment/environment.html" class="cause-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="cause-card">
+                        <div class="cause-icon"><i class="fas fa-hands-helping"></i></div>
+                        <h3>Esforços humanitários</h3>
+                        <p>Identificamos as necessidades mais urgentes do mundo e fornecemos ajuda humanitária onde ela
+                            for mais necessária.</p>
+                        <a href="causes/humanitarian-efforts/humanitarian-efforts.html" class="cause-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="cause-card">
+                        <div class="cause-icon"><i class="fas fa-utensils"></i></div>
+                        <h3>Fome</h3>
+                        <p>Nós nos esforçamos para melhorar a segurança alimentar e o acesso a alimentos nutritivos para
+                            ajudar a aliviar a fome.</p>
+                        <a href="causes/hunger/hunger.html" class="cause-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="cause-card">
+                        <div class="cause-icon"><i class="fas fa-eye"></i></div>
+                        <h3>Visão</h3>
+                        <p>Ajudamos a impedir a cegueira e melhorar a qualidade de vida das pessoas cegas ou com
+                            deficiências visuais.</p>
+                        <a href="causes/vision/vision.html" class="cause-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    <div class="cause-card">
+                        <div class="cause-icon"><i class="fas fa-users"></i></div>
+                        <h3>Juventude</h3>
+                        <p>Apoiamos os jovens para que possam fazer escolhas positivas, viver uma vida saudável e
+                            produtiva e se tornarem a próxima geração de líderes de serviço.</p>
+                        <a href="causes/youth/youth.html" class="cause-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Missão -->
+        <section class="mission" id="mission">
+            <div class="container">
+                <!-- Carousel de Ações Sociais -->
+                <div class="carousel-section">
+
+                    <h2 class="section-title">Nossas Missões</h2>
+                    <p>Desde nossa fundação em Tatuí, temos trabalhado incansavelmente para melhorar a vida das pessoas
+                        em
+                        nossa comunidade e além. Cada pequeno gesto de bondade contribui para um mundo melhor.</p>
+
+                    <div class="carousel-container">
+                        <div class="carousel-wrapper">
+                            <div class="carousel" id="missionCarousel">
+                                <!-- Cards serão adicionados dinamicamente via JavaScript -->
+                            </div>
+
+                            <!-- Botões de navegação do carousel -->
+                            <button class="carousel-btn prev" aria-label="Slide anterior">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="carousel-btn next" aria-label="Próximo slide">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+
+                            <!-- Indicadores de slide -->
+                            <div class="carousel-indicators" id="carouselIndicators">
+                                <!-- Indicadores serão adicionados dinamicamente via JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Atividades -->
+        <section class="activities" id="atividades">
+            <div class="container">
+                <h2 class="section-title">Atividades Desenvolvidas</h2>
+
+                <div class="activities-list">
+                    <!-- Atividade 1 -->
+                    <div class="activity-item">
+                        <div class="activity-image">
+                            <img src="" alt="Jantar Beneficente do Lions Clube">
+                            <div class="activity-date-badge">
+                                <span class="badge-day">24</span>
+                                <span class="badge-month">Out</span>
+                            </div>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-header">
+                                <h3>Jantar Beneficente do Lions Clube de Tatuí</h3>
+                                <div class="activity-datetime">
+                                    <i class="far fa-calendar-alt"></i>
+                                    <span class="date-text">sáb., 24 de out.</span>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="location-text">Tatuí</span>
+                                </div>
+                            </div>
+
+                            <div class="activity-description">
+                                <p>Semestralmente o Lions Clube de Tatuí desenvolve um tradicional Jantar, com bingo. A
+                                    atividade acontece na sede do Clube e busca destinar recursos para instituições com
+                                    importante atuação em nosso município. Nas últimas vezes o Lions pode contribuir com
+                                    valores significativos graças a essa atividade.</p>
+                            </div>
+
+                            <a href="#" class="btn btn-outline activity-btn">
+                                <i class="fas fa-info-circle"></i> Saber Mais
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Atividade 2 -->
+                    <div class="activity-item">
+                        <div class="activity-image">
+                            <img src="" alt="Bazar Solidário Lions Clube">
+                            <div class="activity-date-badge">
+                                <span class="badge-day">29</span>
+                                <span class="badge-month">Set</span>
+                            </div>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-header">
+                                <h3>Bazar Solidário Lions Clube de Tatuí</h3>
+                                <div class="activity-datetime">
+                                    <i class="far fa-calendar-alt"></i>
+                                    <span class="date-text">dom., 29 de set.</span>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="location-text">Praça da Matriz, Tatuí</span>
+                                </div>
+                            </div>
+
+                            <div class="activity-description">
+                                <p>Participe do nosso Bazar Solidário com roupas, livros, utensílios domésticos,
+                                    brinquedos e muito mais. Todo o valor arrecadado é revertido para projetos de
+                                    assistência às famílias carentes do município. Traga sua família e amigos para
+                                    conhecer nosso trabalho!</p>
+                            </div>
+
+                            <a href="#" class="btn btn-outline activity-btn">
+                                <i class="fas fa-info-circle"></i> Saber Mais
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Atividade 3 -->
+                    <div class="activity-item">
+                        <div class="activity-image">
+                            <img src="" alt="Campanha de Saúde Visual Lions">
+                            <div class="activity-date-badge">
+                                <span class="badge-day">15</span>
+                                <span class="badge-month">Out</span>
+                            </div>
+                        </div>
+                        <div class="activity-content">
+                            <div class="activity-header">
+                                <h3>Campanha de Saúde Visual - Lions Clube Tatuí</h3>
+                                <div class="activity-datetime">
+                                    <i class="far fa-calendar-alt"></i>
+                                    <span class="date-text">ter., 15 de out.</span>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="location-text">Unidades de Saúde de Tatuí</span>
+                                </div>
+                            </div>
+
+                            <div class="activity-description">
+                                <p>Realizamos exames de visão gratuitos e distribuímos óculos para pessoas em situação
+                                    de vulnerabilidade. Em parceria com óticas locais e profissionais voluntários,
+                                    oferecemos uma oportunidade de cuidado com a saúde ocular para quem mais precisa.
+                                </p>
+                            </div>
+
+                            <a href="#" class="btn btn-outline activity-btn">
+                                <i class="fas fa-info-circle"></i> Saber Mais
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Envolva-se -->
+        <section class="get-involved" id="envolva-se">
+            <div class="container">
+                <h2 class="section-title">Envolva-se</h2>
+                <p class="section-subtitle">Junte-se a nós e faça a diferença na sua comunidade!</p>
+                <div class="involved-options">
+                    <div class="option-card">
+                        <div class="option-icon"><i class="fas fa-handshake"></i></div>
+                        <h3>Torne-se um Membro</h3>
+                        <p>Participe das reuniões, projetos e eventos do Lions Clube Tatuí. Sua contribuição fará uma
+                            grande diferença.</p>
+                        <a href="#" class="btn btn-small">Saiba mais</a>
+                    </div>
+                    <div class="option-card">
+                        <div class="option-icon"><i class="fas fa-donate"></i></div>
+                        <h3>Faça uma Doação</h3>
+                        <p>Suas doações ajudam a financiar nossos projetos e iniciativas em prol da comunidade.</p>
+                        <a href="#" class="btn btn-small">Doar agora</a>
+                    </div>
+                    <div class="option-card">
+                        <div class="option-icon"><i class="fas fa-calendar-check"></i></div>
+                        <h3>Participe de Eventos</h3>
+                        <p>Participe dos nossos eventos abertos à comunidade e ajude-nos a arrecadar fundos para causas
+                            importantes.</p>
+                        <a href="#atividades" class="btn btn-small">Ver eventos</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="logo">
+                        <img src="src/img/logo.png" alt="Lions Clube Internacional" class="logo-img">
+                        <div class="logo-text">Lions Clube <span>Tatuí</span></div>
+                    </div>
+                    <p>Servindo a comunidade de Tatuí desde 1955. Fazemos parte do Lions Clubs International, a maior
+                        organização de clubes de serviço do mundo.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Lions Clube Tatuí. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
