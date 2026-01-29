@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O que é ser um Leo? | Lions Clube de Tatuí</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../../theme/theme.css">
+    <link rel="stylesheet" href="about-lion-leo.css">
+
+    <!-- JavaScript -->
+    <script src="../../index.js" defer></script>
+    <script src="../../theme/theme.js" defer></script>
+    <script src="about-lion-leo.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../../src/img/logo.png">
+</head>
+
+<body class="leo-page">
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="../../index.html" class="logo-link">
+                    <img src="../../src/img/logo.png" alt="Lions Clube Internacional" class="logo-img">
+                    <div class="logo-text">Lions Clube <span>de Tatuí</span></div>
+                </a>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav" id="mainNav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
+
+                    <!-- Dropdown de Sobre Nós -->
+                    <li class="nav-item dropdown active">
+                        <a href="#" class="nav-link">
+                            Sobre Nós
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../../about-us/who-we-are/who-we-are.html" class="dropdown-item">
+                                    <i class="fa fa-users"></i>Quem Somos?
+                                </a></li>
+                            <li><a href="../../about-us/our-leaders/our-leaders.html" class="dropdown-item">
+                                    <i class="fas fa-crown"></i>Nossos Líderes
+                                </a></li>
+                            <li><a href="https://lionsclubetatui.blogspot.com/" class="dropdown-item" target="blank">
+                                    <i class="fa fa-file-text"></i>Nosso Blog
+                                </a></li>
+                            <li><a href="../../about-us/about-lion-leo/about-lion.html" class="dropdown-item">
+                                    <i class="fas fa-paw"></i>O que é ser Leão?
+                                </a></li>
+                            <li><a href="../../about-us/about-lion-leo/about-leo.html" class="dropdown-item">
+                                    <i class="fas fa-star"></i>O que é um Leo?
+                                </a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Dropdown da Causas -->
+                    <li class="nav-item dropdown">
+                        <a href="#causes" class="nav-link">
+                            Causas
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../../causes/child-cancer.html" class="dropdown-item">
+                                    <i class="fas fa-child"></i>Câncer Infantil
+                                </a></li>
+                            <li><a href="../../causes/diabetes.html" class="dropdown-item">
+                                    <i class="fas fa-heartbeat"></i>Diabetes
+                                </a></li>
+                            <li><a href="../../causes/help-after-disasters.html" class="dropdown-item">
+                                    <i class="fas fa-home"></i>Socorro após catástrofes
+                                </a></li>
+                            <li><a href="../../causes/environment.html" class="dropdown-item">
+                                    <i class="fas fa-leaf"></i>Meio Ambiente
+                                </a></li>
+                            <li><a href="../../causes/humanitarian-efforts.html" class="dropdown-item">
+                                    <i class="fas fa-hands-helping"></i>Esforços Humanitários
+                                </a></li>
+                            <li><a href="../../causes/hunger.html" class="dropdown-item">
+                                    <i class="fas fa-utensils"></i>Fome
+                                </a></li>
+                            <li><a href="../../causes/vision.html" class="dropdown-item">
+                                    <i class="fas fa-eye"></i>Visão
+                                </a></li>
+                            <li><a href="../../causes/youth.html" class="dropdown-item">
+                                    <i class="fas fa-users"></i>Juventude
+                                </a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a href="../../index.html#mission" class="nav-link">Nossa Missão</a></li>
+                    <li class="nav-item"><a href="../../index.html#atividades" class="nav-link">Eventos</a></li>
+                </ul>
+
+                <!-- Links sociais no header -->
+                <div class="nav-social-links">
+                    <a href="https://www.facebook.com/lionsclubedetatui.org.br" target="_blank" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/lionsclubedetatui" target="_blank" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@lionsclubedetatui336" target="_blank" aria-label="YouTube"><i
+                            class="fab fa-youtube"></i></a>
+                </div>
+
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                        <span class="toggle-slider">
+                            <i class="fas fa-sun toggle-icon sun-icon"></i>
+                            <i class="fas fa-moon toggle-icon moon-icon"></i>
+                        </span>
+                    </button>
+
+                    <a href="../../login/login.html" class="btn btn-small nav-involve-btn">
+                        <i class="fas fa-hands-helping"></i>
+                        Envolva-se
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="membership-page">
+
+        <!-- Introdução -->
+        <section class="membership-introduction">
+            <div class="container">
+                <div class="membership-section-header">
+                    <h2 class="membership-section-title">Jovens em Ação, Líderes do Amanhã</h2>
+                    <p class="membership-section-subtitle">O programa Leo é a iniciativa jovem do Lions Clubs
+                        International para desenvolver liderança e serviço comunitário</p>
+                </div>
+                <div class="introduction-content">
+                    <div class="intro-image">
+                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgwH4xp8Fq21A0ztTwZqNwVcROOaI6SOxjFXJQXp4y3hSHdGOSiw8t_q1UaZ1NR9W9iV33NDHlF709KV6klySZUtI-HwlDUjDyuh-JRFoRl3065MhByyGb0cBAxoHegE7quu0TipOQWGtk/s320/11+-+LEO+geral.jpg"
+                            alt="Jovens do Leo Club participando de atividade comunitária" loading="lazy">
+                    </div>
+                    <div class="intro-text">
+                        <p>O programa Leo foi fundado em 1957 como uma iniciativa do Lions Clubs International para
+                            envolver jovens de 12 a 30 anos em serviços comunitários e desenvolvimento de liderança.</p>
+                        <p>Os Leos são jovens líderes que, através do serviço voluntário, desenvolvem habilidades de
+                            liderança, trabalho em equipe e compromisso social, preparando-se para serem futuros Leões.
+                        </p>
+                        <div class="quote-box">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"O programa Leo desenvolve líderes através do serviço à comunidade. Jovens aprendem pela
+                                ação, desenvolvendo habilidades que os acompanharão por toda a vida."</p>
+                            <span class="quote-author">- Melvin Jones, Fundador do Lions International</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Por que ser um Leo? -->
+        <section class="membership-pillars">
+            <div class="container">
+                <div class="membership-section-header">
+                    <h2 class="membership-section-title">Por que ser um Leo?</h2>
+                    <p class="membership-section-subtitle">5 razões para fazer parte deste movimento transformador</p>
+                </div>
+
+                <div class="pillars-grid">
+                    <div class="pillar-card">
+                        <div class="pillar-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3>Desenvolvimento de Liderança</h3>
+                        <p>Oportunidades reais para liderar projetos, desenvolver habilidades de gestão e tomar decisões
+                            importantes.</p>
+                        <ul class="pillar-list">
+                            <li>Liderança prática em projetos reais</li>
+                            <li>Treinamentos e workshops exclusivos</li>
+                            <li>Mentoria de Leões experientes</li>
+                        </ul>
+                    </div>
+
+                    <div class="pillar-card">
+                        <div class="pillar-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>Serviço Comunitário</h3>
+                        <p>Impacto real na sua comunidade através de projetos sociais que fazem a diferença na vida das
+                            pessoas.</p>
+                        <ul class="pillar-list">
+                            <li>Projetos práticos e significativos</li>
+                            <li>Desenvolvimento de empatia</li>
+                            <li>Experiência de vida transformadora</li>
+                        </ul>
+                    </div>
+
+                    <div class="pillar-card">
+                        <div class="pillar-icon">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <h3>Networking Global</h3>
+                        <p>Conexões internacionais com outros jovens líderes de mais de 140 países ao redor do mundo.
+                        </p>
+                        <ul class="pillar-list">
+                            <li>+140 países com clubes Leo</li>
+                            <li>Intercâmbio cultural</li>
+                            <li>Amizades internacionais</li>
+                        </ul>
+                    </div>
+
+                    <div class="pillar-card">
+                        <div class="pillar-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3>Preparação Profissional</h3>
+                        <p>Experiências que agregam valor ao seu currículo e desenvolvem habilidades procuradas pelo
+                            mercado.</p>
+                        <ul class="pillar-list">
+                            <li>Certificações internacionais</li>
+                            <li>Diferencial competitivo</li>
+                            <li>Desenvolvimento de soft skills</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Estrutura do Programa Leo -->
+        <section class="membership-how-it-works">
+            <div class="container">
+                <div class="membership-section-header">
+                    <h2 class="membership-section-title">Como funciona o Programa Leo?</h2>
+                    <p class="membership-section-subtitle">A estrutura organizacional e as oportunidades disponíveis</p>
+                </div>
+
+                <div class="works-timeline">
+                    <div class="timeline-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Club Leo Patrocinado</h3>
+                            <p>Clubes patrocinados e orientados por um Lions Clube, oferecendo estrutura e suporte para
+                                jovens de 12 a 30 anos.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Dois Tipos de Clubes</h3>
+                            <p>Clubes Alpha (12-18 anos) e Clubes Omega (18-30 anos), cada um com atividades apropriadas
+                                para sua faixa etária.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Reuniões Regulares</h3>
+                            <p>Encontros mensais para planejamento, organização de projetos e desenvolvimento de
+                                habilidades.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Projetos Comunitários</h3>
+                            <p>Desenvolvimento e execução de projetos sociais que atendem às necessidades da comunidade
+                                local.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3>Eventos e Conferências</h3>
+                            <p>Participação em eventos distritais, nacionais e internacionais para networking e
+                                aprendizado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefícios Exclusivos para Leos -->
+        <section class="membership-benefits">
+            <div class="container">
+                <div class="membership-section-header">
+                    <h2 class="membership-section-title">Benefícios Exclusivos</h2>
+                    <p class="membership-section-subtitle">O que você ganha ao fazer parte do programa Leo</p>
+                </div>
+
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-header">
+                            <div class="benefit-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h3>Certificações Reconhecidas</h3>
+                        </div>
+                        <div class="benefit-content">
+                            <ul>
+                                <li>Certificado de Membros Leo Internacional</li>
+                                <li>Certificações de Liderança</li>
+                                <li>Certificado de Participação em Projetos</li>
+                                <li>Recomendações para universidades</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-header">
+                            <div class="benefit-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <h3>Programa de Prêmios</h3>
+                        </div>
+                        <div class="benefit-content">
+                            <ul>
+                                <li>Prêmio de Liderança Leo</li>
+                                <li>Prêmio de Excelência em Serviço</li>
+                                <li>Prêmio Presidente do Ano</li>
+                                <li>Reconhecimento Internacional</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-header">
+                            <div class="benefit-icon">
+                                <i class="fas fa-plane"></i>
+                            </div>
+                            <h3>Oportunidades de Viagem</h3>
+                        </div>
+                        <div class="benefit-content">
+                            <ul>
+                                <li>Conferências Internacionais</li>
+                                <li>Intercâmbios culturais</li>
+                                <li>Projetos internacionais</li>
+                                <li>Visitas a outros clubes</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-header">
+                            <div class="benefit-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <h3>Transição para Lions</h3>
+                        </div>
+                        <div class="benefit-content">
+                            <ul>
+                                <li>Preparação para ser Leão</li>
+                                <li>Isenção de taxas iniciais</li>
+                                <li>Reconhecimento de experiência</li>
+                                <li>Rede de contatos estabelecida</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Requisitos e Como Participar -->
+        <section class="membership-requirements">
+            <div class="container">
+                <div class="membership-section-header">
+                    <h2 class="membership-section-title">Como se tornar um Leo</h2>
+                    <p class="membership-section-subtitle">Requisitos e processo para ingressar no programa</p>
+                </div>
+
+                <div class="requirements-content">
+                    <div class="requirements-overview">
+                        <div class="overview-card">
+                            <div class="overview-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <h3>Idade e Perfil</h3>
+                            <p>Jovens entre 12 e 30 anos com interesse em serviço comunitário e desenvolvimento de
+                                liderança. Não é necessária experiência prévia.</p>
+                        </div>
+                        <div class="overview-card">
+                            <div class="overview-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <h3>Compromisso de Tempo</h3>
+                            <p>5-10 horas por mês para reuniões e projetos. Flexibilidade para estudantes e jovens
+                                profissionais.</p>
+                        </div>
+                    </div>
+
+                    <!-- Sistema de Abas para Leos -->
+                    <div class="tabs-container">
+                        <div class="tabs-header">
+                            <button class="tab-btn active" data-tab="leo-requirements">
+                                <i class="fas fa-clipboard-check"></i>
+                                Requisitos para Leos
+                            </button>
+                            <button class="tab-btn" data-tab="leo-process">
+                                <i class="fas fa-road"></i>
+                                Processo de Admissão
+                            </button>
+                            <button class="tab-btn" data-tab="leo-opportunities">
+                                <i class="fas fa-bullseye"></i>
+                                Oportunidades
+                            </button>
+                        </div>
+
+                        <div class="tabs-content">
+                            <!-- Aba 1: Requisitos para Leos -->
+                            <div class="tab-pane active" id="leo-requirements-tab">
+                                <div class="requirements-grid">
+                                    <div class="requirement-card">
+                                        <div class="requirement-card-header">
+                                            <div class="requirement-icon">
+                                                <i class="fas fa-calendar-alt"></i>
+                                            </div>
+                                            <h4>Faixa Etária</h4>
+                                        </div>
+                                        <div class="requirement-card-body">
+                                            <p class="requirement-value">12-30 anos</p>
+                                            <p class="requirement-desc">Divididos em Alpha (12-18) e Omega (18-30)</p>
+                                            <div class="requirement-tip">
+                                                <i class="fas fa-info-circle"></i>
+                                                <span>Podemos fazer exceções com autorização dos pais</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="requirement-card">
+                                        <div class="requirement-card-header">
+                                            <div class="requirement-icon">
+                                                <i class="fas fa-heart"></i>
+                                            </div>
+                                            <h4>Interesse em Servir</h4>
+                                        </div>
+                                        <div class="requirement-card-body">
+                                            <p class="requirement-value">Vontade de ajudar</p>
+                                            <p class="requirement-desc">Disposição para participar de projetos
+                                                comunitários</p>
+                                            <div class="requirement-badge">
+                                                <span>Atitude positiva</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="requirement-card">
+                                        <div class="requirement-card-header">
+                                            <div class="requirement-icon">
+                                                <i class="fas fa-handshake"></i>
+                                            </div>
+                                            <h4>Compromisso Ético</h4>
+                                        </div>
+                                        <div class="requirement-card-body">
+                                            <p class="requirement-value">Boa conduta</p>
+                                            <p class="requirement-desc">Respeito aos valores e regulamentos do programa
+                                            </p>
+                                            <div class="requirement-progress">
+                                                <div class="progress-bar">
+                                                    <div class="progress-fill" style="width: 100%"></div>
+                                                </div>
+                                                <span>Compromisso com a ética</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="requirement-card">
+                                        <div class="requirement-card-header">
+                                            <div class="requirement-icon">
+                                                <i class="fas fa-comments"></i>
+                                            </div>
+                                            <h4>Participação Familiar</h4>
+                                        </div>
+                                        <div class="requirement-card-body">
+                                            <p class="requirement-value">Apoio dos pais</p>
+                                            <p class="requirement-desc">Para menores de 18 anos, é necessário
+                                                consentimento</p>
+                                            <div class="requirement-note">
+                                                <i class="fas fa-users"></i>
+                                                <span>Envolvemos toda a família no processo</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Aba 2: Processo de Admissão -->
+                            <div class="tab-pane" id="leo-process-tab">
+                                <div class="process-intro">
+                                    <h3>Passo a Passo para se tornar um Leo</h3>
+                                    <p>Nosso processo foi desenhado para garantir uma transição suave e uma integração
+                                        completa ao programa.</p>
+                                </div>
+
+                                <div class="process-timeline">
+                                    <div class="process-step">
+                                        <div class="process-step-icon">
+                                            <i class="fas fa-search"></i>
+                                        </div>
+                                        <div class="process-step-content">
+                                            <h4>Primeiro Contato</h4>
+                                            <p>Entre em contato com nosso clube Leo ou participe de uma reunião aberta
+                                                para conhecer o programa.</p>
+                                            <span class="process-duration">1 semana</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="process-step">
+                                        <div class="process-step-icon">
+                                            <i class="fas fa-handshake"></i>
+                                        </div>
+                                        <div class="process-step-content">
+                                            <h4>Reunião com Orientadores</h4>
+                                            <p>Conversa com Leões orientadores e Leos atuais para entender melhor o
+                                                programa e suas expectativas.</p>
+                                            <span class="process-duration">1-2 semanas</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="process-step">
+                                        <div class="process-step-icon">
+                                            <i class="fas fa-file-alt"></i>
+                                        </div>
+                                        <div class="process-step-content">
+                                            <h4>Documentação</h4>
+                                            <p>Preenchimento da ficha de inscrição e, para menores, autorização dos pais
+                                                ou responsáveis.</p>
+                                            <span class="process-duration">3-5 dias</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="process-step">
+                                        <div class="process-step-icon">
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                        <div class="process-step-content">
+                                            <h4>Cerimônia de Boas-vindas</h4>
+                                            <p>Cerimônia especial de iniciação onde você é oficialmente recebido como
+                                                membro do Leo Club.</p>
+                                            <span class="process-duration">Evento especial</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Aba 3: Oportunidades -->
+                            <div class="tab-pane" id="leo-opportunities-tab">
+                                <div class="process-intro">
+                                    <h3>Oportunidades Exclusivas para Leos</h3>
+                                    <p>Como Leo, você terá acesso a experiências únicas que moldarão seu futuro pessoal
+                                        e profissional.</p>
+                                </div>
+
+                                <div class="commitments-grid-alt">
+                                    <div class="commitment-card">
+                                        <div class="commitment-card-header">
+                                            <div class="commitment-card-icon">
+                                                <i class="fas fa-graduation-cap"></i>
+                                            </div>
+                                            <h4>Programas de Liderança</h4>
+                                        </div>
+                                        <div class="commitment-card-body">
+                                            <p>Workshops e treinamentos exclusivos para desenvolvimento de habilidades
+                                                de liderança.</p>
+                                            <ul class="commitment-list">
+                                                <li><i class="fas fa-check-circle"></i> Liderança para Jovens</li>
+                                                <li><i class="fas fa-check-circle"></i> Gestão de Projetos</li>
+                                                <li><i class="fas fa-check-circle"></i> Oratória e Comunicação</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="commitment-card">
+                                        <div class="commitment-card-header">
+                                            <div class="commitment-card-icon">
+                                                <i class="fas fa-briefcase"></i>
+                                            </div>
+                                            <h4>Orientação Profissional</h4>
+                                        </div>
+                                        <div class="commitment-card-body">
+                                            <p>Mentoria com profissionais experientes e apoio na escolha de carreira.
+                                            </p>
+                                            <ul class="commitment-list">
+                                                <li><i class="fas fa-check-circle"></i> Mentoria individual</li>
+                                                <li><i class="fas fa-check-circle"></i> Visitas a empresas</li>
+                                                <li><i class="fas fa-check-circle"></i> Workshops de carreira</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="commitment-card">
+                                        <div class="commitment-card-header">
+                                            <div class="commitment-card-icon">
+                                                <i class="fas fa-globe"></i>
+                                            </div>
+                                            <h4>Intercâmbio Cultural</h4>
+                                        </div>
+                                        <div class="commitment-card-body">
+                                            <p>Oportunidades de conectar-se com Leos de outros países e culturas.</p>
+                                            <ul class="commitment-list">
+                                                <li><i class="fas fa-check-circle"></i> Projetos internacionais</li>
+                                                <li><i class="fas fa-check-circle"></i> Correspondência com Leos
+                                                    estrangeiros</li>
+                                                <li><i class="fas fa-check-circle"></i> Participação em fóruns globais
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="commitment-card">
+                                        <div class="commitment-card-header">
+                                            <div class="commitment-card-icon">
+                                                <i class="fas fa-university"></i>
+                                            </div>
+                                            <h4>Preparação Acadêmica</h4>
+                                        </div>
+                                        <div class="commitment-card-body">
+                                            <p>Suporte para o ingresso na universidade e desenvolvimento acadêmico.</p>
+                                            <ul class="commitment-list">
+                                                <li><i class="fas fa-check-circle"></i> Preparação para vestibulares
+                                                </li>
+                                                <li><i class="fas fa-check-circle"></i> Orientação para bolsas de estudo
+                                                </li>
+                                                <li><i class="fas fa-check-circle"></i> Workshops de estudo</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CTA Especial para Leos -->
+                    <div class="requirements-cta">
+                        <div class="cta-content">
+                            <h3>Pronto para começar sua jornada como Leo?</h3>
+                            <p>Junte-se a milhares de jovens ao redor do mundo que estão transformando suas comunidades
+                                enquanto desenvolvem habilidades para a vida toda.</p>
+
+                            <div class="cta-stats">
+                                <div class="cta-stat">
+                                    <span class="stat-number">7.5K</span>
+                                    <span class="stat-label">Clubes Leo no mundo</span>
+                                </div>
+                                <div class="cta-stat">
+                                    <span class="stat-number">140+</span>
+                                    <span class="stat-label">Países</span>
+                                </div>
+                                <div class="cta-stat">
+                                    <span class="stat-number">170K</span>
+                                    <span class="stat-label">Membros ativos</span>
+                                </div>
+                            </div>
+
+                            <div class="cta-buttons">
+                                <a href="/index.html#envolva-se" class="btn btn-primary btn-large">
+                                    <i class="fas fa-star"></i>
+                                    Quero ser um Leo
+                                </a>
+                                <a href="#faq" class="btn btn-outline">
+                                    <i class="fas fa-question-circle"></i>
+                                    Tenho perguntas
+                                </a>
+                                <a href="/contact.html" class="btn btn-ghost">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    Falar com um orientador
+                                </a>
+                            </div>
+
+                            <p class="cta-note">
+                                <i class="fas fa-user-graduate"></i>
+                                Programa gratuito para estudantes. Vagas limitadas!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Específico para Leos -->
+        <section class="membership-faq" id="faq">
+            <div class="container">
+                <div class="membership-section-header">
+                    <h2 class="membership-section-title">Perguntas Frequentes sobre o Programa Leo</h2>
+                    <p class="membership-section-subtitle">Tire suas dúvidas sobre ser um Leo</p>
+                </div>
+
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Qual a diferença entre Leo Club Alpha e Omega?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Os Clubes Alpha são para jovens de 12 a 18 anos e focam mais em atividades escolares e
+                                desenvolvimento pessoal. Os Clubes Omega são para jovens de 18 a 30 anos e têm um foco
+                                mais profissional e comunitário, com projetos mais complexos.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Existe custo para participar do programa Leo?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>O programa Leo é totalmente gratuito para estudantes. Há apenas uma contribuição
+                                simbólica anual para custos administrativos, mas oferecemos isenção para casos de
+                                necessidade comprovada.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Posso participar se já estiver na faculdade ou trabalhando?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim! O programa Omega é especificamente para jovens de 18 a 30 anos, incluindo
+                                universitários e jovens profissionais. As atividades são planejadas para se adequar à
+                                rotina de estudos e trabalho.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Como o programa Leo pode ajudar na minha carreira?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>O programa desenvolve habilidades valorizadas pelo mercado: liderança, trabalho em
+                                equipe, comunicação, gestão de projetos e responsabilidade social. Além disso, oferece
+                                networking, certificações internacionais e oportunidades de mentoria.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Posso participar mesmo com pouco tempo disponível?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim! O programa é flexível. Você pode participar conforme sua disponibilidade, escolhendo
+                                projetos que se adequem à sua agenda. A média é de 5-10 horas por mês.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Como faço a transição de Leo para Leão?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Aos 30 anos, os Leos têm prioridade para se tornarem Leões, com isenção de taxas iniciais
+                                e reconhecimento de sua experiência. O processo é facilitado e muitos Leos tornam-se
+                                Leões naturalmente.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="../../src/img/logo.png" alt="Lions Clube Internacional" class="logo-img">
+                        <div class="logo-text">Lions Clube <span>Tatuí</span></div>
+                    </div>
+                    <p>Servindo a comunidade de Tatuí desde 1955. Fazemos parte do Lions Clubs International, a maior
+                        organização de clubes de serviço do mundo.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2025</span> Lions Clube Tatuí. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

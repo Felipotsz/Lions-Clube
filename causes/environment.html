@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meio Ambiente | Lions Clube de Tatuí</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../theme/theme.css">
+    <link rel="stylesheet" href="causes.css">
+
+    <!-- JavaScript -->
+    <script src="../index.js" defer></script>
+    <script src="../theme/theme.js" defer></script>
+    <script src="causes.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../src/img/logo.png">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="../index.html" class="logo-link">
+                    <img src="../src/img/logo.png" alt="Lions Clube Internacional" class="logo-img">
+                    <div class="logo-text">Lions Clube <span>de Tatuí</span></div>
+                </a>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav" id="mainNav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+
+                    <!-- Dropdown de Sobre Nós -->
+                    <li class="nav-item dropdown active">
+                        <a href="#" class="nav-link">
+                            Sobre Nós
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../about-us/who-we-are/who-we-are.html" class="dropdown-item">
+                                    <i class="fa fa-users"></i>Quem Somos?
+                                </a></li>
+                            <li><a href="../about-us/our-leaders/our-leaders.html" class="dropdown-item">
+                                    <i class="fas fa-crown"></i>Nossos Líderes
+                                </a></li>
+                            <li><a href="https://lionsclubetatui.blogspot.com/" class="dropdown-item" target="blank">
+                                    <i class="fa fa-file-text"></i>Nosso Blog
+                                </a></li>
+                            <li><a href="../about-us/about-lion-leo/about-lion.html" class="dropdown-item">
+                                    <i class="fas fa-paw"></i>O que é ser Leão?
+                                </a></li>
+                            <li><a href="../about-us/about-lion-leo/about-leo.html" class="dropdown-item">
+                                    <i class="fas fa-star"></i>O que é um Leo?
+                                </a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Dropdown da Causas -->
+                    <li class="nav-item dropdown">
+                        <a href="#causes" class="nav-link">
+                            Causas
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../causes/child-cancer.html" class="dropdown-item">
+                                    <i class="fas fa-child"></i>Câncer Infantil
+                                </a></li>
+                            <li><a href="../causes/diabetes.html" class="dropdown-item">
+                                    <i class="fas fa-heartbeat"></i>Diabetes
+                                </a></li>
+                            <li><a href="../causes/help-after-disasters.html" class="dropdown-item">
+                                    <i class="fas fa-home"></i>Socorro após catástrofes
+                                </a></li>
+                            <li><a href="../causes/environment.html" class="dropdown-item">
+                                    <i class="fas fa-leaf"></i>Meio Ambiente
+                                </a></li>
+                            <li><a href="../causes/humanitarian-efforts.html" class="dropdown-item">
+                                    <i class="fas fa-hands-helping"></i>Esforços Humanitários
+                                </a></li>
+                            <li><a href="../causes/hunger.html" class="dropdown-item">
+                                    <i class="fas fa-utensils"></i>Fome
+                                </a></li>
+                            <li><a href="../causes/vision.html" class="dropdown-item">
+                                    <i class="fas fa-eye"></i>Visão
+                                </a></li>
+                            <li><a href="../causes/youth.html" class="dropdown-item">
+                                    <i class="fas fa-users"></i>Juventude
+                                </a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a href="../index.html#mission" class="nav-link">Nossa Missão</a></li>
+                    <li class="nav-item"><a href="../index.html#atividades" class="nav-link">Eventos</a></li>
+                </ul>
+
+                <!-- Links sociais no header -->
+                <div class="nav-social-links">
+                    <a href="https://www.facebook.com/lionsclubedetatui.org.br" target="_blank" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/lionsclubedetatui" target="_blank" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@lionsclubedetatui336" target="_blank" aria-label="YouTube"><i
+                            class="fab fa-youtube"></i></a>
+                </div>
+
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                        <span class="toggle-slider">
+                            <i class="fas fa-sun toggle-icon sun-icon"></i>
+                            <i class="fas fa-moon toggle-icon moon-icon"></i>
+                        </span>
+                    </button>
+
+                    <a href="../login/login.html" class="btn btn-small nav-involve-btn">
+                        <i class="fas fa-hands-helping"></i>
+                        Envolva-se
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="cause-page">
+
+        <!-- Banner da Causa -->
+        <section class="cause-hero"
+            style="--hero-image: url('https://www.trendsce.com.br/wp-content/uploads/2022/06/meio-ambiente-sara-cafe-trends-ce.jpg')">
+            <div class="container">
+                <h1 class="cause-title">Meio Ambiente</h1>
+                <p class="cause-subtitle">Cuidar hoje para preservar o amanhã. Alinhado à Causa Global Meio Ambiente do
+                    Lions Internacional, o Lions Clube de Tatuí desenvolve ações permanentes voltadas à conscientização
+                    ambiental, à promoção de práticas sustentáveis e ao fortalecimento da relação da comunidade com os
+                    espaços públicos e a natureza.</p>
+                <div class="hero-divider"></div>
+            </div>
+        </section>
+
+        <!-- Seção de Fatos -->
+        <section class="cause-facts">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Fatos sobre o Meio Ambiente</h2>
+                    <p class="section-subtitle">A preservação ambiental é essencial para o futuro do nosso planeta:</p>
+                </div>
+
+                <div class="facts-grid">
+                    <!-- Card 1 -->
+                    <div class="fact-card">
+                        <div class="fact-card-inner">
+                            <div class="fact-number">
+                                1 mi
+                            </div>
+                            <div class="fact-label">
+                                espécies em risco
+                            </div>
+                            <div class="fact-icon">
+                                <i class="fas fa-tree"></i>
+                            </div>
+                            <div class="fact-description">
+                                Cerca de 1 milhão de espécies animais e vegetais estão ameaçadas de extinção em todo o
+                                mundo
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="fact-card">
+                        <div class="fact-card-inner">
+                            <div class="fact-number">
+                                8 mi
+                            </div>
+                            <div class="fact-label">
+                                toneladas de plástico
+                            </div>
+                            <div class="fact-icon">
+                                <i class="fas fa-trash"></i>
+                            </div>
+                            <div class="fact-description">
+                                Anualmente, 8 milhões de toneladas de plástico chegam aos oceanos, afetando a vida
+                                marinha
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="fact-card">
+                        <div class="fact-card-inner">
+                            <div class="fact-number">
+                                80%
+                            </div>
+                            <div class="fact-label">
+                                desmatamento evitável
+                            </div>
+                            <div class="fact-icon">
+                                <i class="fas fa-leaf"></i>
+                            </div>
+                            <div class="fact-description">
+                                Cerca de 80% do desmatamento mundial é causado pela agricultura, sendo grande parte
+                                evitável
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Áreas de Serviço -->
+        <section class="service-areas">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Áreas de Serviço</h2>
+                    <p class="section-subtitle">Envolva-se em uma dessas áreas e ajude a alcançar os Objetivos de
+                        Desenvolvimento Sustentável da ONU</p>
+                </div>
+
+                <div class="service-content">
+                    <div class="service-section">
+                        <div class="service-header">
+                            <i class="fas fa-recycle service-section-icon"></i>
+                            <h3>Reciclagem e Redução de Resíduos</h3>
+                        </div>
+                        <p>Promovemos campanhas de reciclagem, coleta seletiva e redução de resíduos sólidos.
+                            Organizamos pontos de coleta de materiais recicláveis e educamos a comunidade sobre a
+                            importância da economia circular e do consumo consciente.</p>
+                    </div>
+
+                    <div class="service-section">
+                        <div class="service-header">
+                            <i class="fas fa-tree service-section-icon"></i>
+                            <h3>Reflorestamento e Arborização</h3>
+                        </div>
+                        <p>Realizamos mutirões de plantio de árvores nativas, recuperação de áreas degradadas e
+                            arborização urbana. Nossas ações visam restaurar ecossistemas locais, melhorar a qualidade
+                            do ar e promover a biodiversidade regional.</p>
+                    </div>
+
+                    <div class="service-section">
+                        <div class="service-header">
+                            <i class="fas fa-graduation-cap service-section-icon"></i>
+                            <h3>Educação Ambiental</h3>
+                        </div>
+                        <p>Desenvolvemos programas educativos em escolas e comunidades, conscientizando sobre práticas
+                            sustentáveis, conservação de recursos naturais e importância da preservação ambiental para
+                            as futuras gerações.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nossa Ação -->
+        <section class="story-highlight" id="nossa-acao">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nossa Ação</h2>
+                    <p class="section-subtitle">Caminhada do Leão e Plantio de Árvores - Saúde, comunidade e meio
+                        ambiente</p>
+                </div>
+
+                <div class="activities-list">
+                    <!-- Atividade Principal -->
+                    <div class="activity-item">
+                        <div class="activity-image">
+                            <!-- Carrossel -->
+                            <div class="carousel">
+                                <!-- Container das imagens -->
+                                <div class="carousel-track">
+                                    <!-- Slide 1 -->
+                                    <div class="carousel-slide active">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg7OJhGaKlBrpYsx1iJkqf3-ZtCdgc8C9xnv96qInrPugj0g_gZYNn-dwd3UgsFRgVleqWb8Y1ZYwss-A4GOy7DK5cuLPyV-wJF4mHHUxeVdr2EnoewtQl2Jt3xdsd0a-5BcV3U-kHiNqmNTZKvihO0MQp43l_Dx8G6GKSZKJTHkHtpw1BysYImCb6KjV_O/s600/1%20-%20550746078_1089967539970286_3326676277893033159_n.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 2 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhVTSDwxs5bV0cztV8Kxi7KF_duu-bTxi9olUa47eOhakm2RTcSviZVXVRpWxt0jpWeYqtHDsKKGuA9FBVG80HBxfr0Bn4BXpxofyBxZawZRgaksF7B8EeAvq6YNVVqLJ2xG7-LtBGRGHJNtwO4J_pRfFOiFI0o0Emr2ruwEhITeRhabPOCVUApu_udr7mq/s600/2%20-%20547738017_1089967426636964_1506261830742575433_n.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 3 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIRnajsx_I9tmRs4bYudYgg-uCWU975nUkfago81D8YSkGhTPbuC13iEIJw1I3su-_j4-o9cjFGfXFVbUKNbdbKcH6aUBm0W7Opqc3pswscMf4fZcmOXYm_22IkkOvi-7vVP0AyKVXkq4TggxVx4psi52kOEi-w3J1NvG4hv-aKXxXzgzxsCJGTHUlTLBs/s600/3%20-%20550779491_1089967609970279_7714991310257761748_n.jpg"
+                                            alt="Participantes da comunidade engajados no plantio de mudas"
+                                            loading="lazy">
+                                    </div>
+                                    <!-- Slide 4 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgbeBLF0N122S1xpc7gOhMbdoILOFmm8U31uWZNx3I5TyiGl9Q3t29vPLRRcCCHTjwAs6rnCDW8qa75wUnewMFPuBJvM_GEkA24pvfkzyJc5wUGhYC6PjazRytrgjaHoTgegb7c1q7GHbsO_CnqH1adL_NijvUYu_V_QATkCNz_pqIBEaQuQCAiYXsnu8C4/s600/4%20-%20550575433_1089967313303642_5103640179761348146_n.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 5 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhCeuGEGFvNUV7uQJl3ZH7tjcvS4XfY40YtTC28h2BxNlk1Qd5ikDticUOUEGhTv0jI_bLYxxQpdStq6pwJSL0s2sDU9ymIC-jrDr3W0nITk9F5tPJrBZ3GZwpmCePj77oAlZTafZLTVHH16zThrSu8SspZUIiv2hpJWOii6iyNqyWUZ2tKpbJtmjJG4kR/s600/5%20-%20549155794_1089967379970302_6329131598338134860_n.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 6 -->
+                                    <div class="carousel-slide active">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhwJV6xvc99NxrqKVHmRDkD5nbHhZDBC0wuM_acJXApmBNnK2nOBLK6eAzZ6jFzmEnJdQmI_axyvogkgdAqs1cGsZaPjSPOGN1ymmSSBsYdnFso4V6VdVFt8tTFtsS7B_CUdmh-mk61sbHfsMh08UTKav_WI99M0gq_VuLjAAs9eAvobhe2V-Vw-V-jqz6m/s600/6%20-%20550135144_1089967236636983_7955326729301195360_n.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 7 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh53TqdXo0nIwJrt6sONDfu_8g87qyQqinug6yigbasWFahFxehzBflgVtAxPmNLK-men-pv6JTtzhXZrKAEvultnsvyAY41QRjFtHsz8xl4HRKeSal3FhJXhn_R14lIUK9Y1JFUfUcNCQ2Aw-RUM67AoHQ3XukwwTcmG3kCO7Nxd2rKdIHcqe3TliLXHcG/s600/7%20-%20548744920_1089967199970320_3663557734795906883_n.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 8 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhi3QmVH7tZLgX3h5dnm9lHSWOmjeqk4cjOjVaruGun1VPHxMznPZT6TkxMAxNdb9ceR2GoHiJfzgT756Gw7W3M7nvpUOjqYt4OK1i5uoOQDP2SM5ocjfa5A5QP73t-y96FE-8b82pBdr9URuAv90oO9DRPLgG1Jjpx5oPRQSr57aeQ1led3nlTkt-cXh52/s600/8%20-%20548542126_1089966896637017_3544885867619827899_n.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 9 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjXbIo_GOqwaNxuMJ8TVippNGkKuilopCVyL2srVqBHF_qB9N97FIcrkygyo3Q6OhyB1hm-w-NK6qN7U1y3DvoqRr2rYXwIGz7TqOAvyVWN-VJiG6lR6BpQzcFSTmabx_dDKi0RMnQqNpnQBpKtAT3uGbZjy5LgQHhYdYGEUSIkfUEYCw7cUJxgGuFa5yNs/s600/9%20-%20550078077_1089967149970325_5672308886709208516_n.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 10 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5OKHPpXfl053M5cj3-Uf0328QWQNvBmDtRPrzjJviUT_5A4JxorkV1haUoHe3qseG5cJXxvtfpsQxFNUD74KTiult9TC_xAWPJGIOBHHxhZ1hFvqQQ5-fw8dcFOO38RUawxaf3bbF-mHDPN2NR_-6Q96b1l_svqFjksHPjQbWwR8UZPoD_VjX7Q4w-tfd/s600/10%20-%20550226903_1089967009970339_6158383229354517361_n.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 11 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiCV0EPOW1KqQKCqXZp1a8weJvrm_xALdxNSGS4HFiR74kgTLsO4oxK6GzhyphenhyphenMQzVeGqySofNU2-ErpJBCvn-35L57ivla3nM5zUdsf-kDU2STYianOMcSjXl5_0NFT_jvuXMDNyfOhx-zqP3LXldGcF7eHo9bdOqugdl9X-lt9VzCAcFGEChhshVIqbW_He/s600/11%20-%20549295107_1089966853303688_2710651482471708583_n.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 12 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhYY2o4oFy925t3KxD4CkHOu0UB6PDdUT19Bz12opxE8RK5Dbx7GsERZbjVH9-n8bVjpqK7cyViqppRf3wmDen-mrJ_mK7dB55xB13NgX-dgkYyMw1vSCF2rPWL1yYHLf9JqeWiBoVCkpvQTOL24j7hwxTrx2NqwcQQJ6EXGRcGosMX1pI8wzj0DC2UJBaj/s600/12%20-%20549018300_1089966713303702_8874832538710171727_n.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 13 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEilX6zsJkzFtPeTV7RyMUGQaNGoWdRxSbFBf7HjU4QuP1qrLYtV2VfK3-fQcRHFTszCz036rS7l1ja7abbccW0SzZ4ddwwm0QsqwBAcTVVFFrj-KOeNjJCrPrHSDR4VNc2mzreJ7NxPuMjvuSsNqp9zmA42gdmH9P7uYH5gTYo6sS81abTvy404AZWTGBex/s600/13%20-%20551066125_1089966619970378_2674397747210979236_n.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 14 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEikLReazZbkv4UFQJsS5Wil00BTFBvDz9bMK89iGzor3JC17RPN0WniOL0iJ33EB41Q1Vg0cCpXVMhgpUBlbXxFcXycIpkVtBjErLi8rc_p3p1CrkgcMk4SlWF3y2AYMyKaWPdhOfRD9gOC3CYut3sWlny_5FRoOQeodw1uMM2Hf2HdF_HNKEUEfkvadRZz/s600/14%20-%20549902642_1089966466637060_237501096432881508_n.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 15 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKONb7Dr4eCCl1cHmLMXdTfJO-_sdfA3YK6PXXH1hPwaaBV2NeZvpnt67zD6z9WUE_ATK9J1fXqWlLuogVFDs40asMZiRhsWqVs8NJ2_e8Ue8knxIZ2G-XJEqFBrOYmOxeq7JboU__IfWl5xLgiI4csTbSLsEtj4gJRMWS7-_SonZ-GZDiQEW3lhHrGwKL/s600/15%20-%20549673405_1089966673303706_8255797772301042161_n.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 16 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlNPeuS5m_h1Db9QIu_G1AAlnCazn3fZ41JZIbPDoZu_BAVJRgXpIJBMHBRCGLC6eicf-Dvw4wIE7J6yNTEDZKXeKLoZKT6wbLEuqipAgAbkhN29mNFWMD1rvNOSm3HKj-1nUgmzjNXAfeFniEhEeEgyzT125QRd1S3NBBFpJpmsWGXKW3woQWSZjJN0q0/s600/16%20-%20550124641_1089966403303733_8708152393010191186_n.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 17 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiWnZ-YuRtoUqKQ32w5gUvK1D3WfOH9N1HuzycUdvXuVL2BPyRsDNT07rJbbYya_WB-VVdPFWOyWrAoJkPzjCZ2pEFG0rnRKVJejtQMgRXtK3wTS912XHc53orSdbXAKvqO63oAsm8OrgCGb3H9u2KyAvkuYXteMW7s2f9CqP5JRbHrtimdE2lHeBwbRGuv/s600/17%20-%20550355117_1089966359970404_3471577167907454216_n.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 18 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiO7SSRsmCro3RpHj1lNIy_dnhwMyKRyVRQoDGhZr2rD3i-ff2fPCCXWLcrDEX5z3YB5efO7xhPS7HwgOJ9Ymxx-CTe-jFONQ_dM-wSILAy5bdqisOJkgJ4qsr-oAWk0XjOqMYYf_LynNQ3imfnnk8uCH_7gUq8kXc83RS7-wX_YluW40R4vy42lvKUKoLD/s600/18%20-%20548800587_1089966283303745_7258394716173401234_n.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 19 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEge14otjF-W3MYd9nWgglLF0W-SCGjdPrzj4R50DnyaeejbNa9ycoG04bl2sTwNUKS58qL6EB6SnBf_Qory8dz3XOQEKYqMSMMNCGBOiAxmfZblq2q78ntrK3dTFUzSldUDNyQc8AHFjdvsHxJzL3TidRMFtci82R2LhjExqf-1q-ocY6pgGydG5rXpoj25/s600/19%20-%20549759182_1089966123303761_4863481975422447527_n.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 20 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi89tvREqhDyQYIHuTF7tZ9E8MAasPyJPBNlL3VA6ydliRyJFVzdCcrQZy66tc1rUoIo84WOK-fu-doAWmanOzqQMTVQKiQIRqODi-Ci3yXzVvoXIA-0aHfWVUj16-0OYPsVNh1XINlUGeUkhyphenhyphenlpCymKJtZ0b8rqL-4MSF4tbXADenHyhMCAQWTRvTO5VPp/s600/20%20-%20549669268_1089966203303753_635933569917906406_n.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 21 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhlEiR6cnwa5PYQyG2BwM7It8rewyQsoZ-o49CsJRccdHO8qpf44FXX_4-87zs5QX7lvd9nqe6dc4TyGAeKJ3fJXbCnwS_L_S0iyn7UELuLxSJGNkKzfjji5lZtIBmBhSNz_U6WrMQ7rpTkVqjrfF9rVD7p2KucD4nZ62tA2VEFT6UA8ZIaTloqcZPsoKIi/s600/21%20-%20549366397_1089966033303770_4937617895107419863_n.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 22 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEji9eKSNwiAwQ9hiI2UZQxni3vD7A-5ohDyhj4QdMVvSXLeoPXT52VQwVROI3gnIC9z6uTjqeBStWKMfslsYU8xBtuWbIjOJd71K6SnwI8GAJwhTdG8fTE5pZVtQLiqW4kHMSI_iMdZBkBvrvajLo5zDIKtL7ocnjHoTflvaoEQd1ezfk_Crlr7tp8Bls25/s600/22%20-%20547736205_1089965916637115_7849845144659856561_n.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 23 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1AJOy9Vz_giXhOLKhXZe8vHP4MFFYlkbBBxt_3EsJCSvu-LHdCAKFJkBoskJMwGNeeFhD2Fl7oc_u8HNkAsyHVDK9zFNXV9MX9Bqam9Dh-a4pACBeMQll8HTqMHCA3EBUWfWGqNwqHpmS7dkiwlVJJtNscxRnwgAkMsqBNBsADX_OoknEmDxEjF8IdC4A/s600/23%20-%20548209553_1089965216637185_7677146738624163858_n.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 24 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu7wSscMZ0edqDB66gzR616rguoXXTPH_T_H3EOurPwGig6daynK7YfgIgEg3TlRBXmhFCIIkp_DJTYZyxBnAWvGGqZhDdZYPrC88FKqVmUjIqS8GQAxL3IyfcAHwccRI0SKVWUWhcxga0X6g0zbX4nQkTL7klh40tubEbcvEi_kPGdtcPDy5t1jAVbuGC/s600/24%20-%20550067240_1089965819970458_8760070261468948391_n.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 25 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWpcuMALbLO8cbRGE2eFBwQDz4OaWoXZJwgOTNLpi_XDNSs-Lqym0ZQY6jyyleaQ1jo4-RslX05rGJptW3g3T3tkvwKMw7Kq6Fuhp_rpOuEvlyruY-o_3WoNAFvxgt0-dWxRxe0sGLbRYXarzBLgbTDYEz5Fv7VIKNp-oG3OtlcWcM-lm-KoqUkfvOlg1B/s600/25%20-%20552566817_1089965643303809_7478212184416310248_n.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 26 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiXQv9HXU0hx8KcB8OPA2FMrL6Ouup5zEioVzxLHaNlVu6mGCRb1UmaWs6cu8T3_3TX-CmLx2X8hQ03IQn7ClTjZGRhafrHcGEKj1RwFSC3RzXHwcsZhbJlTpQeBuqT5b18bhYRvFwzIyFeygwqc62wotyMQcY0lCdt6z89Lm2lDwdEhaHIg4SAwnJXHDa/s600/26%20-%20551465564_1089963229970717_1116224045795567279_n.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 27 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwr082_p2vJNZD2k_EPq2R7zfFh-nwkwnyQH6OuoH-iIhAuzEul3YxHRNH0mavTmhAMmG1x7jPW5GxbraB1_4wDOjNiTP8-0DmjMEjwF2pxoKrx70WIKCbnuaEupcHi5ovXBwtP65alfcFLung0yNE6BHO0YtJWL429lRUMMwiR3DkG_lQzLecHM0GHTo1/s600/27%20-%20550160689_1089963189970721_5747307050657527846_n.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 28 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZ5Juj_isOslzQ92yw5b3odu4xA6icyzts9VYINvKdGn0-OJen9ELaIos6G7NmXlWPD9HhzP5xzArLhNrpXnU9lDz6du-oqMv8WfdQsm-XrwbRjgDyecVaWPkD4aM5radWCeJvdSCAt_DEGoZugPs0veY2Sx88NEs94dRMQyEouYy92PuLjkRGTTYhc1C0/s600/28%20-%20552309749_1089963156637391_1523696641885257421_n.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 29 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGVOL4mxhvG2TtedTfeiEgrucS8Nrod1CfhMBaIG2gaO1EsdwcqnSHXv7HUyR5Khag7YcHohKHNxwqlMoTQPcyxTpfNwUpYSbyQarRiGnpDALq_C6TuXxhAFNoBfGYPHpTm0NVWpz6lBLf3ca-QCSsnTN-8PexMq-JtUD6aI0SJs9qQBeYFdb9Gn7rzDww/s600/29%20-%20552162898_1089963066637400_5903286806001465451_n.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 30 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqIyzsP1UwcnC2yx0u8i9aZqzeZaNeqW1UuLPImagEfyoqSYognM5ag01OeBq9b371HhweIp3SHbV2S61-UZkW80SJwZUJyHtUHwaCVBTgZ7vHoBw2XAbVJF-dJ-D5yP2cSBv9XFFT4_YIjl9A0UwsyZl7luCsWW2il8i8e2tDLY1pRk1O1wJbB9vJr2eT/s600/30%20-%20549188272_1089963123304061_811769184160905509_n.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 31 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiQZJw2hu_UY5V_P80-klj8TBFoNE5iC8G0lvrlcU0bUU-JH5T_796RAJSsf4N3bh8q6PegxtIx9z8yst-IT_0xhxRqRWbHsBca-jTNv7Qv449HMwmLKq-_260cPRTgmI81nzyc8gMLxnMOFDZqfeNgS_5TnPXn_D6_y5p9OrIBxfbf08Np1XnGK5ofKss6/s600/31%20-%20549630573_1089963036637403_8420524003639564313_n.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 32 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfqG0IofgO_wNZJi0DwozxdNytwkC0q75Z48OwOD-IbiQ3qUHyBFc0_GOxPe5j1Dfje0Bhl_RbR1FgQUlhZS1C6Xz1opRhRyg39qjb-CpJuzZ5wsLoz6QVEAH6kdhQtKDAJ_GCT-g-3SG6hq-yTqUqBOcTcosdw7WvHLpKEIPU_bVwrhqYOPXdn9rN9t0r/s600/32%20-%20549845605_1089962996637407_6435263420330308297_n.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 33 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhM_XZWnW_fa3svpVjLlf-vWk7c4gc6xERHxbcm0F5zxr5m3D4VOEGRsoO7fepjniEdDDAXOjNqoCfxwQvs5r1s72gvtgJtgLbxnPYXq8_p_que_j9pxjBWFaBuMpC7pQaQFSra5PVfMot95RZfvOGJS_aiJAPr6Hr80CQJEnoIIBxoEO7QMPorGUaMyYPV/s600/33%20-%20552500891_1089962953304078_8899162956026580202_n.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 34 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEicNA-9JzqW8wkb2UYQHXfn26MRYree4kyPjAdOd91diwZZLOowJXfHJZfP-ZGAURJEZwxtgj6qWtMEBWN-71ONhV8aCOjOBkrMo8InlQsk560sC0354JxyuQARUX2DJ-kofct0OFVd0AbczMs4lA1qxpZ1etoIbkp8pHznxIAH3bmf98QixQrzWPcFy0kF/s600/34%20-%20549500516_1089962913304082_4103964221943767290_n.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 35 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0Bn0pxzZ_bPund_G1YwCE1xJIBt5FnSr1Gp5eidB3nXLfnPb-azLxdmwOfQR44QGuYOWPTmMpZMPEVvdR-n2blL1dD-uF9LrRnAMPBXEh_z11TxrbwNzQfLVWhHEJIYRzD4TKpMWlR-Ht6-BciNJw3ob2c9n9szatafudsIUvUDTiyVnA-mIGc4oA6wMq/s600/35%20-%20532560448_1089962883304085_5024419897217650835_n.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 36 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwXD0xk-fhtyuPv8xKWhaqWaT9YlBwHOvufBE303Y9HU3ztcYOHBKnmq90qTyBgAvUHDD38dQEheNZLK_4aTLWJmMakQUUqxWarjToILtuWPeihOuxmYNIvgtMZiXY3KBAEdA0k_9Sj5MTRSC-FOuhfgG-FMXX2p9fFc5A7tF_mlc55mwlnaExfvzNCmUM/s600/36%20-%20549732897_1089964833303890_872038945858892046_n.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                </div>
+
+                                <!-- Controles -->
+                                <button class="carousel-btn prev" aria-label="Imagem anterior">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button class="carousel-btn next" aria-label="Próxima imagem">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+
+                            <!-- Badge de data -->
+                            <div class="activity-date-badge">
+                                <span class="badge-day">Set</span>
+                                <span class="badge-month">2025</span>
+                            </div>
+                        </div>
+
+                        <!-- Conteúdo -->
+                        <div class="activity-content">
+                            <div class="activity-header">
+                                <h3>Caminhada do Leão e Plantio de Árvores - Integrando Saúde, Comunidade e Meio
+                                    Ambiente</h3>
+                                <div class="activity-datetime">
+                                    <i class="far fa-calendar-alt"></i>
+                                    <span class="date-text">set. de 2025</span>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="location-text">Tatuí, São Paulo</span>
+                                </div>
+                            </div>
+
+                            <div class="activity-description">
+                                <p>Essas iniciativas buscam gerar impactos positivos que ultrapassem o presente,
+                                    deixando um legado para as futuras gerações.</p>
+
+                                <p>Como exemplo desse trabalho, foi realizada uma atividade que integrou saúde,
+                                    convivência comunitária e responsabilidade ambiental. A tradicional Caminhada do
+                                    Leão reuniu diferentes públicos em um momento de integração e bem-estar, seguida do
+                                    plantio de espécies nativas, contribuindo para a arborização urbana e para a
+                                    valorização do meio ambiente.</p>
+
+                                <p>A ação também incorporou um momento de reflexão sobre a valorização da vida e o
+                                    cuidado com o bem-estar emocional, reforçando a conexão entre ambiente saudável e
+                                    qualidade de vida. Participantes de todas as idades se uniram para plantar mudas de
+                                    árvores nativas, aprendendo sobre a importância da preservação ambiental enquanto
+                                    fortaleciam os laços comunitários.</p>
+
+                                <p>Durante a caminhada, foram abordados temas como a importância da atividade física
+                                    regular, a convivência harmoniosa com a natureza e a necessidade de práticas
+                                    sustentáveis no dia a dia. O plantio das árvores simbolizou o compromisso coletivo
+                                    com um futuro mais verde e saudável para a comunidade de Tatuí.</p>
+
+                                <p>Essa iniciativa representa apenas uma entre diversas atividades desenvolvidas ao
+                                    longo do ano, reafirmando o compromisso do Lions Clube de Tatuí com a preservação
+                                    ambiental, a conscientização coletiva e a construção de uma comunidade mais
+                                    sustentável, equilibrada e humana.</p>
+                            </div>
+
+                            <!-- Botão Saber Mais -->
+                            <div class="activity-actions">
+                                <a href="https://lionsclubetatui.blogspot.com/2025/09/na-manha-de-hoje-o-lions-clube-de-tatui.html"
+                                    target="_blank" class="btn-know-more">
+                                    Ver todas as fotos desta ação
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Outras Ações Relacionadas -->
+                    <div class="related-actions">
+                        <h3 class="related-title">Outras Ações Realizadas</h3>
+                        <div class="related-grid">
+                            <div class="related-card">
+                                <div class="related-icon">
+                                    <i class="fas fa-trash-restore"></i>
+                                </div>
+                                <h4>Mutirão de Limpeza</h4>
+                                <p>Limpeza de áreas públicas e campanha de conscientização sobre descarte adequado de
+                                    resíduos e preservação de espaços comunitários.</p>
+                                <a href="#" class="related-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="related-card">
+                                <div class="related-icon">
+                                    <i class="fas fa-seedling"></i>
+                                </div>
+                                <h4>Horta Comunitária</h4>
+                                <p>Criação e manutenção de horta comunitária com cultivo de alimentos orgânicos e
+                                    educação sobre agricultura sustentável.</p>
+                                <a href="#" class="related-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="related-card">
+                                <div class="related-icon">
+                                    <i class="fas fa-recycle"></i>
+                                </div>
+                                <h4>Campanha de Reciclagem</h4>
+                                <p>Pontos de coleta seletiva e oficinas sobre reciclagem e reutilização de materiais
+                                    para reduzir o impacto ambiental.</p>
+                                <a href="#" class="related-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Como Ajudar -->
+        <section class="how-help" id="como-ajudar">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Como Você Pode Ajudar</h2>
+                    <p class="section-subtitle">Junte-se a nós nesta causa tão importante. Cada contribuição faz a
+                        diferença!</p>
+                </div>
+
+                <div class="involved-options">
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-donate"></i>
+                        </div>
+                        <h3>Faça uma Doação</h3>
+                        <p>Suas doações ajudam a financiar mudas de árvores nativas, materiais para reciclagem e
+                            programas de educação ambiental. Todo valor contribui para um futuro mais sustentável.</p>
+                        <div class="option-features">
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Mudas de árvores
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Materiais educativos
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Equipamentos de reciclagem
+                            </span>
+                        </div>
+                        <a href="#" class="btn btn-small">
+                            <i class="fas fa-heart"></i>
+                            Doar Agora
+                        </a>
+                    </div>
+
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>Torne-se Voluntário</h3>
+                        <p>Doe seu tempo e habilidades para nossos mutirões de plantio, campanhas de limpeza e
+                            atividades de educação ambiental. Voluntários são essenciais para o sucesso de nossos
+                            projetos.</p>
+                        <div class="option-features">
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Plantio de árvores
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Educação ambiental
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Organização de eventos
+                            </span>
+                        </div>
+                        <a href="#" class="btn btn-small">
+                            <i class="fas fa-user-plus"></i>
+                            Voluntariar-se
+                        </a>
+                    </div>
+
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <h3>Divulgue a Causa</h3>
+                        <p>Compartilhe informações sobre práticas sustentáveis e nossos projetos ambientais. A
+                            conscientização é fundamental para engajar mais pessoas na preservação do meio ambiente.</p>
+                        <div class="option-features">
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Compartilhe nas redes
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Organize palestras
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Distribua material
+                            </span>
+                        </div>
+                        <div class="share-button">
+                            <a href="#" class="btn btn-small share-main-btn">
+                                <i class="fas fa-share"></i>
+                                Compartilhar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="../src/img/logo.png" alt="Lions Clube Internacional" class="logo-img">
+                        <div class="logo-text">Lions Clube <span>Tatuí</span></div>
+                    </div>
+                    <p>Servindo a comunidade de Tatuí desde 1955. Fazemos parte do Lions Clubs International, a maior
+                        organização de clubes de serviço do mundo.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2025</span> Lions Clube Tatuí. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

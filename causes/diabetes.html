@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diabetes | Lions Clube de Tatuí</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../theme/theme.css">
+    <link rel="stylesheet" href="causes.css">
+
+    <!-- JavaScript -->
+    <script src="../index.js" defer></script>
+    <script src="../theme/theme.js" defer></script>
+    <script src="causes.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../../src/img/logo.png">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="../index.html" class="logo-link">
+                    <img src="../src/img/logo.png" alt="Lions Clube Internacional" class="logo-img">
+                    <div class="logo-text">Lions Clube <span>de Tatuí</span></div>
+                </a>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav" id="mainNav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+
+                    <!-- Dropdown de Sobre Nós -->
+                    <li class="nav-item dropdown active">
+                        <a href="#" class="nav-link">
+                            Sobre Nós
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../about-us/who-we-are/who-we-are.html" class="dropdown-item">
+                                    <i class="fa fa-users"></i>Quem Somos?
+                                </a></li>
+                            <li><a href="../about-us/our-leaders/our-leaders.html" class="dropdown-item">
+                                    <i class="fas fa-crown"></i>Nossos Líderes
+                                </a></li>
+                            <li><a href="https://lionsclubetatui.blogspot.com/" class="dropdown-item" target="blank">
+                                    <i class="fa fa-file-text"></i>Nosso Blog
+                                </a></li>
+                            <li><a href="../about-us/about-lion-leo/about-lion.html" class="dropdown-item">
+                                    <i class="fas fa-paw"></i>O que é ser Leão?
+                                </a></li>
+                            <li><a href="../about-us/about-lion-leo/about-leo.html" class="dropdown-item">
+                                    <i class="fas fa-star"></i>O que é um Leo?
+                                </a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Dropdown da Causas -->
+                    <li class="nav-item dropdown">
+                        <a href="#causes" class="nav-link">
+                            Causas
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../causes/child-cancer.html" class="dropdown-item">
+                                    <i class="fas fa-child"></i>Câncer Infantil
+                                </a></li>
+                            <li><a href="../causes/diabetes.html" class="dropdown-item">
+                                    <i class="fas fa-heartbeat"></i>Diabetes
+                                </a></li>
+                            <li><a href="../causes/help-after-disasters.html" class="dropdown-item">
+                                    <i class="fas fa-home"></i>Socorro após catástrofes
+                                </a></li>
+                            <li><a href="../causes/environment.html" class="dropdown-item">
+                                    <i class="fas fa-leaf"></i>Meio Ambiente
+                                </a></li>
+                            <li><a href="../causes/humanitarian-efforts.html" class="dropdown-item">
+                                    <i class="fas fa-hands-helping"></i>Esforços Humanitários
+                                </a></li>
+                            <li><a href="../causes/hunger.html" class="dropdown-item">
+                                    <i class="fas fa-utensils"></i>Fome
+                                </a></li>
+                            <li><a href="../causes/vision.html" class="dropdown-item">
+                                    <i class="fas fa-eye"></i>Visão
+                                </a></li>
+                            <li><a href="../causes/youth.html" class="dropdown-item">
+                                    <i class="fas fa-users"></i>Juventude
+                                </a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a href="../index.html#mission" class="nav-link">Nossa Missão</a></li>
+                    <li class="nav-item"><a href="../index.html#atividades" class="nav-link">Eventos</a></li>
+                </ul>
+
+                <!-- Links sociais no header -->
+                <div class="nav-social-links">
+                    <a href="https://www.facebook.com/lionsclubedetatui.org.br" target="_blank" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/lionsclubedetatui" target="_blank" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@lionsclubedetatui336" target="_blank" aria-label="YouTube"><i
+                            class="fab fa-youtube"></i></a>
+                </div>
+
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                        <span class="toggle-slider">
+                            <i class="fas fa-sun toggle-icon sun-icon"></i>
+                            <i class="fas fa-moon toggle-icon moon-icon"></i>
+                        </span>
+                    </button>
+
+                    <a href="../login/login.html" class="btn btn-small nav-involve-btn">
+                        <i class="fas fa-hands-helping"></i>
+                        Envolva-se
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="cause-page">
+
+        <!-- Banner da Causa -->
+        <section class="cause-hero"
+            style="--hero-image: url('https://cdn.prod.website-files.com/659ec5cf6e73f13d3d0a18d1/68da89bf04ffaa5ce4b2b43b_642d8d42defb897f23b9fdf4_BLOG_DIABETES_75KB.jpeg')">
+            <div class="container">
+                <h1 class="cause-title">Diabetes</h1>
+                <p class="cause-subtitle">Combate ao Diabetes – Prevenção, informação e cuidado com a vida. Alinhado à
+                    Causa Global Combate ao Diabetes do Lions Internacional, o Lions Clube de Tatuí desenvolve ações
+                    permanentes voltadas à promoção da saúde, à prevenção de doenças crônicas e à conscientização da
+                    população sobre a importância do diagnóstico precoce e dos cuidados contínuos.</p>
+                <div class="hero-divider"></div>
+            </div>
+        </section>
+
+        <!-- Seção de Fatos -->
+        <section class="cause-facts">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Fatos sobre a Diabetes</h2>
+                    <p class="section-subtitle">A diabetes é uma epidemia global que afeta milhões de pessoas em todo o
+                        mundo:</p>
+                </div>
+
+                <div class="facts-grid">
+                    <!-- Card 1 -->
+                    <div class="fact-card">
+                        <div class="fact-card-inner">
+                            <div class="fact-number">
+                                537 mi
+                            </div>
+                            <div class="fact-label">
+                                Adultos vivem com diabetes
+                            </div>
+                            <div class="fact-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="fact-description">
+                                1 em cada 10 adultos entre 20 e 79 anos vive com diabetes, totalizando 537 milhões de
+                                pessoas em todo o mundo
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="fact-card">
+                        <div class="fact-card-inner">
+                            <div class="fact-number">
+                                1 em 2
+                            </div>
+                            <div class="fact-label">
+                                Casos não diagnosticados
+                            </div>
+                            <div class="fact-icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <div class="fact-description">
+                                Quase metade dos adultos com diabetes (240 milhões) não sabe que tem a doença, o que
+                                aumenta os riscos de complicações
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="fact-card">
+                        <div class="fact-card-inner">
+                            <div class="fact-number">
+                                6,7 mi
+                            </div>
+                            <div class="fact-label">
+                                Mortes anuais
+                            </div>
+                            <div class="fact-icon">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <div class="fact-description">
+                                A diabetes causa aproximadamente 6,7 milhões de mortes por ano, sendo uma das principais
+                                causas de morte prematura
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Áreas de Serviço -->
+        <section class="service-areas">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Áreas de Serviço</h2>
+                    <p class="section-subtitle">Envolva-se em uma dessas áreas e ajude a alcançar os Objetivos de
+                        Desenvolvimento Sustentável da ONU</p>
+                </div>
+
+                <div class="service-content">
+                    <div class="service-section">
+                        <div class="service-header">
+                            <i class="fas fa-walking service-section-icon"></i>
+                            <h3>Strides pela Conscientização do Diabetes</h3>
+                        </div>
+                        <p>Eventos Strides envolvem atividades físicas divertidas para ajudar a promover a
+                            conscientização e o controle do diabetes. Organizamos caminhadas, corridas e atividades
+                            recreativas que incentivam a prática de exercícios físicos como forma de prevenção e
+                            controle da doença.</p>
+                    </div>
+
+                    <div class="service-section">
+                        <div class="service-header">
+                            <i class="fas fa-stethoscope service-section-icon"></i>
+                            <h3>Exames do Diabetes Tipo 2</h3>
+                        </div>
+                        <p>Os eventos de exames do diabetes tipo 2 são uma forma importante de ajudar sua comunidade a
+                            compreender o risco de diabetes e tomar medidas para a prevenção. Oferecemos testes
+                            gratuitos de glicemia, avaliação de risco e orientação sobre hábitos saudáveis.</p>
+                    </div>
+
+                    <div class="service-section">
+                        <div class="service-header">
+                            <i class="fas fa-hands-helping service-section-icon"></i>
+                            <h3>Grupo de Apoio para Diabéticos</h3>
+                        </div>
+                        <p>Os grupos de apoio para diabéticos incentivam a troca de apoio de todos os tipos entre os
+                            membros da comunidade que vivem com diabetes. Oferecemos encontros regulares, palestras com
+                            especialistas e suporte emocional para pacientes e familiares.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nossa Ação -->
+        <section class="story-highlight" id="nossa-acao">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nossa Ação</h2>
+                    <p class="section-subtitle">Feira da Saúde - Prevenção, informação e cuidado com a vida</p>
+                </div>
+
+                <div class="activities-list">
+                    <!-- Atividade Principal -->
+                    <div class="activity-item">
+                        <div class="activity-image">
+                            <!-- Carrossel -->
+                            <div class="carousel">
+                                <!-- Container das imagens -->
+                                <div class="carousel-track">
+                                    <!-- Slide 1 -->
+                                    <div class="carousel-slide active">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhWcFaPEk35OIPw8NRdwAHm4yGmsG6SpjoM1Zx3tUmhBvfwj-H6K5as4Po0c-7MJKQFMO6NxC__wIvHwgq8S6P6_KxSrmPPtA6uQhMc-S77gneBYac158lY0LoBMymR_7YZcV0TxaZ2F1DBsFcQn2i9Jb6-hbC15YOdnCcam37Oa67e-TDG4-RdoV_4d6W-/s600/1%20-%20212e14cf-04a9-4180-8f7c-8b69e500e677.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 2 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhAz20Wc27KaOOo-gN2mCAYxjg6rDN8ATum2ggIP9v9OZPAzrhowkZTCM-6UWIy_7WF1Yft8dRqpAgD_NW_BxIFRmvJtm56pwTg2FHHdv-Zdpa0-RO3bky3G05k_gnOBXDfw5b2_5Bo9-qgXzs3XPlEUoy2gpAy7sPbNftiyFZA9Wxc1Kx6d70hZyeJyRTb/s600/2%20-%20fdb9c361-8327-450d-ac83-aab261d1f271.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 3 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZKrxoq1ZHZtd_5Sg2G4LeugDOY6cc-WNVZwWaG4paYQB_ngXPDXJ3EVXAQAneh4zJ8gxGZ4i-R82UhCwvqlzBBax_BEFPzq6XNVg29H1aIIpRoZY9dn1QE5yFXNNtSDOOywS3NiIb93t_OZek_huKtJBtMm1PExLgHTFP8zZKU6W2-Xk8LvGqR7YqmEzB/s600/3%20-%20a68dfcae-968b-489a-84dc-a357e1c55c06.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 4 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrATTCTHY9YwasvD92l3m-Gb_huUgVHL-XKBOEkBmmgc4woFmqqwRocNXN4P2wbJE1EzWtz9GRn8YQY3xJ1SQNXxm5rrcf6BjCCEpBKBwYHZdZPu6i2w1x3psOUvkgwisqkNrwprHNZNCLC38cXr5z6P8ML0dHhiyFNg4eU_vnitlLqrGVOwhjzoI-aiV_/s600/4%20-%207d61ee34-30ce-4252-877f-c57e6cef0e26.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 5 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEif5VNzaAJ9O3I4TDR5KhVQboALc9MVIrRiy8L9jInOJiRA0TEvny05mkzGtCpoMAImI_jhu9BXzOqygRbmgl6ly7JDWTUUoirXZtE8E7p_5AB4P_oWnyaB55GbNJ6fFt3derYNiuu9zbLKiyLVCHnl0nsYwf9mF6kVIj24wFsN-flGBvR3-zY245e2wVux/s600/5%20-%2025%20de%20Outubro%20001.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 6 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitsZD8ghp4SV_dEhyRE4wuxzt-4EYRFR29X-Ke91g1wF6uBnTupCzMem6Ml-W0zxL-DCcwfS5hBgt52Wz9T_g2ZM3fYLPlQMGif857wWPM119_5dJnati-sX5nHvLwx_yykQPDpge3UWtAvTu_cT2SqQ5bUuSWU5kGeg49YGevL5Vp0bjSMIt-EJTqQbts/s600/6%20-%2025%20de%20Outubro%20002.JPG"
+                                            alt="" loading="lazy">
+                                    </div> <!-- Slide 7 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiOOfRbcWWczGNNsgm1-MgkWgtEwrrFxgerlO-NezE4zIonln_4Iu4xFLtxhvN9kFETht4eNLk922__D3okmDyOUKKObwCaUH_YryNLLuc9t1Rjr3u2VhRIjp-GkHtV9lS4X46xc_dKMsLYn1mzTbrut-zakTGtTkvDLVpV32uvS-sySSs_UPhisCAfdXKd/s600/7%20-%2025%20de%20Outubro%20004.JPG"
+                                            alt="" loading="lazy">
+                                    </div> <!-- Slide 8 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeLYwK-Vw3DaKDGHtmQsIj_gIxn6dxTyoifqa4M-uSdxL1Rt4kNKDymVTWB0tLyIUm4vZLcufq891Sn0OELXri9vRuiz0agE5GQ4AnegD7m-nfjlLQ418Ljq5x8Y8R4CyAVHEg46H1ehJC4UngSFP7wWzfTMoZD7OehdznfY56EaAfpLWNhVq74VKxo7Ai/s600/8%20-%2025%20de%20Outubro%20003.JPG"
+                                            alt="" loading="lazy">
+                                    </div> <!-- Slide 9 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjrwHkn1DrlbZceIRtCVQMWdLlA-2Gm9o7PyqLBa6UGADR7kYLCFJoAaEeUgSpL4WrNRyl9SAFDgtaATioj59Bb2nzcKYD7ooFLp4ozPEEV2lN-7zpKKyaJj1M3X4c4hoxU-xOWUS1ZeMYaI6thJ5McFM9OQyFOLSpp_8Rfm281Qv-kfyjRumBqwxDVyzWc/s600/9%20-%2025%20de%20Outubro%20005.JPG"
+                                            alt="" loading="lazy">
+                                    </div> <!-- Slide 10 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgc3oiFK1vVpPhtS9abe4MUen7j4YqDj1kYL7te9hTPZQtExWcJzAiLkenT56BdXqr-VMbuoLLIjV0gOWWj7kZLgVSo80YkIPbCeYiIUWFhQi7pbbAIxK4UJp0Y1WIh3p3sUeai3omUyC8QAOVuozFBBE9oFEFOTLH97M3IIUu6I7slbYPbaKtFIFet3E9T/s600/10%20-%2025%20de%20Outubro%20008.JPG"
+                                            alt="" loading="lazy">
+                                    </div> <!-- Slide 11 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgmPfGCA8ja8sPlZ2SqRArNUAfVrnMGNMrm_DS52hLoe5Yj2DphLEchq3GPZKWwxcUOsHGblwTzrUdAuw8nj6zaQPmZN8dHlkM-St-a9RLjspWT3zOxvKdE1cH3rIYPU9i0sgGpe147nEAkDZkT50OavSyOMdo7SAFBDguGcMtAAS2idsrQ33T9xWPOw9xP/s600/11%20-%2025%20de%20Outubro%20010.JPG"
+                                            alt="" loading="lazy">
+                                    </div> <!-- Slide 12 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEivHjJ9YhlCMrAXMMkyrLF31mDAthfAZ04YPHMZ19qBUqB9AMcAYs6-3WtYyzKzjfUyfE9DifdPV5k6o68_08LG2D4Eyunkd9s7YxXrbarJm0fe_tSucXmiulz3pu4CiRPTaaQoQ3eMZeogakaBHibin8IBLWUu414J5sOPNnk-IyiFFFkyUoy5ts6NTOmZ/s600/12%20-%2025%20de%20Outubro%20009.JPG"
+                                            alt="" loading="lazy">
+                                    </div> <!-- Slide 13 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjoXVQSnWlhsTcZnPfYGU3FNEVdn3hUgR5wbY4LOefVeXRpD7Oh2ZCcRHS8IQ-1fAzGRS4h3tJX9abcQPjPo3mBf7swYnNsQX1YlfMXJ62oiudbl2m0CQVx-zPyvtb9EqP2HB2xHfcVP1kyU6_bTUswIhM3sFsHcH48JwnsFjaKBW3GiL9mUTf9HctCzEMK/s600/13%20-%2025%20de%20Outubro%20011.JPG"
+                                            alt="" loading="lazy">
+                                    </div> <!-- Slide 14 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgsi-pWlXLBed2F8NT91lBLJhbT3ep-E3JP3daFETuTDXkCRW03SWDrzGYj0Hn1ltZ0BpdjWka-A6sIv72q_wIgdovOZ25Vjr0hEd0dAo5I6zaAcH5yjUG_jOPdsEb-hgTGY61r63nGnkXKmF27i_fshaOhGY1GlkxrWOvhzRegO9ekPpiY3Pbmhlvdjti6/s600/14%20-%2025%20de%20Outubro%20012.JPG"
+                                            alt="" loading="lazy">
+                                    </div> <!-- Slide 15 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhO3MfclyHWJZfInY2HKldCHKQsEOvcd0o7oWYKlsqQaRPpL5EACiWFKC46o4bJznxb9HUc7fVY8-duY1xIap0vX-IYyOQlNu-Fhu25jEvwMBEzPCTseRBilF90F1kYvWQHwDdr7go-oFqA_Yw9cbSemh1KHr-Npd5eGujL-HdF9GIV9z5emLfjj7fAx_WH/s600/15%20-%2025%20de%20Outubro%20013.JPG"
+                                            alt="" loading="lazy">
+                                    </div> <!-- Slide 16 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0v0fGb0-1dLSXtWeJb-FdCsQiNkb5DVKgXtAa89-8rTABCK4bBngUlcPKLpIe9PfeaNapYql7Sd5s-saBKU4qQ85B1Nd5H9hmZYeazQJ1fNM5lduu68io3qC0trKd6uI205hLgHm4W-B6yJhfTHcREOB2DAJ3_TbGTI_mOBRM6Kt_Mb2S-VqAJGCcjJY7/s600/16%20-%2025%20de%20Outubro%20014.JPG"
+                                            alt="" loading="lazy">
+                                    </div> <!-- Slide 17 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhOaHCtbAR8PDS7DMQC2iWgl68dW2kvaIOsMR_l39-r8haYoH2hYyHEoO9J8SGI7xt79k5HnA5oQ3HKWp8M7KMuXe8qkipAvFJIWdQ9zjCEgG51E57LucEYCk4Xo9iTlT1P7QlTnHv6n4YsIEnv1fNNnJEFqlsFBDjz00UCcmtdfdUzVaZIYufttF1tGHUL/s600/17%20-%2025%20de%20Outubro%20015.JPG"
+                                            alt="" loading="lazy">
+                                    </div> <!-- Slide 18 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj44L3A066ZXNJlUiOwd_WEehLo4ypefjzo_S6650jLGHwEGne61clu4QwTukuQduIz8Qn-Dz2uAdyy5fDSGvqfV-BPwcGBJlAASjjYyM-c1wHxhz_sYZyQuw35Fmqadv1snjIqzncvjw81oDk0oE9EnTgqCcrdScN1FK9-_6y6bzgTm4rouTgrLMDy0sm9/s600/18%20-%2025%20de%20Outubro%20016.JPG"
+                                            alt="" loading="lazy">
+                                    </div> <!-- Slide 19 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjyHU7obPm3HlQbyRrC2zMxjQnKnswX-RfhGV5CUHzakjfG7qXJQj_Q7UI218d2G4y8q_MJNPI_lFJ3opbh-l98Dx9D7q-m8w57OsNb-ht-4yfH-X_kgg2-mMW9z6SVQgawESUswfReEAN7MitssKQcCvOLNBV2lRdUOs-Lxo3T3VX3VX50Gide064fu1Zi/s600/19%20-%2025%20de%20Outubro%20017.JPG"
+                                            alt="" loading="lazy">
+                                    </div> <!-- Slide 20 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiSI659tJLG61Q94xAPHHbj5KY-Au0LJv5aT1EZZQgqokJIIGMQtovKjw0IXP355r2owJoy3O0vM8AidjVIDdJOE2xSMuj9aYOQVMXNmRnX1CnaUDHvsLkUaQnDULuWIom4lgi516gu0IeospRsvj5WU96o6jsEOu67ulcQ1bzaiV71UQ0w9BntOhZmTfl/s600/20%20-%2025%20de%20Outubro%20018.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 21 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgPWO7atU7DAYiUY625DQcChJriaCYyj_khyphenhyphenDida4Ttf-A091lYNQdGFJSpurwht5SR5m2R6o1mpijW8_1273iRvNnc7_M57yy8kUzqePEW0Gle8CBeOxyd7taXGf_KavCeN3D_Z9upVW1cwe-muADxI-8aYh12Ky_-WwktD4U_zELF3NBKUXZpd91nrqk2/s600/21%20-%2025%20de%20Outubro%20019.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 22 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhqCIkjlp2K__LQJG4hWWjQn9uCxTuciOQ1hzzrZhcDHaijwrNLETJ1jbuK53MfhlD4j9ri1Gh-Q5yN48kQg4oH8dpILViGzGbbcqaz0B2FaOXs4FUN5AFiyh81K4TfqpQAnWFWB4rFI1kcLBoxcJIX5lzHsBGwpuICrnol_SVWNi8Mj2D26tzVK1SyMlEo/s600/22%20-%2025%20de%20Outubro%20020.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 23 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjLuZTXm8j2KI04GIaHuJSX754afsjd9eP7gnvEcWpzPPfmKyOxPMKidg9gRNgv4r0tnyuAAi9uWn3Alt5mrWLg7hBzRxVh1VOXc5Vv_oqc11PbjDHcyGCymhFibq66H7HVm2eg_pFfuMI-MFZjGtzDGlegJeF8R4xNNqi5vP9snNQytojCI7soYbY9k_J7/s600/23%20-%2025%20de%20Outubro%20021.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 24 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLXJXFzuXcVicU2exCOkjotZMalEGqtQ6lnFHvGtgXH8DlPZnBTu1yztvvaeFQUs6SwdVgs9w8tAFWSVBbq5zhRPMSPZEI0TgGOIFXgFMrTebxGdXxk0A6amXTydDlmYTzo-q2PwhyOPB3NTyEsMkjpQke-IinCjKRK3OjVf6QVqs7KcAotCUYwLhPacuB/s600/24%20-%2025%20de%20Outubro%20022.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 25 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5FefM3hha9N7UIi5OuJV0opwSNTBZ8SflTc2akzxr-mCGb_NQ8mW-Ty3R7eJkL0gJl_GxbdwCVfhtPogen3BsSGMBX87sxWouORS-uTp-JLTkiBLeBqOJZrTylC07eLLJk-yBJCRB6VmXFEKzAiKvblUHS4o4k1GFnonFh69ASjofOTq2AKYIgtKD9c56/s600/25%20-%2025%20de%20Outubro%20023.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 26 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiT66JXKDqEQQE4_qEjpT6_brCYM5vdsopkQGmEvcx0PKCMTDXikSNB_cOYdEKA7J47Ohi97OJHJ_sF9mqlT7NSUF763vfK3fD5PfixFkPCIuKEk1TVegdYUvKnyNR-WcYyrqG3rPLsYJcj9jBY7FmDAS_XR3H3CN8B2Y3oSLLd0MVgsKItXhbbMUk_gWKo/s600/26%20-%2025%20de%20Outubro%20024.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 27 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjdLGlB0SgJoH2cOhKgzwKT_xEtDkjjP21LvXW050YnQ7lWVqNpviICTdAIjdSEjFmVwhAnaEXpOdfuB5j-Tp3YUoF_ESQcEYs5aX52Te3a3TZWh_1hKp3dsY90KDh2dGZOizvCOhgnjHn4lmywyIVwRsMaumCyZVkB65DwC7nVJZj2SIF0w1Fm55CT33L3/s600/27%20-%2025%20de%20Outubro%20026.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 28 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiAXD_17feiQUpHLiKRvyTLT8UShoAYBRHFnuHH1VgXnz_uhbMw_zjbnWXL9_gRuwWDDtit5tSxw70v1-tf3NefWawjsqTkFN52BGD27c0NkF7yM6_oBKqbkkquxINWzf9dwoPMH6ricuVqJmxYey0AugnrJrclriGnJzTutv8u64oK8IBaIPWPAbP1pHhH/s600/28%20-%2025%20de%20Outubro%20025.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 29 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg9kkGcUVMefFTH3cXGOlfxLr3fEy1xy10eCM0WRrjlQIC1vf-2s81RI8l55jFZHtytsyw8uydTeG2_itdrNOemFSfFhvMydPtqzNjJDmzSB54MLYH5QdNcu5mNiTQHSdt_2XqdpK31wX5LLKHp2db7h0mCBg57yugEClvIgbzSRx_wmA_0-XijQpCLV9hM/s600/29%20-%2025%20de%20Outubro%20027.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 30 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi_q55oFtMAxZqxan6Na5ne8PCi1UMbkMF_2mHhL8tQcUnBxOzKghfZ1IO2e65g0f_StHCl57iQVKaIUraXyp-zlcLDlMncXc-8lakccQk2Pcmdm3UdMPUvXz3jdY9rcE43Bhw4sJdc-qkuea9tV1H81dcFT__XzS01507i7klCzq63P9ek4b1lQNG3t4cE/s600/30%20-%2025%20de%20Outubro%20029.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 31 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi3KpkSaUViavvk-f0Fqly7qfLWNhBnpvubp-ucbe0V8u5O3OoOfc3_MnHXJstj_CpC3Qqd_UHMATD65cdsFPLC7mVXHfGFF3DRG5_P_KThYZwOLDuOGySyHwGrczv3FoLiUbFQX9-ZyaXUG1Zu8oRXPv6sb-fdCiRwvX_SgJI9r2H64sP6FYNcV_6gFzlO/s600/31%20-%2025%20de%20Outubro%20030.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 32 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjAYj_dpmHFD5FykH3jttiD7LoXbhgL606t5FsuXbuyk6AnhkVOx9yY7SFdcKEotyiIgn8K9H7pl8IIm8YLb4yTiru0ljeOIHLUIaZ8TnZ1oA6e2p4pITtdjFhTq-m4sx4h3h8u3K2BSMy5dMKNx0X_fAi6p4QCr1NTmxtCxdVdC7txDmwsZCkgf38JMMza/s600/32%20-%2025%20de%20Outubro%20031.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 33 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEghmtXhscY43qEL3edn1A8131kdkZmCVfZJQ4E2CTpPeliu3foVZOAOAHQuL6k6rHRVQIPXjpOP0RhaMyV1eGlgQEpKK2tk4WRNLP-8eRCAZ9nvthIYcR34tBX26wmVx4U4kI4t9hhgzf5FAu0uUj56oOZUolQFrMZQb0yrfFaci8zmvO34BucxMXN2QkBv/s600/33%20-%2025%20de%20Outubro%20032.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 34 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhJcW1ZjbFAjfIVKqdSxgXbe5sTtkbApgZjCkr5GArDD2wTmF3VoDMdAb55Vd7DwKipKI7Bo2O7yCk_J0lCUxMG_XCaEUx5zy4gWUOObMm2i_0T1dtfIHrU0AME-l0Q8uk2QamiK9G4ZiHTs3CNWJtetUnhyphenhyphenaaxq4nPFq6ou8nC9Cg1zeuRHm9qNASS3hSG/s600/34%20-%2025%20de%20Outubro%20033.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 35 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgVO4xGypW8YSbMfEWLHghMxtFeAoJZdc2BCXg3qxj08hWuAl89TaQwmlbmXQqwdx7CnIJsF-5mBN2E2EaZTuF2NnXJETDezMWDoHL8TlOKAp3WBy_gi5B542A683Vz5za7-ygtWQH5G8BXG55b8GI_ozCxScqexPdOieiMe49-UIvT6vjCSKjlvMATz-I5/s600/35%20-%2025%20de%20Outubro%20034.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 36 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizNjCFKQDEFqieHyENFp8Sb9a9uRKYUtODT4nvPHKNZrbrK07hugQaX9UZyzDXI9JzoZijm7aJlai8QomM_WS4rlpxwSPOYuLUe4t60BO34spw8MYDP_gLaEnWTtY-uUJOJR_WxrLsS36iKTjd-cptaJsknj9bKtR3YN338zEUhPC7oiqMdJudyukE0K0L/s600/36%20-%2025%20de%20Outubro%20035.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                </div>
+
+                                <!-- Controles -->
+                                <button class="carousel-btn prev" aria-label="Imagem anterior">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button class="carousel-btn next" aria-label="Próxima imagem">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+
+                            <!-- Badge de data -->
+                            <div class="activity-date-badge">
+                                <span class="badge-day">12</span>
+                                <span class="badge-month">Out</span>
+                            </div>
+                        </div>
+
+                        <!-- Conteúdo -->
+                        <div class="activity-content">
+                            <div class="activity-header">
+                                <h3>Feira da Saúde - Prevenção e Cuidado Integrado para a Comunidade</h3>
+                                <div class="activity-datetime">
+                                    <i class="far fa-calendar-alt"></i>
+                                    <span class="date-text">sáb., 12 de out. de 2024</span>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="location-text">Praça da Matriz, Tatuí, São Paulo</span>
+                                </div>
+                            </div>
+
+                            <div class="activity-description">
+                                <p>Por meio de parcerias institucionais, essas iniciativas ampliam o acesso à informação
+                                    e aos serviços básicos de saúde, fortalecendo a qualidade de vida da comunidade.</p>
+
+                                <p>Como exemplo desse trabalho, foi realizada a Feira da Saúde, na Praça da Matriz de
+                                    Tatuí, oferecendo à população atendimentos gratuitos como aferição de pressão
+                                    arterial, testes de glicemia e exames rápidos, além de atividades educativas e
+                                    orientações preventivas.</p>
+
+                                <p>A ação contou com a participação de profissionais de saúde voluntários que
+                                    realizaram:
+                                    <br>• <strong>Aferição de pressão arterial</strong> para detecção de hipertensão
+                                    <br>• <strong>Testes de glicemia capilar</strong> para triagem de diabetes
+                                    <br>• <strong>Exames rápidos</strong> e avaliação de saúde básica
+                                    <br>• <strong>Orientações nutricionais</strong> e dicas de alimentação saudável
+                                    <br>• <strong>Informações sobre prevenção</strong> e cuidados com doenças crônicas
+                                </p>
+
+                                <p>A ação também integrou a arrecadação de produtos de higiene pessoal e fraldas
+                                    geriátricas, posteriormente destinados a instituições de acolhimento de idosos,
+                                    reforçando o caráter solidário e abrangente da iniciativa.</p>
+
+                                <p>A mobilização conjunta de diferentes setores da sociedade, aliada à participação da
+                                    comunidade, demonstra como ações integradas podem gerar impacto positivo e
+                                    duradouro.
+                                    Essa atividade representa apenas uma entre tantas outras desenvolvidas ao longo do
+                                    ano, reafirmando o compromisso do Lions Clube de Tatuí com a prevenção do diabetes,
+                                    a promoção da saúde e o cuidado com a dignidade humana.</p>
+
+                                <!-- Botão Saber Mais -->
+                                <div class="activity-actions">
+                                    <a href="#" class="btn-know-more">
+                                        Saber mais sobre esta ação
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Outras Ações Relacionadas -->
+                    <div class="related-actions">
+                        <h3 class="related-title">Outras Ações Realizadas</h3>
+                        <div class="related-grid">
+                            <div class="related-card">
+                                <div class="related-icon">
+                                    <i class="fas fa-walking"></i>
+                                </div>
+                                <h4>Caminhada da Saúde 2024</h4>
+                                <p>Caminhada comunitária com medição de glicemia e orientação sobre prevenção do
+                                    diabetes e hábitos saudáveis.</p>
+                                <a href="#" class="related-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="related-card">
+                                <div class="related-icon">
+                                    <i class="fas fa-user-md"></i>
+                                </div>
+                                <h4>Campanha de Diagnóstico Precoce</h4>
+                                <p>Testes gratuitos de glicemia em praças públicas e orientação sobre fatores de risco e
+                                    prevenção do diabetes.</p>
+                                <a href="#" class="related-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="related-card">
+                                <div class="related-icon">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <h4>Feira de Alimentos Saudáveis</h4>
+                                <p>Feira com produtos naturais e orgânicos, orientação nutricional e degustação de
+                                    alimentos para diabéticos.</p>
+                                <a href="#" class="related-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Como Ajudar -->
+        <section class="how-help" id="como-ajudar">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Como Você Pode Ajudar</h2>
+                    <p class="section-subtitle">Junte-se a nós nesta causa tão importante. Cada contribuição faz a
+                        diferença!</p>
+                </div>
+
+                <div class="involved-options">
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-donate"></i>
+                        </div>
+                        <h3>Faça uma Doação</h3>
+                        <p>Suas doações ajudam a financiar tratamentos, medicamentos e suporte às pessoas com diabetes.
+                            Todo valor contribui diretamente para melhorar a qualidade de vida dos pacientes.</p>
+                        <div class="option-features">
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Doação única
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Doação mensal
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Doação em espécie
+                            </span>
+                        </div>
+                        <a href="#" class="btn btn-small">
+                            <i class="fas fa-heart"></i>
+                            Doar Agora
+                        </a>
+                    </div>
+
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>Torne-se Voluntário</h3>
+                        <p>Doe seu tempo e habilidades para nossas campanhas, eventos e atividades de apoio. Voluntários
+                            são essenciais para o sucesso de nossos projetos de assistência.</p>
+                        <div class="option-features">
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Acompanhamento de pacientes
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Organização de eventos
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Apoio administrativo
+                            </span>
+                        </div>
+                        <a href="#" class="btn btn-small">
+                            <i class="fas fa-user-plus"></i>
+                            Voluntariar-se
+                        </a>
+                    </div>
+
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <h3>Divulgue a Causa</h3>
+                        <p>Compartilhe informações sobre a diabetes e nossos projetos. A conscientização é fundamental
+                            para o diagnóstico precoce e para engajar mais apoiadores.</p>
+                        <div class="option-features">
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Compartilhe nas redes
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Organize palestras
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Distribua material
+                            </span>
+                        </div>
+                        <div class="share-button">
+                            <a href="#" class="btn btn-small share-main-btn">
+                                <i class="fas fa-share"></i>
+                                Compartilhar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="../src/img/logo.png" alt="Lions Clube Internacional" class="logo-img">
+                        <div class="logo-text">Lions Clube <span>Tatuí</span></div>
+                    </div>
+                    <p>Servindo a comunidade de Tatuí desde 1955. Fazemos parte do Lions Clubs International, a maior
+                        organização de clubes de serviço do mundo.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2025</span> Lions Clube Tatuí. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

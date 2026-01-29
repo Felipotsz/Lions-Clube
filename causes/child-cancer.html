@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Câncer Infantil | Lions Clube de Tatuí</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../theme/theme.css">
+    <link rel="stylesheet" href="causes.css">
+
+    <!-- JavaScript -->
+    <script src="../index.js" defer></script>
+    <script src="../theme/theme.js" defer></script>
+    <script src="causes.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../src/img/logo.png">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="../index.html" class="logo-link">
+                    <img src="../src/img/logo.png" alt="Lions Clube Internacional" class="logo-img">
+                    <div class="logo-text">Lions Clube <span>de Tatuí</span></div>
+                </a>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav" id="mainNav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+
+                    <!-- Dropdown de Sobre Nós -->
+                    <li class="nav-item dropdown active">
+                        <a href="#" class="nav-link">
+                            Sobre Nós
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../about-us/who-we-are/who-we-are.html" class="dropdown-item">
+                                    <i class="fa fa-users"></i>Quem Somos?
+                                </a></li>
+                            <li><a href="../about-us/our-leaders/our-leaders.html" class="dropdown-item">
+                                    <i class="fas fa-crown"></i>Nossos Líderes
+                                </a></li>
+                            <li><a href="https://lionsclubetatui.blogspot.com/" class="dropdown-item" target="blank">
+                                    <i class="fa fa-file-text"></i>Nosso Blog
+                                </a></li>
+                            <li><a href="../about-us/about-lion-leo/about-lion.html" class="dropdown-item">
+                                    <i class="fas fa-paw"></i>O que é ser Leão?
+                                </a></li>
+                            <li><a href="../about-us/about-lion-leo/about-leo.html" class="dropdown-item">
+                                    <i class="fas fa-star"></i>O que é um Leo?
+                                </a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Dropdown da Causas -->
+                    <li class="nav-item dropdown">
+                        <a href="#causes" class="nav-link">
+                            Causas
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../causes/child-cancer.html" class="dropdown-item">
+                                    <i class="fas fa-child"></i>Câncer Infantil
+                                </a></li>
+                            <li><a href="../causes/diabetes.html" class="dropdown-item">
+                                    <i class="fas fa-heartbeat"></i>Diabetes
+                                </a></li>
+                            <li><a href="../causes/help-after-disasters.html" class="dropdown-item">
+                                    <i class="fas fa-home"></i>Socorro após catástrofes
+                                </a></li>
+                            <li><a href="../causes/environment.html" class="dropdown-item">
+                                    <i class="fas fa-leaf"></i>Meio Ambiente
+                                </a></li>
+                            <li><a href="../causes/humanitarian-efforts.html" class="dropdown-item">
+                                    <i class="fas fa-hands-helping"></i>Esforços Humanitários
+                                </a></li>
+                            <li><a href="../causes/hunger.html" class="dropdown-item">
+                                    <i class="fas fa-utensils"></i>Fome
+                                </a></li>
+                            <li><a href="../causes/vision.html" class="dropdown-item">
+                                    <i class="fas fa-eye"></i>Visão
+                                </a></li>
+                            <li><a href="../causes/youth.html" class="dropdown-item">
+                                    <i class="fas fa-users"></i>Juventude
+                                </a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a href="../index.html#mission" class="nav-link">Nossa Missão</a></li>
+                    <li class="nav-item"><a href="../index.html#atividades" class="nav-link">Eventos</a></li>
+                </ul>
+
+                <!-- Links sociais no header -->
+                <div class="nav-social-links">
+                    <a href="https://www.facebook.com/lionsclubedetatui.org.br" target="_blank" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/lionsclubedetatui" target="_blank" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@lionsclubedetatui336" target="_blank" aria-label="YouTube"><i
+                            class="fab fa-youtube"></i></a>
+                </div>
+
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                        <span class="toggle-slider">
+                            <i class="fas fa-sun toggle-icon sun-icon"></i>
+                            <i class="fas fa-moon toggle-icon moon-icon"></i>
+                        </span>
+                    </button>
+
+                    <a href="../login/login.html" class="btn btn-small nav-involve-btn">
+                        <i class="fas fa-hands-helping"></i>
+                        Envolva-se
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="cause-page">
+
+        <!-- Banner da Causa -->
+        <section class="cause-hero"
+            style="--hero-image: url('https://www.healthxchange.sg/adobe/dynamicmedia/deliver/dm-aid--ac78623d-e86c-4a60-8b50-64df1bef56a6/childhood-cancer-facts-and-symptoms.jpg?preferwebp=true')">
+            <div class="container">
+                <h1 class="cause-title">Câncer Infantil</h1>
+                <p class="cause-subtitle">Solidariedade que acolhe e fortalece. Comprometido com a
+                    Causa Global Câncer Infantil do Lions Internacional, o Lions Clube de Tatuí desenvolve ações
+                    permanentes voltadas ao apoio, à humanização do atendimento e ao fortalecimento emocional de
+                    crianças em tratamento oncológico e de suas famílias.</p>
+                <div class="hero-divider"></div>
+            </div>
+        </section>
+
+        <!-- Seção de Fatos -->
+        <section class="cause-facts">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Fatos sobre o Câncer Infantil</h2>
+                    <p class="section-subtitle">Globalmente, este é o panorama do câncer infantil:</p>
+                </div>
+
+                <div class="facts-grid">
+                    <!-- Card 1 -->
+                    <div class="fact-card">
+                        <div class="fact-card-inner">
+                            <div class="fact-number">
+                                400.000
+                            </div>
+                            <div class="fact-label">
+                                crianças diagnosticadas anualmente
+                            </div>
+                            <div class="fact-icon">
+                                <i class="fas fa-user-injured"></i>
+                            </div>
+                            <div class="fact-description">
+                                Em todo o mundo, a cada ano quase meio milhão de crianças recebem diagnóstico de câncer
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="fact-card">
+                        <div class="fact-card-inner">
+                            <div class="fact-number">
+                                9 em 10
+                            </div>
+                            <div class="fact-label">
+                                vivem em países de baixa renda
+                            </div>
+                            <div class="fact-icon">
+                                <i class="fas fa-globe-americas"></i>
+                            </div>
+                            <div class="fact-description">
+                                A maioria esmagadora dos casos ocorre em países com menos recursos para tratamento
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="fact-card">
+                        <div class="fact-card-inner">
+                            <div class="fact-number">
+                                &lt;30%
+                            </div>
+                            <div class="fact-label">
+                                taxa de sobrevivência
+                            </div>
+                            <div class="fact-icon">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <div class="fact-description">
+                                Nos países em desenvolvimento, contra 80% nos países desenvolvidos
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Áreas de Serviço -->
+        <section class="service-areas">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Áreas de Serviço</h2>
+                    <p class="section-subtitle">Envolva-se em uma dessas áreas e ajude a alcançar os Objetivos de
+                        Desenvolvimento Sustentável da ONU</p>
+                </div>
+
+                <div class="service-content">
+                    <div class="service-section">
+                        <div class="service-header">
+                            <i class="fas fa-hands-helping service-section-icon"></i>
+                            <h3>Apoio ao Paciente e à Família</h3>
+                        </div>
+                        <p>Assegurar que os pacientes e suas famílias afetadas recebam o apoio adequado e abordar as
+                            barreiras mais comuns para obter o tratamento necessário. Fornecemos assistência
+                            psicológica, apoio logístico e suporte financeiro para famílias em tratamento.</p>
+                    </div>
+
+                    <div class="service-section">
+                        <div class="service-header">
+                            <i class="fas fa-bullhorn service-section-icon"></i>
+                            <h3>Conscientização e Informação</h3>
+                        </div>
+                        <p>Promover campanhas de conscientização sobre os sinais e sintomas do câncer infantil e
+                            defender políticas públicas que melhorem o acesso ao diagnóstico precoce e tratamento.
+                            Realizamos palestras em escolas e distribuição de material informativo.</p>
+                    </div>
+
+                    <div class="service-section">
+                        <div class="service-header">
+                            <i class="fas fa-hand-holding-heart service-section-icon"></i>
+                            <h3>Subsídios e Recursos</h3>
+                        </div>
+                        <p>Os subsídios para o Câncer Infantil da LCF impulsionam os Leões para melhorarem a qualidade
+                            de vida das crianças em tratamento. Através de parcerias, conseguimos medicamentos,
+                            equipamentos e recursos para hospitais especializados.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nossa Ação -->
+        <section class="story-highlight" id="nossa-acao">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nossa Ação</h2>
+                    <p class="section-subtitle">Programa Leãozinho CUB e Lions Clube de Tatuí - Solidariedade que acolhe
+                        e fortalece</p>
+                </div>
+
+                <div class="activities-list">
+                    <!-- Atividade Principal -->
+                    <div class="activity-item">
+                        <div class="activity-image">
+                            <!-- Carrossel -->
+                            <div class="carousel">
+                                <!-- Container das imagens -->
+                                <div class="carousel-track">
+                                    <!-- Slide 1 -->
+                                    <div class="carousel-slide active">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgINP-8uKkXQgCDNoaIqvRuSuoA9wzVaA8PmQQLlezB0kW2oMqRvvnEtZIoYTM8-UAprjgerKjBevRc_m5TQUnZdT7xK2mZXPm_fbccPFyRfUul8jPyPDRlNquY6Wkbpq-cAH9RAUl1LBLs-0bMXfUboHTy3VlVKiBSjC0lnB5dXjuL07fDsYJs2oXnICue/s600/2%20-%20001.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 2 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhMD9ZAwkly77SQJCkC3k1VeanwYMKzjrIWiKk2qnvMZVhR_iwz8coM0wcoi8ddJ16VIwxsdm_YwhUNxdhE68At_maIDgqY9_5bA9azlCRPqIh7jIUah8OUyRmLIQuCjyIC6YnmpcimFOeAJumXWCIz5W7SZTaMxx2gHbKiogeaYhxZf0oev9o5uPA72Bli/s600/3%20-%20002.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 3 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQCsyXh48SvxaDBlHoXfOvJkEzlSjSYVgln0Pl-84wndNBrT8pqXZPWU1godOjIpiOWtdz-p5rEFzzhOPhCGLJgKMz5tc2wRc-9MvNnMW9TjD3bbXxy-N4QgUBz4bJfpVLGOjPWO5jSR7HFzVk4RFaIxqkLzPAbWvR33YzY6bJUYSoUWa-czmJJg1TMMeM/s600/4%20-%20005.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 4 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj7cwbwYoh_mqaF7mnJRu5w3ZBP3fixl5aH6-U7DA0jvxlFXx1hhTdRX44e9LwiEoBSnTVvmklvHnc7YNrkCVueQhH26IlEutZkTl42zYVvQCdhDeBW-mihSmwQ3x4bLv71holXkGJgbHftA3ArgvXj8a0iRaNMlbSHGhi8uMD3ykOn0hAhXC-W57yQev-q/s600/5%20-%20003.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 5 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwOTaaaEE_drGVHz1nfwA-a3D6rRWkXMu56aUzYdba8RFfOXk9rN_-P9HRv9Y0e-pcY3Tb0EtyCKDBhZYhj4avPmM4zyKm5r5rUaiTtGrZ-_7vngwp96vrj4Qc25yePpKfwRS-GInVRFRtLb4AF4gJxW0TeZ0TXjaPs0YgwQFB0J_RtdOrA3YmX62K8iRF/s600/6%20-%20004.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 6 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg2lUVJV5h-KNS7b1ZkyBmNk8Q65k9i1OC59LIErUg80CzFL8BWTlpZsk-_Kq43P2QyEVJs-N63fldGZGAwxJONmB9NQf5jXg3xvfOuV0Ls03d97xEGI1IlnbwzDouIzWZNArOadOJJU7SRl7SkTpXC-jSipVjTW5-ZqsgBBiQwM9bfnD7jPHnimkwJf1WI/s600/7%20-%20007.JPG"
+                                            alt="" loading="lazy">
+                                    </div> <!-- Slide 7 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiE84yO5wKgesIG7VvyHqGAsxkTv3ZoUe_0WrRXO44K1Q-DcHC7Mklkm0RXt1enEODYvR_HkCN9YJHQg5WsHt0Il7x5p3eysZmiuQ8X4KHRNGY7d7XeP0mhZzeb373cAwDwbRuKH6QSsgdsxDaHVD85NVmJicG6ZGPxgiielN849e2aPSdm39teZJ-Fdpfv/s600/8%20-%20006.JPG"
+                                            alt="" loading="lazy">
+                                    </div> <!-- Slide 8 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjO_7UbKr7WvjzoDkxfHm8stPLSt8t7VDQbUip0acyjc1jyb87TvA54oTQ_Yzo1O3UARvNruvcMHdy9js6VzndDMpsmhE1EnPynnJ95c4uAaUy26cD95q7XzQAjxu073MsLXr509lLkSjXDpEO0Ssr3AzuC0ihgPKSHifbnocl0yXkFHuUmNvSu03Omkbvr/s600/9%20-%20009.JPG"
+                                            alt="" loading="lazy">
+                                    </div> <!-- Slide 9 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEig9fq60gk_JpH8nyyfDqVAWmSOZ5zD-du1uJvqPE2Nzb0myCkXOPNZ8gUW5ua8lsDoSF9SE_SG32zXil9mkw8Vi187MY9akDA_kKnQDrDxGIU-9glwDm-YYJ6ZBp2pEI09iGoXNZBIv70fIbmsYDp5hFQ9-UAesKZPARcBOT9_NTc5o3lAfqR_knVtR8DP/s600/10%20-%20011.JPG"
+                                            alt="" loading="lazy">
+                                    </div> <!-- Slide 10 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjU32LDgKNLOh53MOzhO51QrKIpK0BS75qgQtpT6yELYTncZ4kCDD3CMpTWPfn2FYOOjVNOQfpTHgCCcCgW9PhIz7V1B7LdqfZWlt-hzmLNmnqhdf_qFm_9mf-uXQnwG5bUShFWGLQeP3UeGjPww4EcHnZW9d_GNnZ6mKUCsnL8t7U260w0bvg6lw2Nz4EG/s600/11%20-%20010.JPG"
+                                            alt="" loading="lazy">
+                                    </div> <!-- Slide 11 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgE113qDBf1UD_0wHW-ZtFDHpNjm5oIisTk2zh-2PfxJjMzi-iuHPQmoxjmjsfLY7aTpn1c7P92nNzPiqlK4yfiexcdiZ5Begm6GuavmKG2aGfWrQ_Y9UkBADdCbAh3WQv0LoafzBO15ChuZcY0tJ1Iw3G0x_QZF4jnnAOORNSaSxpTZQm7GlU5ruji8zxw/s600/12%20-%20012.JPG"
+                                            alt="" loading="lazy">
+                                    </div> <!-- Slide 12 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHuLPIDo-F7knG9bhb-QWqCFhc6BB-Hi67NvjkxWSgEDj6t4rmYGkQ9Zu1ILTGX-iWMqyyXZag60NKaVIouZ0hXAI_aQnyODS0BHxjDk5eKnO5Bk2X8bEJcOijpCTP8RW7cqmETBssR2J9In0vyxLP192Xqv5UFDWmAI2GHnRaMeCfsflZFl3BiiTcr9eo/s600/13%20-%20013.JPG"
+                                            alt="" loading="lazy">
+                                    </div> <!-- Slide 13 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUQ57ZasiJdF6ynFR3OCRNQ67neSn1tuEsqfxk3Z2Ilco2p8doDZ0UY2MtEw9Mmw8OhDSyrStBdacugS1N1D4jE96IjMeka6XXeusPy1sR1Rhyebren7aGH1ZFAPRni67PaV-S8K9-6t_K7PpkBeV-_8xU1PK4dZEYkf8PAO0EmXJfktbU4FK7dVBCjfnK/s600/14%20-%20017.JPG"
+                                            alt="" loading="lazy">
+                                    </div> <!-- Slide 14 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEif3Yp0T0qnoUuIVY9NoTNb6Yf6jOhH11iAsbGVBuC47_hEiNP-HjfoDjnsFcr6A0FCEnjw8aV0jypH-UyxRTfiYf8VR-F-hkTNbz0ugoIXOR0dyl4XcNgoq8zKV_p5MU1uaB3UAa1IH7t4LaqAmbCyID7eC9yJ-VWkLwgLamlSOSqYSe9h3N8ozj3pnhBW/s600/15%20-%20014.JPG"
+                                            alt="" loading="lazy">
+                                    </div> <!-- Slide 15 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFLorwSUaUdj0yaRMRPL3WnQOdu4L9C9KGOA1EENBTtA0QXSApfuAWmZxxUf7zyz8ktkviweIfPIKpH5mplzck2rW4xMt1tvrbONhOrtbUmDLCXGfg6Jg47FjGac_oMcGO9ucNoK1J6Hmx_bPkX9PA7tIVrTndv5HCgXJt0efrWPQwh7G1KYduotdczhqC/s600/16%20-%20015.JPG"
+                                            alt="" loading="lazy">
+                                    </div> <!-- Slide 16 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhirG1DtKg7xxE_Fjf55MtP4e0cLiMklHRdHufgEaSrve4Iwi0-3gxwSFjLYqg2xw4t-nixPO58pIK47R7oIjmM4EHk6Me7Bw4OJ11qAmXwyk4hQ8b-7kD86B9uhV98eQB93F4SOoIAshyphenhyphenbHsB1ValzF8co04aZnI-2pRLUMFPWviCHqwW9paDQjqoJQN0Y/s600/17%20-%20018.JPG"
+                                            alt="" loading="lazy">
+                                    </div> <!-- Slide 17 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg76D6H_1iLimKZu7vmvUH_GSBXECkrXvl4iD9MGA_5TUkKSB2_BdKWH2PJmAVHfuBE5f4SfSs9Isq4xHcQmEU0Js33BCTizbIkAdPwX3CDBqYMmCfUaonjw9At-cTpcwQZWUd0PnbhpUG0Tl5OHr1W-ImM0couV5lNxPg7hQbtK0AsiK0yHuq5wBjuTEvr/s600/18%20-%20020.JPG"
+                                            alt="" loading="lazy">
+                                    </div> <!-- Slide 18 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhRvVhWHceeS3nv4U9cmKU69UpErQMVpnYHbd4gdi0FbMTkSh9JU1EKhPzYLLNoIJ8H_GEUMbU3hRwDLE4xT1qALYWTvuftAIpomdIFzwj6rAXiotX3Qp9w4NdCAyOP3Kn8Coa5U383rlrpOE0edlgXPprYaAUw7n4g0MbkIeSjK3XlBdqiAYIk1cp4jiui/s600/19%20-%20019.JPG"
+                                            alt="" loading="lazy">
+                                    </div> <!-- Slide 19 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEJsuQzKng1-1Vy551iNV5Iqd3S7hoDTEN31mSGKPC-91Lilr2Snv8XAnKiNq5KyRBo9Q0H7UdgsthlU4vJfblJYQ3AJx8PIArxQfV-m2FbE6c1EH1DsjibN3s2zcsb21e4AJuDk__PBITjdpoAWgkQwqaf_e9Qi5AnE-DWxFUnnLHUwYuBOgbuNaTXexl/s600/20%20-%20021.JPG"
+                                            alt="" loading="lazy">
+                                    </div> <!-- Slide 20 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj02TAW4j0Hj4gUXJZzQ0LHuGbPlGxRZdV7TaH_cLDkMePilAthLo5etaVfmDmCyy9Rxdqms1g_q1SxeezNpS_chLosmnmbM70jNgaEwKFeQUbUwMKPSlqwjjUqnCexp96gAiUJB0WvsAUw9WMaNIll6_IKgJcZ5Yg1mJ_yjL8TiyciExWmJm1M1Iw_nQIY/s600/21%20-%20022.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 21 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWslWm_k303ZLL7fLT6minXlkwfyDcPwYne_Ds7pDKZaWcvB2f5JFz8Uto2rv_8P7XZfD421W0DKP_J1gHleo-H5Q4RuT_dVCtSO3Lo9LnBAn_B8ywBWuKgn_NiFFflGOyb8rWq7_XTlvks0pjjD_xDnXmnoRy9w1-0v0oMTDbT1n9y_Lx10NkBcj2FUZE/s600/22%20-%20023.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 22 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEisp6dZEIBsvXF7jdBc3OWL7Bcvme8TOm9tScuY2vkrzHegQ997jbScpa9Uct0-W9POy5xkPe-N1v9IWTERUDQR_gMRFg490iHs1rzmH_qDuwBWe8q9BkIawoGVR3USHhOyvqdxTwhCF1nDzicz7HzxPz0YSETQ04KubH06EfsGFCM59XlILYrNseyhKoJC/s600/23%20-%20025.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 23 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhgVtuX_Snd8hlsy5vs1FRm4owRdL26jc1gFlSnxyBs8CSHMqQuMpwukJG-ZzWnMzFtjoZW1e1fkc6O9H-9WciSe51thpjiqnkUF8rr6nfbmPKx6osT_S54pMsrMMDS78S8v08E5z40q4UvjRXBpZxei5NEIBJCj0j57h2te4lFXCttcdI8nfdbX0jTdXxc/s600/24%20-%20026.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 24 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhHtjJNlLzyBNxOJn_NfKoh73QiSQDGty74pJ7wcUQXml95d8HAAfdQJ1e81wbpK4gt-1jb2U61TKxxb_Tq_CJKXxl8wWBeBLeJNO2LUHLNbT87etfY8t8c2LvFX0qdoVaZx6k9HrpERVwoxZxDQ-x60NWhPshVdfthImxPLp4XrBTqR3ILIie05UbgfnWO/s600/25%20-%20024.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 25 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjf_SuV0JdoXAZr7QpS1km5qNY6b22rBa_tXRgF77RF_c9aOOV6Q58r9somPl8KpC01r6GI9syjxESUU9FowlIx9C74q2r_E5J2n3enLwVTi0QX73I5OsAhpirVibbW3w20QAxhBDIlQpI7lmO28_ysadHnozkcPk6eygRjEzmP8ZWnIP0yyB5T_0jTwS5h/s600/26%20-%20027.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 26 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgjqs5PKE1GaTqa6elQNo32p1ZeCc_17Z1PGGMyQyk1ujDIciyy1r1WNJQ5MI9LhA3iFSSuM06-YN642KBGACYmXmiYjRPfYo3M03ZaRm9VIThLnnqvQfyrg8kHROYqybO_Bl_VYnJGifFZjkwOwieaV4IIIAPSe3OBV7KSaGGFI65o0EFX8GySZrakzRmv/s600/27%20-%20028.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 27 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjteYSZkw5HZfyM_Ei91f1DY-Gyo5gTVCXhJAWsm0x7rJGIpDNU1bkD_OiIzcPH8pdY8wseif8raanNgSW7aZtg9WxYP6aDGIOVbuYywqzT1o1HihYaAeOtV3Izp7oIm9YpdBK69JLj_69fCA5Q68V3f-B_LOD0r5bWyMoZLd2PwATwSC782pGNdKbqGrrq/s600/28%20-%20029.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 28 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhr5d3aPXU9Y16uYeEyb-gwNQVm6zM2XGC-Sa2EZsBqn4vqrjC08RHqgLDqm_ckQp2k16X4WVV6_ttPspeVafr6oFpYJ32T8-RPEqPTHNnxSyntLwyyeairH4nhkIlfn2rqKsAMXGhrkKOF-nRSJXLogr6tWUFr89Sv5PaXRIrny482rZ0AUZ59oeYCRsvJ/s600/29%20-%20031.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 29 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgQVoXG7vhRfsMG48IMqtlmpqON4FHUJIzzeEZfHsjeDy8UW3IGQ8-T_1YCftk68OjsAwp5paNCg-DdvTNfugw_j-4zOeeWrQmQNgOfH6oixSPKfBoepfBxw7nBudxshK9XKDIW9p6YMW42DMQDIlDdzaYMPA4l98kkgTZL6RpQuLSTwTNGrEKh4_FHoORr/s600/30%20-%20030.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 30 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCVeVs-LCXyvLozVXj_QijNF4PK0U7tdlgCZ4o8VAe7pd6q41ZZ6faKzeqS17a6ORIA7FnNVoVKNWvtge-sfALhF3iPdPnfgTJsgdL0rka7Bb6hb4em92myqnjMIzDH00qJUeYTamYpwugW_JKXcS7NwFvbjAstSGbpGSGaIn1PIWn-v9riPsOQpGPsR1n/s600/31%20-%20032.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 31 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjZRwpz_qihe7zgOJFbi7wMVHYrv4ZLKSVQ5edBYKrl3lw9UayPVKZQNFR7bwIFL0PDUoa5B7aB-X5w5Y-UH4duF_iG5Gx2RRF_bql981QoDZVOZ2Cfl4ilNclaPN_u-YFogkss6VJDgUuzzpr_VESA9rbPDTXe52wzS2g7uEq8xNbCnA8IkOjPWi2vgWC-/s600/32%20-%20035.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 32 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjS2nj3SMi9Vk66eVldC2QH7GybfMd9KszcZgCSgNelZ5XwVSr3ylEkiieQSr8jeF_iPm080aaxGQ-jwh64q1PeMqrDZe4dDEBgohY5PcVqoMD4SzmV7ayKz2EfDCyd-XCBwAkJqwzRZiuzOFXwPlvoPVmx48JR3YRvd12Irfr28KGI4xfEvgQWBaxsx1WV/s600/34%20-%20033.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 33 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcJJ6DQizMhVDYYV2tKWWvyTZ48AiRd9jq6MlJlJqpr46KJxM0iUzvIqos7DIYu7ZjvIsAF5baTOi9gN4LG80l6uKYt4daK40wdMgMLK3BJmhRrjqAUQPrU3q0PIqbitz6mDWgpCbGsemHO2xuu2tQqhBElm2pHWyzIgCKTyvySnH-RNE3UJgfpdjj-DcX/s600/35%20-%20037.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 34 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiA2O0sCmT-y2t1ajkDSJoc5HgaACFR3hpc_Eidc0g-Wkm4xAY2kfONvxJucxfS7I6xpJvkc2O2Wc-vOgzjk2aMDdHXglO3caLnermWcev-cDZ9m_c1mJCOT-gxp0-RuaAzJYB2mGDVKrKTTR6Oy1xU7X56biAda_sRc7kEQ1MUI18k_yXK-QP-oPZk1aAn/s600/36%20-%20038.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 35 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCXH53Z8g4GwQ4KxoAtdEaNHMbCJcossw5vthh-_ZI57VG6vdqhrdqiTUyxSNyAzs0yYifK82fzdgm4R8QeSsK9o9fZZW0lcdsP0gVaSY70J8H0TBvn-0UE2n56QB8GQn5dafTnjzkJc-dDk4SSR4sVBjQt6Sl_wIbcXZqU9u9kU-2CtdJPYBG-lqH2cum/s600/37%20-%20040.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 37 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEih7ZFph8I7p_rT8ohTaJ4DXvzLmYBqSgCD_1KZ1vRIGtN6XKr9qk185_zUAHjjVXHwLBA8nTiBfinup4Y2UofNsRa_artnpOlXR7vsQKTscGctphEtCM083RwTsc0hgwG844ZJs8sEwlifM7LZqbLnQZpqP3nBaJvwZXzY1Rhf8CjPlrAvucOMOmEAYvcA/s600/38%20-%20043.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 38 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjlmaLUWAVVlFo8npsDSDCqKYccdbt9FL0MxAsoxDOubjIikPpfx1itEl65Qd0LnOuwgvYflp0YjlcAbxmIuzKlaejr8x_IytVuXOhD_h74vDpP_pi-f144yyOFyKkdmqNQ1jcGb-IplI7FIr2b7cZgf2dmbA-SSjBZrhs0vWRorL69L8OWNq-xbBzLhFT/s600/39%20-%20042.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 39 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgA3NEHIMQS3icTCkJpiZkAqEo8v011JeaalBM1nqQBB_O5PQBHJqkKWAlzzYHqimvU1E_TM6yNvul5QeDG2AqYoUnKYNMl7pSj3tZMS-vG7jltPCosa8bbHiTLraKJKgi1olyqg3aiOYz7Aug1cUQyiyT9PD4_H3L4mBwTTXJ1VvfOo2EE10mYoqcyLlrW/s600/40%20-%20044.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 40 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggw4h0LXkZXyBpf7qEOR31cGE3wSHWWuwhQICpvRDdqfKzLg66ElSAQNtinjeHb3aLwtXWTnXQQG3E4Wd2OKvNINMfhh__bhO-yCEl89QqCURJlPC06VPHfXQlITOwmoypd9b9AWN5C2hBLuReSqR08lNr9ls-zjbq6sQekMdrW_y4CwUdDnEI7Mirlaim/s600/41%20-%20046.JPG"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 41 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgiEwx9mTA0xg7zlR7ZI7zYx2WU00k3tn-zG4NKWW76Vxrj7mTHeT3gq0L1ZRFFAw8pjq35PpFBq5uyjI5nw8N_xptZaZxF0EzI-S5vAsWrIRqjdMyugAbqpI0Spg3oUY72qqiVW8uJ7_7eRwElKOl4C5HeQGA4ro5DnMVTchnSJweWpKtS4rFgag18RUTg/s600/42%20-%20fe052d80-573a-47b7-9f49-b07063ca3ddc.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 42 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3ckYJGlsNbkTPzSxdLteZUw9Mt2_lrPRhGBO7d7Vfh6P1EdBxqExxesE8uj4bDUk0MqAWj-7-t7fLm5zlxSOuc-vboEp_nkYZDKxObuPSKsk30TGTLhzxCarhXLWjgF_POzgeYQ5JBE4CqtIbklwMFINuh463AisoGFUr0NfO0-Nt97Hfx8iTLgy4ycVd/s600/43%20-%20de2372ac-ef21-4e50-8ab0-a1c73223adcf.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 43 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj-qsq8MhanK7W8a690PqoIKeeauWM2Hn-oDhnu3sjgngzZI1yOzevdOIjKpNeM53RH1mVcuLsAXojqfNX2XTu2U-mFaqQ4fgtF2S7iVO94eAZvRgFSaajkCw-no1dLOq20JzHJvw6oNNfjXdIRwSRutmpR70NRK8jPiGxeATvzB_1cwbhHSPFDGpl_fRwd/s600/44%20-%201172ab4b-12e1-4bb9-8284-7b4b89a5686.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 44 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjRqNzz_lDv7n1r5W0HDP7WhiZdvkH5HxI8vzyCOWuBYmbNF8MKyTQ4ose-rvcCQE8aIADTXKzX7eLPLrm7KGMDQJ1YAM1Em-GwIq-ZkugADKDbp5TE9fE-JWKMTKpHeoJU7aRMOQ69Hzqw5j7HGrQcvS5ytxdZ-M4U2zYNW8JBygnig-hDMTqlG5kJBmA7/s600/45%20-%20ec961560-61c5-4076-8372-dd91a78f9d29.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                </div>
+
+                                <!-- Controles -->
+                                <button class="carousel-btn prev" aria-label="Imagem anterior">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button class="carousel-btn next" aria-label="Próxima imagem">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+
+                            <!-- Badge de data -->
+                            <div class="activity-date-badge">
+                                <span class="badge-day">12</span>
+                                <span class="badge-month">Jul</span>
+                            </div>
+                        </div>
+
+                        <!-- Conteúdo -->
+                        <div class="activity-content">
+                            <div class="activity-header">
+                                <h3>Programa Leãozinho CUB e Lions Clube de Tatuí - Acolhimento e Fortalecimento</h3>
+                                <div class="activity-datetime">
+                                    <i class="far fa-calendar-alt"></i>
+                                    <span class="date-text">sáb., 12 de jul. de 2025</span>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="location-text">Hospital GPACI, Sorocaba, São Paulo</span>
+                                </div>
+                            </div>
+
+                            <div class="activity-description">
+                                <p>Essas iniciativas buscam levar não apenas auxílio material, mas também conforto,
+                                    carinho e esperança em momentos de grande sensibilidade.</p>
+
+                                <p>Como exemplo desse trabalho, uma das ações resultou na entrega de doações a crianças
+                                    em tratamento no Hospital GPACI, em Sorocaba. A iniciativa contou com a participação
+                                    do Programa Leãozinho CUB, que realizou sua primeira campanha do período com o
+                                    objetivo de proporcionar gestos de afeto por meio de lembranças simbólicas,
+                                    somando-se às doações arrecadadas pelo Lions Clube de Tatuí.</p>
+
+                                <p>O momento foi marcado pela sensibilidade, pelo acolhimento e pelo contato humano,
+                                    reforçando a importância do cuidado emocional no enfrentamento da doença. As
+                                    crianças receberam não apenas itens de necessidade básica, mas também presentes
+                                    especialmente selecionados para trazer alegria e conforto durante o tratamento.</p>
+
+                                <p>Os voluntários do Lions Clube de Tatuí e do Programa Leãozinho CUB dedicaram tempo
+                                    para conversar, brincar e ouvir as histórias das crianças e suas famílias, criando
+                                    um ambiente de acolhimento que vai além da assistência material.</p>
+
+                                <p>Essa ação representa apenas uma entre diversas iniciativas desenvolvidas ao longo do
+                                    ano, reafirmando o compromisso do Lions Clube de Tatuí com o apoio às crianças em
+                                    tratamento contra o câncer, com a promoção da empatia e com a construção de uma rede
+                                    de solidariedade que fortalece vidas e renova esperanças.</p>
+                            </div>
+
+                            <!-- Botão Saber Mais (ADICIONADO) -->
+                            <div class="activity-actions">
+                                <a href="#" class="btn-know-more">
+                                    Saber mais sobre esta ação
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Outras Ações Relacionadas -->
+                    <div class="related-actions">
+                        <h3 class="related-title">Outras Ações Realizadas</h3>
+                        <div class="related-grid">
+                            <div class="related-card">
+                                <div class="related-icon">
+                                    <i class="fas fa-gift"></i>
+                                </div>
+                                <h4>Natal Solidário 2024</h4>
+                                <p>Distribuição de brinquedos e cestas básicas para famílias de crianças em tratamento
+                                    oncológico.</p>
+                                <a href="#" class="related-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="related-card">
+                                <div class="related-icon">
+                                    <i class="fas fa-stethoscope"></i>
+                                </div>
+                                <h4>Campanha Diagnóstico Precoce</h4>
+                                <p>Palestras em escolas sobre os sinais do câncer infantil e importância do diagnóstico
+                                    rápido.</p>
+                                <a href="#" class="related-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="related-card">
+                                <div class="related-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <h4>Apoio Psicológico</h4>
+                                <p>Grupos de apoio e acompanhamento psicológico para famílias durante o tratamento.</p>
+                                <a href="#" class="related-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Como Ajudar -->
+        <section class="how-help" id="como-ajudar">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Como Você Pode Ajudar</h2>
+                    <p class="section-subtitle">Junte-se a nós nesta causa tão importante. Cada contribuição faz a
+                        diferença!</p>
+                </div>
+
+                <div class="involved-options">
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-donate"></i>
+                        </div>
+                        <h3>Faça uma Doação</h3>
+                        <p>Suas doações ajudam a financiar tratamentos, medicamentos e suporte às famílias de crianças
+                            com câncer. Todo valor contribui diretamente para melhorar a qualidade de vida dos pequenos
+                            pacientes.</p>
+                        <div class="option-features">
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Doação única
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Doação mensal
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Doação em espécie
+                            </span>
+                        </div>
+                        <a href="#" class="btn btn-small">
+                            <i class="fas fa-heart"></i>
+                            Doar Agora
+                        </a>
+                    </div>
+
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>Torne-se Voluntário</h3>
+                        <p>Doe seu tempo e habilidades para nossas campanhas, eventos e atividades de apoio. Voluntários
+                            são essenciais para o sucesso de nossos projetos de assistência.</p>
+                        <div class="option-features">
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Acompanhamento hospitalar
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Organização de eventos
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Apoio administrativo
+                            </span>
+                        </div>
+                        <a href="#" class="btn btn-small">
+                            <i class="fas fa-user-plus"></i>
+                            Voluntariar-se
+                        </a>
+                    </div>
+
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <h3>Divulgue a Causa</h3>
+                        <p>Compartilhe informações sobre o câncer infantil e nossos projetos. A conscientização é
+                            fundamental para o diagnóstico precoce e para engajar mais apoiadores.</p>
+                        <div class="option-features">
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Compartilhe nas redes
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Organize palestras
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Distribua material
+                            </span>
+                        </div>
+                        <div class="share-button">
+                            <a href="#" class="btn btn-small share-main-btn">
+                                <i class="fas fa-share"></i>
+                                Compartilhar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="../src/img/logo.png" alt="Lions Clube Internacional" class="logo-img">
+                        <div class="logo-text">Lions Clube <span>Tatuí</span></div>
+                    </div>
+                    <p>Servindo a comunidade de Tatuí desde 1955. Fazemos parte do Lions Clubs International, a maior
+                        organização de clubes de serviço do mundo.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2025</span> Lions Clube Tatuí. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

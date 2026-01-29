@@ -1,0 +1,40 @@
+/* Modo Escuro */
+:root {
+    --primary: #4A9DE3;
+    --secondary: #FFC72C;
+    --accent: #FFD93D;
+    --light: #1A1A2E;
+    --dark: #F5F5F5;
+    --gray: #A0A0A0;
+    --background: #121212;
+    --surface: #1E1E2E;
+    --text: #E0E0E0;
+    --text-light: #A0A0A0;
+    --border: #2D2D3A;
+    --shadow: rgba(0, 0, 0, 0.3);
+    --muted: #252535;
+    --transition: all 0.3s ease;
+
+    /* Tons adicionais para o modo escuro */
+    --primary-light: #6BB5FF;
+    --primary-dark: #3A85C3;
+    --secondary-light: #FFE066;
+    --secondary-dark: #E6B400;
+}
+
+/* Modo Claro */
+[data-theme="light"] {
+    --primary: #0054A4;
+    --secondary: #FFC72C;
+    --accent: #FFC72C;
+    --light: #F5F5F5;
+    --dark: #333333;
+    --gray: #6C757D;
+    --background: #FFFFFF;
+    --surface: #FFFFFF;
+    --text: #333333;
+    --text-light: #6C757D;
+    --border: #E0E0E0;
+    --shadow: rgba(0, 0, 0, 0.1);
+    --muted: #F8F9FA;
+}

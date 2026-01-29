@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visão | Lions Clube de Tatuí</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../theme/theme.css">
+    <link rel="stylesheet" href="causes.css">
+
+    <!-- JavaScript -->
+    <script src="../index.js" defer></script>
+    <script src="../theme/theme.js" defer></script>
+    <script src="causes.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../src/img/logo.png">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="../index.html" class="logo-link">
+                    <img src="../src/img/logo.png" alt="Lions Clube Internacional" class="logo-img">
+                    <div class="logo-text">Lions Clube <span>de Tatuí</span></div>
+                </a>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav" id="mainNav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+
+                    <!-- Dropdown de Sobre Nós -->
+                    <li class="nav-item dropdown active">
+                        <a href="#" class="nav-link">
+                            Sobre Nós
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../about-us/who-we-are/who-we-are.html" class="dropdown-item">
+                                    <i class="fa fa-users"></i>Quem Somos?
+                                </a></li>
+                            <li><a href="../about-us/our-leaders/our-leaders.html" class="dropdown-item">
+                                    <i class="fas fa-crown"></i>Nossos Líderes
+                                </a></li>
+                            <li><a href="https://lionsclubetatui.blogspot.com/" class="dropdown-item" target="blank">
+                                    <i class="fa fa-file-text"></i>Nosso Blog
+                                </a></li>
+                            <li><a href="../about-us/about-lion-leo/about-lion.html" class="dropdown-item">
+                                    <i class="fas fa-paw"></i>O que é ser Leão?
+                                </a></li>
+                            <li><a href="../about-us/about-lion-leo/about-leo.html" class="dropdown-item">
+                                    <i class="fas fa-star"></i>O que é um Leo?
+                                </a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Dropdown da Causas -->
+                    <li class="nav-item dropdown">
+                        <a href="#causes" class="nav-link">
+                            Causas
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../causes/child-cancer.html" class="dropdown-item">
+                                    <i class="fas fa-child"></i>Câncer Infantil
+                                </a></li>
+                            <li><a href="../causes/diabetes.html" class="dropdown-item">
+                                    <i class="fas fa-heartbeat"></i>Diabetes
+                                </a></li>
+                            <li><a href="../causes/help-after-disasters.html" class="dropdown-item">
+                                    <i class="fas fa-home"></i>Socorro após catástrofes
+                                </a></li>
+                            <li><a href="../causes/environment.html" class="dropdown-item">
+                                    <i class="fas fa-leaf"></i>Meio Ambiente
+                                </a></li>
+                            <li><a href="../causes/humanitarian-efforts.html" class="dropdown-item">
+                                    <i class="fas fa-hands-helping"></i>Esforços Humanitários
+                                </a></li>
+                            <li><a href="../causes/hunger.html" class="dropdown-item">
+                                    <i class="fas fa-utensils"></i>Fome
+                                </a></li>
+                            <li><a href="../causes/vision.html" class="dropdown-item">
+                                    <i class="fas fa-eye"></i>Visão
+                                </a></li>
+                            <li><a href="../causes/youth.html" class="dropdown-item">
+                                    <i class="fas fa-users"></i>Juventude
+                                </a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a href="../index.html#mission" class="nav-link">Nossa Missão</a></li>
+                    <li class="nav-item"><a href="../index.html#atividades" class="nav-link">Eventos</a></li>
+                </ul>
+
+                <!-- Links sociais no header -->
+                <div class="nav-social-links">
+                    <a href="https://www.facebook.com/lionsclubedetatui.org.br" target="_blank" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/lionsclubedetatui" target="_blank" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@lionsclubedetatui336" target="_blank" aria-label="YouTube"><i
+                            class="fab fa-youtube"></i></a>
+                </div>
+
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                        <span class="toggle-slider">
+                            <i class="fas fa-sun toggle-icon sun-icon"></i>
+                            <i class="fas fa-moon toggle-icon moon-icon"></i>
+                        </span>
+                    </button>
+
+                    <a href="../login/login.html" class="btn btn-small nav-involve-btn">
+                        <i class="fas fa-hands-helping"></i>
+                        Envolva-se
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="cause-page">
+
+        <!-- Banner da Causa -->
+        <section class="cause-hero"
+            style="--hero-image: url('https://marvel-b1-cdn.bc0a.com/f00000000210829/www.lionsclubs.org/sites/default/files/styles/full_width_image/public/2018-06/lcif-story-kid-sight.jpg?itok=aM8KVneN')">
+            <div class="container">
+                <h1 class="cause-title">Visão</h1>
+                <p class="cause-subtitle">Visão – Enxergar melhor para aprender e viver melhor. Alinhado à Causa Global
+                    Visão do Lions Internacional, o Lions Clube de Tatuí desenvolve ações permanentes voltadas à
+                    prevenção de problemas visuais, ao acesso a cuidados oftalmológicos e à promoção da inclusão,
+                    especialmente entre crianças e jovens em idade escolar.</p>
+                <div class="hero-divider"></div>
+            </div>
+        </section>
+
+        <!-- Seção de Fatos -->
+        <section class="cause-facts">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Fatos sobre a Visão</h2>
+                    <p class="section-subtitle">Garantir uma boa visão significa ampliar oportunidades de aprendizado,
+                        autonomia e qualidade de vida. A visão afeta todas as idades, e a maioria dos problemas pode ser
+                        prevenida ou tratada:</p>
+                </div>
+
+                <div class="facts-grid">
+                    <!-- Card 1 -->
+                    <div class="fact-card">
+                        <div class="fact-card-inner">
+                            <div class="fact-number">
+                                2,2 bi
+                            </div>
+                            <div class="fact-label">
+                                Pessoas com deficiência visual
+                            </div>
+                            <div class="fact-icon">
+                                <i class="fas fa-user-friends"></i>
+                            </div>
+                            <div class="fact-description">
+                                No mundo todo, 2,2 bilhões de pessoas sofrem com deficiência visual de perto ou de
+                                longe, sendo que 1 bilhão desses casos poderiam ter sido evitados*
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="fact-card">
+                        <div class="fact-card-inner">
+                            <div class="fact-number">
+                                450 mi
+                            </div>
+                            <div class="fact-label">
+                                Crianças com problemas visuais
+                            </div>
+                            <div class="fact-icon">
+                                <i class="fas fa-child"></i>
+                            </div>
+                            <div class="fact-description">
+                                Estima-se que 450 milhões de crianças em todo o mundo apresentam problemas visuais que
+                                precisam de tratamento adequado para um desenvolvimento saudável**
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="fact-card">
+                        <div class="fact-card-inner">
+                            <div class="fact-number">
+                                80%
+                            </div>
+                            <div class="fact-label">
+                                Casos preveníveis ou curáveis
+                            </div>
+                            <div class="fact-icon">
+                                <i class="fas fa-stethoscope"></i>
+                            </div>
+                            <div class="fact-description">
+                                Oitenta por cento de todas as deficiências visuais podem ser prevenidas ou curadas com
+                                acesso a cuidados oftalmológicos básicos e tratamento adequado**
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Áreas de Serviço -->
+        <section class="service-areas">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Áreas de Serviço</h2>
+                    <p class="section-subtitle">Essas ações representam apenas algumas entre diversas iniciativas
+                        realizadas ao longo do ano, reafirmando o compromisso do Lions Clube de Tatuí com a saúde
+                        visual, a inclusão social e a construção de um futuro em que todos possam enxergar melhor para
+                        aprender, crescer e realizar seus sonhos.</p>
+                </div>
+
+                <div class="service-content">
+                    <div class="service-section">
+                        <div class="service-header">
+                            <i class="fas fa-glasses service-section-icon"></i>
+                            <h3>Reciclagem de Óculos</h3>
+                        </div>
+                        <p>Os erros de refração podem ser facilmente corrigidos com óculos, porém milhões de pessoas
+                            que vivem em países de baixa e média renda não têm acesso a serviços oftalmológicos
+                            básicos. Os Leões reconheceram a necessidade urgente de lentes corretivas e coletam
+                            óculos usados em suas comunidades para apoiar a reciclagem de óculos.</p>
+                    </div>
+
+                    <div class="service-section">
+                        <div class="service-header">
+                            <i class="fas fa-eye service-section-icon"></i>
+                            <h3>Exames de Visão</h3>
+                        </div>
+                        <p>Oitenta por cento de todas as deficiências visuais podem ser prevenidas ou curadas. A
+                            primeira etapa da prevenção é a conscientização. A segunda é a detecção precoce por meio
+                            de exame oftalmológico. Em todo o mundo, os Leões fazem parcerias com profissionais
+                            médicos e líderes comunitários para examinar crianças, estudantes do ensino fundamental
+                            e adultos, a fim de identificar os indivíduos que correm o risco de perder a visão.</p>
+                    </div>
+
+                    <div class="service-section">
+                        <div class="service-header">
+                            <i class="fas fa-hospital service-section-icon"></i>
+                            <h3>Banco Leonístico de Olhos</h3>
+                        </div>
+                        <p>Os bancos de olhos recuperam, avaliam, armazenam e distribuem tecido ocular humano para a
+                            restauração da visão, pesquisa e educação. Os cirurgiões oftalmológicos dependem dos
+                            bancos de olhos para fornecer tecidos para procedimentos que salvam a visão. Um banco
+                            Leonístico de olhos é patrocinado por um Lions clube, distrito ou distrito múltiplo e
+                            tem uma relação de trabalho estabelecida com uma instituição médica.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nossa Ação -->
+        <section class="story-highlight" id="nossa-acao">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nossa Ação</h2>
+                    <p class="section-subtitle">Campanha da Visão - Transformando dificuldades em novas perspectivas</p>
+                </div>
+
+                <div class="activities-list">
+                    <!-- Atividade Principal -->
+                    <div class="activity-item">
+                        <div class="activity-image">
+                            <!-- Carrossel -->
+                            <div class="carousel">
+                                <!-- Container das imagens -->
+                                <div class="carousel-track">
+                                    <!-- Slide 1 -->
+                                    <div class="carousel-slide active">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQEHP4ndwmeMDF7WJMrvZce5MT7GgV4JCWsi8bWQDOHU13cjOmPPh73UMkiIDO4nN2XzF-dQdvUOdzLgU1ZayEMKVpywM7t7idS8-B7R-JAKqlssJXYPc8wnl4GwxUk7fewGFsWKpj9naQYHuV7ZpxPTqOOOLBKyOjS4bv8qPz-k8i8bjMZXZlP87lWHOu/s600/2%20-%2062ad8079-ed30-48ee-b43d-1e8295e30585.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 2 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh9SlkcKKDtpNnLTpgTW21IZDNMOx100tolb4T56HRBkkqp9YJwIvJpilO3y-a2K89nR_wHTop6CiaGvm4XrM8hjaElGws7qeIuXSCP9Nay8RVnZJZIp86ljfZuxuR6oKHdPRYA7awx3mS68T4cMiRkjIICryk2WD_GPxR-2yyv4w0lOsbt1-Dl_xMaJ6KH/s600/3%20-%2015485c22-f0cf-41b3-944b-25d3641e23ae.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 3 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiqMIUiK2Fd5hv1fCksMONxuCPo74seps8C6u_Hvcd6B1UslzWMdzM0WG7lmfJU1Q8aqel-X8EU2MSskEgA94VaiRTTgW2PaUp-PUP9bMATNjZIEhdf1l9VIxx1EqdUi1V1MAyhYJkR7IcBPUY8wDUIV2-tJ04mYCu7dsf_nnkO_mBFKgKWQojB0LSyH2gY/s600/4%20-%2020d336a1-530c-4033-a538-e883f0cc48ad.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 4 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj2-1w4vM4VydYb7CtgmpPN1rooLz06bYnagEqOvEr_BuGFYke4HyPLHUIGw6jZef6iG-AtG5aRwXKb4BY-wGjrgUPruGEOtpuuvB0WUAKT_BuGkE9kbjQvkStx9kbgn7PYbGtd_50upNtwZ92YWa8QXev560_Q08-l4gYtORs9CrQDeqpBdnnscv-Ifdri/s600/5%20-%20a361f22e-f7b3-4459-a599-8368b6e1590e.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 5 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh4M6dWNA6EyPMypimxrIC4DS3Ponnblv24aLZeDmsrMmmpAGdGhwRTcfdnyPs8uAOmE07A0-GrgVBXQ6EuRkcQC_aRmkHqQf8PaL1Sv4eReDk-hNFgEPLZPETpY0T75XNFQxC-CZVf7Tx0qzV5K43Lb7kesgLAu887g11OVJ8j_l4brCaBJ__4CwPrvA85/s600/6%20-%20a3a3aefd-25d1-42eb-a48a-4bf19b825ca3.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 6 -->
+                                    <div class="carousel-slide active">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjHDbsq259c-xShltc6DcnlLrBb3ioVOhV0zZJAMatdVqNwKF8jK1O1j8HjSz5Y_UwbESXPyACa3Fj26qOjJezjRA6v02G89nsdOqRKU6NuPbiqutFH9i5lEp9fp7WH7PlYyqlublJ4FDVYbrZLTpisE5jU9H5YmmCbvY2cMat6hiIDM2Tx8jXC6ywxJbSw/s600/7%20-%2099ec3111-30fc-4c89-83ed-045a27661945.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 7 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgoXM8roSwT6UMziyloLnmy-G3ahOHlOzdUI3G0HvK1IEmgRk41Fvc4ItJ1TNYMh6njqihinYGurdOIA52CxkNeZZHJK52N4_LarDUe5shJyGOrwllqFaQiSTbGY0fQ8MkKoJk_yo7Vo2bPo50A_2O3fyGbuXTYdhlNFloDaJdus79KLZl-ia32XIcmwBmS/s600/8%20-%20bdbd3449-4df1-4d9d-8274-4e4bc829d919.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                </div>
+
+                                <!-- Controles -->
+                                <button class="carousel-btn prev" aria-label="Imagem anterior">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button class="carousel-btn next" aria-label="Próxima imagem">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+
+                            <!-- Badge de data -->
+                            <div class="activity-date-badge">
+                                <span class="badge-day">18</span>
+                                <span class="badge-month">Set</span>
+                            </div>
+                        </div>
+
+                        <!-- Conteúdo -->
+                        <div class="activity-content">
+                            <div class="activity-header">
+                                <h3>Campanha da Visão - Enxergar melhor para aprender e viver melhor</h3>
+                                <div class="activity-datetime">
+                                    <i class="far fa-calendar-alt"></i>
+                                    <span class="date-text">qua., 18 de set. de 2024</span>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="location-text">Escolas Públicas de Tatuí, São Paulo</span>
+                                </div>
+                            </div>
+
+                            <div class="activity-description">
+                                <p>Como exemplo desse trabalho, a Campanha da Visão atendeu estudantes de escolas da
+                                    rede pública, possibilitando a identificação de necessidades visuais e a entrega de
+                                    óculos a alunos que precisavam desse recurso para seu pleno desenvolvimento
+                                    educacional.</p>
+
+                                <p>A iniciativa contou com o engajamento da comunidade e com parcerias institucionais,
+                                    demonstrando como a união de esforços torna possível transformar dificuldades em
+                                    novas perspectivas. Entre as principais ações realizadas destacam-se:</p>
+
+                                <p>• <strong>Triagem visual</strong> em mais de 500 estudantes<br>
+                                    • <strong>Entrega de óculos</strong> para 150 alunos identificados com necessidades
+                                    visuais<br>
+                                    • <strong>Orientação sobre saúde ocular</strong> para professores e familiares<br>
+                                    • <strong>Encaminhamento para tratamento</strong> de casos que requeriam atenção
+                                    especializada</p>
+
+                                <p>O pequeno João, de 7 anos, era um dos beneficiados. Com alta miopia não corrigida,
+                                    ele enfrentava dificuldades de aprendizado e isolamento social. Após receber óculos
+                                    adequados através de nosso programa de reciclagem, sua professora relatou: "Ele
+                                    mudou completamente. Agora participa ativamente das aulas e recuperou sua
+                                    autoestima."</p>
+
+                                <p>A campanha incluiu também:</p>
+
+                                <p>• Workshops sobre cuidados com a saúde ocular<br>
+                                    • Distribuição de material informativo sobre prevenção de problemas visuais<br>
+                                    • Parcerias com óticas locais para ajuste e adaptação dos óculos</p>
+
+                                <p>Essa ação representa apenas uma entre diversas iniciativas realizadas ao longo do
+                                    ano, reafirmando o compromisso do Lions Clube de Tatuí com a saúde visual, a
+                                    inclusão social e a construção de um futuro em que todos possam enxergar melhor para
+                                    aprender, crescer e realizar seus sonhos.</p>
+
+                                <!-- Botão Saber Mais -->
+                                <div class="activity-actions">
+                                    <a href="https://lionsclubetatui.blogspot.com/2024/12/campanha-da-visao-campanha-da-visao.html"
+                                        target="_blank" class="btn-know-more">
+                                        Saber mais sobre esta ação
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Outras Ações Relacionadas -->
+                    <div class="related-actions">
+                        <h3 class="related-title">Outras Ações Realizadas</h3>
+                        <div class="related-grid">
+                            <div class="related-card">
+                                <div class="related-icon">
+                                    <i class="fas fa-glasses"></i>
+                                </div>
+                                <h4>Reciclagem Solidária 2024</h4>
+                                <p>Arrecadação de mais de 500 pares de óculos usados, que foram reciclados e
+                                    distribuídos para comunidades carentes.</p>
+                                <a href="#" class="related-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="related-card">
+                                <div class="related-icon">
+                                    <i class="fas fa-school"></i>
+                                </div>
+                                <h4>Visão nas Escolas</h4>
+                                <p>Triagem visual em 15 escolas municipais, beneficiando mais de 2.000 estudantes com
+                                    exames oftalmológicos.</p>
+                                <a href="#" class="related-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="related-card">
+                                <div class="related-icon">
+                                    <i class="fas fa-hand-holding-heart"></i>
+                                </div>
+                                <h4>Doação de Córneas</h4>
+                                <p>Campanha de conscientização sobre doação ocular que resultou em 30 novos doadores
+                                    cadastrados.</p>
+                                <a href="#" class="related-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Como Ajudar -->
+        <section class="how-help" id="como-ajudar">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Como Você Pode Ajudar</h2>
+                    <p class="section-subtitle">Junte-se a nós na missão de construir um futuro em que todos possam
+                        enxergar melhor para aprender, crescer e realizar seus sonhos. Cada contribuição pode
+                        transformar uma dificuldade visual em uma nova perspectiva!</p>
+                </div>
+
+                <div class="involved-options">
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-glasses"></i>
+                        </div>
+                        <h3>Doe seus Óculos</h3>
+                        <p>Aqueles óculos que você não usa mais podem mudar a vida de alguém. Doe óculos usados em bom
+                            estado para nosso programa de reciclagem. Eles serão limpos, classificados e ajustados para
+                            beneficiar pessoas que não têm acesso a correção visual.</p>
+                        <div class="option-features">
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Óculos de grau usados
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Armações em bom estado
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Óculos de sol com proteção UV
+                            </span>
+                        </div>
+                        <a href="#" class="btn btn-small">
+                            <i class="fas fa-heart"></i>
+                            Doar Óculos
+                        </a>
+                    </div>
+
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>Seja um Voluntário</h3>
+                        <p>Participe das campanhas de triagem visual, ajude na organização dos óculos doados, seja um
+                            divulgador da causa ou ofereça suas habilidades profissionais. Se você é oftalmologista,
+                            técnico ou tem experiência na área, sua contribuição é especialmente valiosa.</p>
+                        <div class="option-features">
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Apoio em campanhas de triagem
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Organização de óculos doados
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Divulgação da causa
+                            </span>
+                        </div>
+                        <a href="#" class="btn btn-small">
+                            <i class="fas fa-user-plus"></i>
+                            Voluntariar-se
+                        </a>
+                    </div>
+
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <h3>Divulgue a Causa</h3>
+                        <p>Compartilhe informações sobre a importância da saúde ocular, prevenção de doenças visuais e
+                            nossas iniciativas. A conscientização é fundamental para identificar problemas precocemente
+                            e incentivar a doação de óculos e recursos.</p>
+                        <div class="option-features">
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Compartilhe informações sobre saúde ocular
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Divulgue nossos pontos de coleta
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Conscientize sobre doação ocular
+                            </span>
+                        </div>
+                        <div class="share-button">
+                            <a href="#" class="btn btn-small share-main-btn">
+                                <i class="fas fa-share"></i>
+                                Compartilhar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="../src/img/logo.png" alt="Lions Clube Internacional" class="logo-img">
+                        <div class="logo-text">Lions Clube <span>Tatuí</span></div>
+                    </div>
+                    <p>Servindo a comunidade de Tatuí desde 1955. Fazemos parte do Lions Clubs International, a maior
+                        organização de clubes de serviço do mundo.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2025</span> Lions Clube Tatuí. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combate à Fome | Lions Clube de Tatuí</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../theme/theme.css">
+    <link rel="stylesheet" href="causes.css">
+
+    <!-- JavaScript -->
+    <script src="../index.js" defer></script>
+    <script src="../theme/theme.js" defer></script>
+    <script src="causes.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../src/img/logo.png">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="../index.html" class="logo-link">
+                    <img src="../src/img/logo.png" alt="Lions Clube Internacional" class="logo-img">
+                    <div class="logo-text">Lions Clube <span>de Tatuí</span></div>
+                </a>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav" id="mainNav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+
+                    <!-- Dropdown de Sobre Nós -->
+                    <li class="nav-item dropdown active">
+                        <a href="#" class="nav-link">
+                            Sobre Nós
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../about-us/who-we-are/who-we-are.html" class="dropdown-item">
+                                    <i class="fa fa-users"></i>Quem Somos?
+                                </a></li>
+                            <li><a href="../about-us/our-leaders/our-leaders.html" class="dropdown-item">
+                                    <i class="fas fa-crown"></i>Nossos Líderes
+                                </a></li>
+                            <li><a href="https://lionsclubetatui.blogspot.com/" class="dropdown-item" target="blank">
+                                    <i class="fa fa-file-text"></i>Nosso Blog
+                                </a></li>
+                            <li><a href="../about-us/about-lion-leo/about-lion.html" class="dropdown-item">
+                                    <i class="fas fa-paw"></i>O que é ser Leão?
+                                </a></li>
+                            <li><a href="../about-us/about-lion-leo/about-leo.html" class="dropdown-item">
+                                    <i class="fas fa-star"></i>O que é um Leo?
+                                </a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Dropdown da Causas -->
+                    <li class="nav-item dropdown">
+                        <a href="#causes" class="nav-link">
+                            Causas
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../causes/child-cancer.html" class="dropdown-item">
+                                    <i class="fas fa-child"></i>Câncer Infantil
+                                </a></li>
+                            <li><a href="../causes/diabetes.html" class="dropdown-item">
+                                    <i class="fas fa-heartbeat"></i>Diabetes
+                                </a></li>
+                            <li><a href="../causes/help-after-disasters.html" class="dropdown-item">
+                                    <i class="fas fa-home"></i>Socorro após catástrofes
+                                </a></li>
+                            <li><a href="../causes/environment.html" class="dropdown-item">
+                                    <i class="fas fa-leaf"></i>Meio Ambiente
+                                </a></li>
+                            <li><a href="../causes/humanitarian-efforts.html" class="dropdown-item">
+                                    <i class="fas fa-hands-helping"></i>Esforços Humanitários
+                                </a></li>
+                            <li><a href="../causes/hunger.html" class="dropdown-item">
+                                    <i class="fas fa-utensils"></i>Fome
+                                </a></li>
+                            <li><a href="../causes/vision.html" class="dropdown-item">
+                                    <i class="fas fa-eye"></i>Visão
+                                </a></li>
+                            <li><a href="../causes/youth.html" class="dropdown-item">
+                                    <i class="fas fa-users"></i>Juventude
+                                </a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a href="../index.html#mission" class="nav-link">Nossa Missão</a></li>
+                    <li class="nav-item"><a href="../index.html#atividades" class="nav-link">Eventos</a></li>
+                </ul>
+
+                <!-- Links sociais no header -->
+                <div class="nav-social-links">
+                    <a href="https://www.facebook.com/lionsclubedetatui.org.br" target="_blank" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/lionsclubedetatui" target="_blank" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@lionsclubedetatui336" target="_blank" aria-label="YouTube"><i
+                            class="fab fa-youtube"></i></a>
+                </div>
+
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                        <span class="toggle-slider">
+                            <i class="fas fa-sun toggle-icon sun-icon"></i>
+                            <i class="fas fa-moon toggle-icon moon-icon"></i>
+                        </span>
+                    </button>
+
+                    <a href="../login/login.html" class="btn btn-small nav-involve-btn">
+                        <i class="fas fa-hands-helping"></i>
+                        Envolva-se
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Conteúdo Principal -->
+    <main class="cause-page">
+
+        <!-- Banner da Causa -->
+        <section class="cause-hero"
+            style="--hero-image: url('https://jamesvalappila.com/wp-content/uploads/2024/03/Lions-Relieving-Hunger-Lions-Vision-Project3.jpeg')">
+            <div class="container">
+                <h1 class="cause-title">Combate à Fome</h1>
+                <p class="cause-subtitle">Compromisso contínuo com a dignidade humana. O Lions Clube de Tatuí, alinhado
+                    a uma das Causas Globais do Lions Internacional, desenvolve de forma permanente ações voltadas ao
+                    Combate à Fome, buscando minimizar a insegurança alimentar e fortalecer instituições que atuam
+                    diretamente no atendimento a pessoas em situação de vulnerabilidade.</p>
+                <div class="hero-divider"></div>
+            </div>
+        </section>
+
+        <!-- Seção de Fatos -->
+        <section class="cause-facts">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Fatos sobre o Combate à Fome</h2>
+                    <p class="section-subtitle">Nosso impacto local na luta contra a insegurança alimentar:</p>
+                </div>
+
+                <div class="facts-grid">
+                    <!-- Card 1 -->
+                    <div class="fact-card">
+                        <div class="fact-card-inner">
+                            <div class="fact-number">
+                                200 kg
+                            </div>
+                            <div class="fact-label">
+                                de alimentos doados
+                            </div>
+                            <div class="fact-icon">
+                                <i class="fas fa-shopping-basket"></i>
+                            </div>
+                            <div class="fact-description">
+                                Arrecadação em eventos comunitários para instituições de apoio em Tatuí
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="fact-card">
+                        <div class="fact-card-inner">
+                            <div class="fact-number">
+                                2+
+                            </div>
+                            <div class="fact-label">
+                                instituições beneficiadas
+                            </div>
+                            <div class="fact-icon">
+                                <i class="fas fa-hands-helping"></i>
+                            </div>
+                            <div class="fact-description">
+                                Apoio direto ao Núcleo de Apoio ao Combate ao Câncer e Casa de Apoio aos Irmãos de Rua
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="fact-card">
+                        <div class="fact-card-inner">
+                            <div class="fact-number">
+                                100%
+                            </div>
+                            <div class="fact-label">
+                                voluntários engajados
+                            </div>
+                            <div class="fact-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="fact-description">
+                                Mobilização integral dos Leões e Leos em ações contra a fome
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Áreas de Serviço -->
+        <section class="service-areas">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Áreas de Serviço</h2>
+                    <p class="section-subtitle">Estratégias para combater a fome e promover dignidade</p>
+                </div>
+
+                <div class="service-content">
+                    <div class="service-section">
+                        <div class="service-header">
+                            <i class="fas fa-shopping-basket service-section-icon"></i>
+                            <h3>Arrecadação e Distribuição</h3>
+                        </div>
+                        <p>Organização de eventos comunitários para arrecadação de alimentos não perecíveis e destinação
+                            estratégica para instituições que atendem pessoas em situação de vulnerabilidade alimentar
+                            em Tatuí.</p>
+                    </div>
+
+                    <div class="service-section">
+                        <div class="service-header">
+                            <i class="fas fa-handshake service-section-icon"></i>
+                            <h3>Parcerias Institucionais</h3>
+                        </div>
+                        <p>Fortalecimento de organizações locais como o Núcleo de Apoio ao Combate ao Câncer e a Casa de
+                            Apoio aos Irmãos de Rua, fornecendo suporte alimentar essencial para suas atividades.</p>
+                    </div>
+
+                    <div class="service-section">
+                        <div class="service-header">
+                            <i class="fas fa-calendar-alt service-section-icon"></i>
+                            <h3>Ações Permanentes</h3>
+                        </div>
+                        <p>Desenvolvimento de iniciativas contínuas ao longo do ano que garantem um fluxo constante de
+                            apoio alimentar para as instituições parceiras e famílias em situação de vulnerabilidade.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nossa Ação -->
+        <section class="story-highlight" id="nossa-acao">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nossa Ação</h2>
+                    <p class="section-subtitle">Doação de Alimentos - Compromisso contínuo com a dignidade humana</p>
+                </div>
+
+                <div class="activities-list">
+                    <!-- Atividade Principal -->
+                    <div class="activity-item">
+                        <div class="activity-image">
+                            <!-- Carrossel -->
+                            <div class="carousel">
+                                <!-- Container das imagens -->
+                                <div class="carousel-track">
+                                    <!-- Slide 1 -->
+                                    <div class="carousel-slide active">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgDLWiqEKtsIqotFd7d1sNn2LNeipru-6zHb4EiN08lvHiDG7iKd8sRECqbNlYC-I2l1RbVLoHxm0pg9NTnSoRYXfg5C2iKf8RznNF0XP2zjXwtf-MwbibvVWIRF6oTLXIScIv2y5iOLpyVxmT4P_kOrzfSmB-q4aJqEYpUpbQStz0_YJ8dIhsVplabmrZK/s600/2%20-%20d50318fa-3783-4277-a0b3-8cf42ace283e.jpg"
+                                            alt="Arrecadação de alimentos pelo Lions Clube de Tatuí" loading="lazy">
+                                    </div>
+                                    <!-- Slide 2 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEizcsP_YV8mlu4sIAjnkNzm6g5AbUTMe_2tqQBPbn7LcCSiiF7O35-nrhiBKPDXPjhAeGkogvpbPpWLz1bkALA32EOaca8p2Y1pyowWtJgoLd31uDEzgGbPxXPI-0jCS0l9ETFDK8bKcj3KGf8UcEvxvxR16uxEQH-bIWkb1xGB2R_v3Sz7sYzp9fm5t79d/s600/3%20-%20431c7eb9-912d-42f3-949c-9621cbfdfaa7.jpg"
+                                            alt="Organização dos alimentos arrecadados" loading="lazy">
+                                    </div>
+                                    <!-- Slide 3 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhtRswf6U2ZZ1PmEQEWl2suIbPbOCoyB50hCTm-7wMCI10UKX1f5Nj9p4wvLAmZzkWY6F-YDPBIOhRZtvm-LILr-aq_W8xZrQFqbpIkZk-I-yKt8IrIFb3kFHAyyOE2mqC7gbiFNe_hMjyKv2UVHvU2oEmYJo_rPX3kQhmxqNXZz8LltdJOllY1UubWzYES/s600/4%20-%20f79cd25a-72df-41b5-8a20-b65bd4bdd2c2.jpg"
+                                            alt="Entrega no Núcleo de Apoio ao Combate ao Câncer" loading="lazy">
+                                    </div>
+                                    <!-- Slide 4 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEip8BoedyYmgTVV0ClhnDn9m66iB8afHtaV9UfgR_ZDJFWuCJdk7-Ed2VaRWRKuCWlUHxXkhAyW5QtSav9NYTOpYTjTBX4ofds9VEPCvJ0S2VYRO9BIQAg-lShXs58z4B8cFsotHmNg7gt2qV5hj_GqJeoQkWmGfIfCYBiWXjcNHc1nlVw-WRw8kG0CAZWF/s600/5%20-%20851b8d94-fb6f-40b2-add3-25aa4ad72755.jpg"
+                                            alt="Entrega na Casa de Apoio aos Irmãos de Rua" loading="lazy">
+                                    </div>
+                                    <!-- Slide 5 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg3LxVEBKW73CLWu4UWC9MACPKudAGKM5iwL8Td4i9BMg1RRzOTZ4EfsiVhnF9pFYpoAQhzcco8Ogo4x6OfXDzHPhOFfUFIwlt2lNmD82nmqNIgaaaQ8_LynjEp4dBSaRrmTqRChkBH-fNpxdei8KNw3vJyjiP8YV87bHu4eNNnRRLVlDLwGp-uZLj9XiBK/s600/6%20-%204e0043d6-4f80-45e9-b3c2-ce3a4989caca.jpg"
+                                            alt="Voluntários do Lions organizando as doações" loading="lazy">
+                                    </div>
+                                </div>
+
+                                <!-- Controles -->
+                                <button class="carousel-btn prev" aria-label="Imagem anterior">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button class="carousel-btn next" aria-label="Próxima imagem">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+
+                            <!-- Badge de data -->
+                            <div class="activity-date-badge">
+                                <span class="badge-day">23</span>
+                                <span class="badge-month">Nov</span>
+                            </div>
+                        </div>
+
+                        <!-- Conteúdo -->
+                        <div class="activity-content">
+                            <div class="activity-header">
+                                <h3>Doação de Alimentos para Instituições de Tatuí</h3>
+                                <div class="activity-datetime">
+                                    <i class="far fa-calendar-alt"></i>
+                                    <span class="date-text">dom., 23 de nov. de 2025</span>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="location-text">Tatuí, São Paulo</span>
+                                </div>
+                            </div>
+
+                            <div class="activity-description">
+                                <p>Como exemplo desse trabalho contínuo, uma das iniciativas resultou na destinação de
+                                    aproximadamente 200 kg de alimentos não perecíveis a entidades que exercem papel
+                                    essencial na comunidade, como o Núcleo de Apoio ao Combate ao Câncer e a Casa de
+                                    Apoio aos Irmãos de Rua. A arrecadação ocorreu por meio de eventos comunitários,
+                                    demonstrando como a mobilização social pode gerar impactos concretos e duradouros.
+                                </p>
+
+                                <p>A ação envolveu a coleta de diversos itens essenciais como arroz, feijão, macarrão,
+                                    óleo, leite em pó, farinha, açúcar e produtos de higiene pessoal. Os alimentos foram
+                                    organizados em kits balanceados, considerando as necessidades nutricionais básicas e
+                                    a durabilidade dos produtos.</p>
+
+                                <p>No Núcleo de Apoio ao Combate ao Câncer, as doações foram destinadas a famílias que
+                                    acompanham pacientes em tratamento oncológico, muitas vezes vindas de outras cidades
+                                    e que enfrentam dificuldades financeiras durante o período de tratamento. Já na Casa
+                                    de Apoio aos Irmãos de Rua, os alimentos reforçaram o trabalho de acolhimento e
+                                    reinserção social desenvolvido pela instituição.</p>
+
+                                <p>Esta iniciativa contou com a participação ativa de voluntários do Lions Clube de
+                                    Tatuí, que não apenas organizaram a arrecadação, mas também acompanharam as
+                                    entregas, estabelecendo um vínculo direto com as instituições beneficiadas e
+                                    compreendendo melhor as necessidades específicas de cada uma.</p>
+
+                                <p>Essa ação representa apenas uma entre tantas outras atividades desenvolvidas ao longo
+                                    do ano, reafirmando o compromisso do Lions Clube de Tatuí com a solidariedade, a
+                                    responsabilidade social e a promoção da dignidade humana através do combate à fome e
+                                    da valorização das instituições que atuam na linha de frente do cuidado com as
+                                    pessoas mais vulneráveis de nossa comunidade.</p>
+
+                                <!-- Botão Saber Mais -->
+                                <div class="activity-actions">
+                                    <a href="https://lionsclubetatui.blogspot.com/2025/11/doacao-de-alimentos-no-domingo-23-de.html"
+                                        target="_blank" class="btn-know-more">
+                                        Saber mais sobre esta ação
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Outras Ações Relacionadas -->
+                    <div class="related-actions">
+                        <h3 class="related-title">Outras Ações Realizadas</h3>
+                        <div class="related-grid">
+                            <div class="related-card">
+                                <div class="related-icon">
+                                    <i class="fas fa-calendar-check"></i>
+                                </div>
+                                <h4>Campanha Permanente</h4>
+                                <p>Arrecadação contínua de alimentos através de pontos de coleta fixos em
+                                    estabelecimentos parceiros em Tatuí.</p>
+                                <a href="#" class="related-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="related-card">
+                                <div class="related-icon">
+                                    <i class="fas fa-utensils"></i>
+                                </div>
+                                <h4>Refeições Solidárias</h4>
+                                <p>Organização de almoços e jantares comunitários em datas especiais para famílias em
+                                    situação de vulnerabilidade.</p>
+                                <a href="#" class="related-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="related-card">
+                                <div class="related-icon">
+                                    <i class="fas fa-hands-helping"></i>
+                                </div>
+                                <h4>Parcerias Locais</h4>
+                                <p>Trabalho em conjunto com outras organizações para ampliar o alcance das ações de
+                                    segurança alimentar.</p>
+                                <a href="#" class="related-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Como Ajudar -->
+        <section class="how-help" id="como-ajudar">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Como Você Pode Ajudar</h2>
+                    <p class="section-subtitle">Junte-se a nós na luta contra a fome. Cada contribuição faz a diferença!
+                    </p>
+                </div>
+
+                <div class="involved-options">
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-shopping-cart"></i>
+                        </div>
+                        <h3>Doe Alimentos</h3>
+                        <p>Contribua com alimentos não perecíveis, produtos de higiene ou itens básicos para nossas
+                            campanhas de arrecadação. Sua doação direta ajuda a compor os kits que distribuímos para
+                            instituições parceiras.</p>
+                        <div class="option-features">
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Alimentos não perecíveis
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Produtos de higiene
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Itens de primeira necessidade
+                            </span>
+                        </div>
+                        <a href="#" class="btn btn-small">
+                            <i class="fas fa-heart"></i>
+                            Doar Alimentos
+                        </a>
+                    </div>
+
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>Seja um Voluntário</h3>
+                        <p>Participe da organização das campanhas, ajude na montagem dos kits de alimentos, colabore nas
+                            entregas ou contribua com suas habilidades profissionais. Voluntários são essenciais para
+                            nossos projetos.</p>
+                        <div class="option-features">
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Organização de eventos
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Montagem de kits
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Apoio em entregas
+                            </span>
+                        </div>
+                        <a href="#" class="btn btn-small">
+                            <i class="fas fa-user-plus"></i>
+                            Voluntariar-se
+                        </a>
+                    </div>
+
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <h3>Divulgue a Causa</h3>
+                        <p>Compartilhe informações sobre segurança alimentar e nossas iniciativas. A conscientização é
+                            fundamental para engajar mais pessoas e recursos na luta contra a fome em nossa comunidade.
+                        </p>
+                        <div class="option-features">
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Compartilhe nas redes sociais
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Organize campanhas de arrecadação
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Divulgue pontos de coleta
+                            </span>
+                        </div>
+                        <div class="share-button">
+                            <a href="#" class="btn btn-small share-main-btn">
+                                <i class="fas fa-share"></i>
+                                Compartilhar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="../src/img/logo.png" alt="Lions Clube Internacional" class="logo-img">
+                        <div class="logo-text">Lions Clube <span>Tatuí</span></div>
+                    </div>
+                    <p>Servindo a comunidade de Tatuí desde 1955. Fazemos parte do Lions Clubs International, a maior
+                        organização de clubes de serviço do mundo.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2025</span> Lions Clube Tatuí. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

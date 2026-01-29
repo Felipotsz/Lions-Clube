@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juventude | Lions Clube de Tatuí</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../theme/theme.css">
+    <link rel="stylesheet" href="causes.css">
+
+    <!-- JavaScript -->
+    <script src="../index.js" defer></script>
+    <script src="../theme/theme.js" defer></script>
+    <script src="causes.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../src/img/logo.png">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="../index.html" class="logo-link">
+                    <img src="../src/img/logo.png" alt="Lions Clube Internacional" class="logo-img">
+                    <div class="logo-text">Lions Clube <span>de Tatuí</span></div>
+                </a>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav" id="mainNav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+
+                    <!-- Dropdown de Sobre Nós -->
+                    <li class="nav-item dropdown active">
+                        <a href="#" class="nav-link">
+                            Sobre Nós
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../about-us/who-we-are/who-we-are.html" class="dropdown-item">
+                                    <i class="fa fa-users"></i>Quem Somos?
+                                </a></li>
+                            <li><a href="../about-us/our-leaders/our-leaders.html" class="dropdown-item">
+                                    <i class="fas fa-crown"></i>Nossos Líderes
+                                </a></li>
+                            <li><a href="https://lionsclubetatui.blogspot.com/" class="dropdown-item" target="blank">
+                                    <i class="fa fa-file-text"></i>Nosso Blog
+                                </a></li>
+                            <li><a href="../about-us/about-lion-leo/about-lion.html" class="dropdown-item">
+                                    <i class="fas fa-paw"></i>O que é ser Leão?
+                                </a></li>
+                            <li><a href="../about-us/about-lion-leo/about-leo.html" class="dropdown-item">
+                                    <i class="fas fa-star"></i>O que é um Leo?
+                                </a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Dropdown da Causas -->
+                    <li class="nav-item dropdown">
+                        <a href="#causes" class="nav-link">
+                            Causas
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../causes/child-cancer.html" class="dropdown-item">
+                                    <i class="fas fa-child"></i>Câncer Infantil
+                                </a></li>
+                            <li><a href="../causes/diabetes.html" class="dropdown-item">
+                                    <i class="fas fa-heartbeat"></i>Diabetes
+                                </a></li>
+                            <li><a href="../causes/help-after-disasters.html" class="dropdown-item">
+                                    <i class="fas fa-home"></i>Socorro após catástrofes
+                                </a></li>
+                            <li><a href="../causes/environment.html" class="dropdown-item">
+                                    <i class="fas fa-leaf"></i>Meio Ambiente
+                                </a></li>
+                            <li><a href="../causes/humanitarian-efforts.html" class="dropdown-item">
+                                    <i class="fas fa-hands-helping"></i>Esforços Humanitários
+                                </a></li>
+                            <li><a href="../causes/hunger.html" class="dropdown-item">
+                                    <i class="fas fa-utensils"></i>Fome
+                                </a></li>
+                            <li><a href="../causes/vision.html" class="dropdown-item">
+                                    <i class="fas fa-eye"></i>Visão
+                                </a></li>
+                            <li><a href="../causes/youth.html" class="dropdown-item">
+                                    <i class="fas fa-users"></i>Juventude
+                                </a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a href="../index.html#mission" class="nav-link">Nossa Missão</a></li>
+                    <li class="nav-item"><a href="../index.html#atividades" class="nav-link">Eventos</a></li>
+                </ul>
+
+                <!-- Links sociais no header -->
+                <div class="nav-social-links">
+                    <a href="https://www.facebook.com/lionsclubedetatui.org.br" target="_blank" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/lionsclubedetatui" target="_blank" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@lionsclubedetatui336" target="_blank" aria-label="YouTube"><i
+                            class="fab fa-youtube"></i></a>
+                </div>
+
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                        <span class="toggle-slider">
+                            <i class="fas fa-sun toggle-icon sun-icon"></i>
+                            <i class="fas fa-moon toggle-icon moon-icon"></i>
+                        </span>
+                    </button>
+
+                    <a href="../login/login.html" class="btn btn-small nav-involve-btn">
+                        <i class="fas fa-hands-helping"></i>
+                        Envolva-se
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="cause-page">
+
+        <!-- Banner da Causa -->
+        <section class="cause-hero"
+            style="--hero-image: url('https://marvel-b1-cdn.bc0a.com/f00000000210829/www.lionsclubs.org/sites/default/files/styles/text_image/public/2020-10/AlpTanjuTurkeyYCECamp2019Bursa1.jpg?itok=RLOlVuWr')">
+            <div class="container">
+                <h1 class="cause-title">Juventude</h1>
+                <p class="cause-subtitle">Compromisso com a Juventude – Investindo no presente e no futuro. Alinhado à
+                    Causa Global Juventude do Lions Internacional, o Lions Clube de Tatuí desenvolve de forma contínua
+                    ações voltadas à formação cidadã, ao protagonismo juvenil e ao fortalecimento de competências
+                    essenciais para o futuro.</p>
+                <div class="hero-divider"></div>
+            </div>
+        </section>
+
+        <!-- Seção de Fatos -->
+        <section class="cause-facts">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Fatos sobre a Juventude</h2>
+                    <p class="section-subtitle">O futuro da sociedade está nas mãos dos jovens</p>
+                </div>
+
+                <div class="facts-grid">
+                    <!-- Card 1 -->
+                    <div class="fact-card">
+                        <div class="fact-card-inner">
+                            <div class="fact-number">
+                                150+
+                            </div>
+                            <div class="fact-label">
+                                projetos liderados por jovens
+                            </div>
+                            <div class="fact-icon">
+                                <i class="fas fa-hands-helping"></i>
+                            </div>
+                            <div class="fact-description">
+                                Projetos de impacto social desenvolvidos e liderados por jovens Leos e Leõezinhos em
+                                nossa comunidade
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="fact-card">
+                        <div class="fact-card-inner">
+                            <div class="fact-number">
+                                300+
+                            </div>
+                            <div class="fact-label">
+                                jovens engajados
+                            </div>
+                            <div class="fact-icon">
+                                <i class="fas fa-users"></i>
+                            </div>
+                            <div class="fact-description">
+                                Jovens participantes ativos em nossos programas de liderança, voluntariado e
+                                desenvolvimento comunitário
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="fact-card">
+                        <div class="fact-card-inner">
+                            <div class="fact-number">
+                                100 anos
+                            </div>
+                            <div class="fact-label">
+                                de compromisso
+                            </div>
+                            <div class="fact-icon">
+                                <i class="fas fa-history"></i>
+                            </div>
+                            <div class="fact-description">
+                                Mais de um século investindo no desenvolvimento da juventude e no serviço comunitário
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Áreas de Serviço -->
+        <section class="service-areas">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Áreas de Serviço</h2>
+                    <p class="section-subtitle">Trabalhamos para desenvolver a liderança e o potencial dos jovens em
+                        diversas frentes</p>
+                </div>
+
+                <div class="service-content">
+                    <div class="service-section">
+                        <div class="service-header">
+                            <i class="fas fa-user-graduate service-section-icon"></i>
+                            <h3>Desenvolvimento de Liderança</h3>
+                        </div>
+                        <p>Capacitamos jovens para se tornarem líderes eficazes através de programas de mentoria,
+                            workshops e oportunidades práticas de liderança. Nossos programas focam em habilidades de
+                            comunicação, tomada de decisão e trabalho em equipe.</p>
+                    </div>
+
+                    <div class="service-section">
+                        <div class="service-header">
+                            <i class="fas fa-hands service-section-icon"></i>
+                            <h3>Voluntariado Juvenil</h3>
+                        </div>
+                        <p>Incentivamos e organizamos oportunidades de voluntariado significativo para jovens,
+                            conectando-os com necessidades reais da comunidade e proporcionando experiências
+                            transformadoras de serviço.</p>
+                    </div>
+
+                    <div class="service-section">
+                        <div class="service-header">
+                            <i class="fas fa-brain service-section-icon"></i>
+                            <h3>Desenvolvimento de Habilidades</h3>
+                        </div>
+                        <p>Oferecemos programas que desenvolvem habilidades técnicas, sociais e emocionais essenciais
+                            para o sucesso pessoal e profissional dos jovens no século XXI.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nossa Ação -->
+        <section class="story-highlight" id="nossa-acao">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nossa Ação</h2>
+                    <p class="section-subtitle">Projeto Lions MUND - Formando jovens protagonistas</p>
+                </div>
+
+                <div class="activities-list">
+                    <!-- Atividade Principal -->
+                    <div class="activity-item">
+                        <div class="activity-image">
+                            <!-- Carrossel -->
+                            <div class="carousel">
+                                <!-- Container das imagens -->
+                                <div class="carousel-track">
+                                    <!-- Slide 1 -->
+                                    <div class="carousel-slide active">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnjqFqt5fAguyYR-0Ezb4rc6iNiI1_fHfwzYVMAqD3ubZnUbGgykvoqPlSoYWjmJBvz17pN-xzNVJfYP8Gz6w6IM8lCROLPg8Zx0kvylcWKB62WZ3H4enSnTkZjnJVoLniWmIce2nCc34zdTDqI2kjFBu37dnjndBToBSVxX4p6qLjDjHFTO6s08w5zk-G/s600/1%20-%20Lions%20Mund%202026%20%281%29.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 2 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiyJnder0WeGtFDfg3g_WQlxvgkQkfZsVJU7tGLA0pj7TNj5Rxe4fOCF7gSGe5ptJ7wCTNQZqe4QEc5aAhkPAtXAPmNMM_OGlHa_5hpsDPboYKlWWge_5YMdjANOXcUCDSxX_nVvTb6TCNc5BlKHlp1GCH-prJAAgtL53ls1Kz3E0rIQc9xCZlGQHMhi_Rh/s600/2%20-%20Lions%20Mund%202026%20%281%29.png"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 3 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjX-gdc9Eiksg-CF7rmjo6ri1CfUg8sIG5ZP2zG6EXWIXqz5eQ6p3qC9gpT8Alm0zVu77ptAz2vJr2CI9xvDZI-gkXV_5rcMROAwnptt_hnmg1InWgn_dtQDraA78sSSvXOW-V53x0RVo7Wy5OxFSe2gYpx52TldjMNR4kPrkKVQmMmGUlBnxoNFODFo5Wm/s600/3%20-%20Lions%20Mund%202026%20%282%29.png"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 4 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg0eAWGvnpXKyXFQj7jh-2dfisDgap7VQQ07gBdVfG78N0x2A-LOSQ4ANpxkrLB1NVO6S8dmwUvGvREx1HtLizmx6U8R6k54h3czmVM87y2HaXqpp5rK3eMZZycKjRa6gfM3IYO_B_7YNfk3i9oe5yvgI7q1ejqA4_ND0rH8k-T6ikLoebTn5FnFI8eYxl9/s600/4%20-%20Lions%20Mund%202026%20%283%29.png"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 5 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPBMxHgsey6zt8XDlXYbHN3kGwU63Zwc77Z0R_TkMCidixzQgl66TMuNZjoaYJNd2OeEW_dz6hN1TG3pXv61WEqKDqbDy6Qrn7OyastIP90KBKqeoYJNbuo1MfS9zg8_vniDOUN-Bi-avC2yOMEadE59EEVn_PzBbtHyVotJMt_ZaJ8iNki-TZKF311HK4/s600/5%20-%20Lions%20Mund%202026%20%284%29.png"
+                                            alt="" loading="lazy">
+                                    </div>
+                                    <!-- Slide 6 -->
+                                    <div class="carousel-slide active">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEigZGwySerHCUnbrE05AJDqfBvDTzo2fymxb3RzsVeWR0QamoXYAfzkKOu44dZ3yWxGEdc8joNg2tqFVbxAqTOsgrg3GUtij1eQy2_vrCBF3AzdeP-8HgR3zvojP9Yeda5wmGsz9DyTfyS9ChPbMx9v2d0z1E4YaUuG7GmLz8IH9JwBWoaDPc-26VZlvPiC/s600/6%20-%20Lions%20Mund%202026%20%282%29.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                </div>
+
+                                <!-- Controles -->
+                                <button class="carousel-btn prev" aria-label="Imagem anterior">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button class="carousel-btn next" aria-label="Próxima imagem">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+
+                            <!-- Badge de data -->
+                            <div class="activity-date-badge">
+                                <span class="badge-day">Nov</span>
+                                <span class="badge-month">2025</span>
+                            </div>
+                        </div>
+
+                        <!-- Conteúdo -->
+                        <div class="activity-content">
+                            <div class="activity-header">
+                                <h3>Projeto Lions MUND - Formando jovens protagonistas</h3>
+                                <div class="activity-datetime">
+                                    <i class="far fa-calendar-alt"></i>
+                                    <span class="date-text">nov. de 2025</span>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="location-text">Fatec Tatuí, Tatuí - SP</span>
+                                </div>
+                            </div>
+
+                            <div class="activity-description">
+                                <p>O Lions Clube de Tatuí, alinhado à Causa Global Compromisso com a Juventude do Lions
+                                    Internacional, desenvolve de forma contínua ações voltadas à formação cidadã, ao
+                                    protagonismo juvenil e ao fortalecimento de competências essenciais para o futuro.
+                                    Por meio de parcerias institucionais, busca ampliar oportunidades de aprendizado,
+                                    diálogo e crescimento para jovens e para a comunidade em geral.</p>
+
+                                <p>Como exemplo desse trabalho, temos o Lions MUND, projeto idealizado pelo LEO Clube de
+                                    Tatuí e desenvolvido em parceria com a Fatec Tatuí. A iniciativa tem como propósito
+                                    promover reflexões relevantes e incentivar o desenvolvimento de habilidades
+                                    fundamentais, abordando temas atuais que contribuem para a formação pessoal,
+                                    acadêmica e social dos participantes.</p>
+
+                                <p>Essa ação representa apenas uma entre diversas iniciativas desenvolvidas ao longo do
+                                    ano, reafirmando o compromisso do Lions Clube de Tatuí com a juventude, entendida
+                                    como agente transformador da sociedade e elemento central na construção de um futuro
+                                    mais justo, participativo e solidário.</p>
+
+                                <!-- Botão Saber Mais -->
+                                <div class="activity-actions">
+                                    <a href="#" class="btn-know-more">
+                                        Saber mais sobre esta ação
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Outras Ações Relacionadas -->
+                    <div class="related-actions">
+                        <h3 class="related-title">Outras Ações Realizadas</h3>
+                        <div class="related-grid">
+                            <div class="related-card">
+                                <div class="related-icon">
+                                    <i class="fas fa-campground"></i>
+                                </div>
+                                <h4>Acampamento de Liderança</h4>
+                                <p>Retiro de fim de semana para desenvolvimento de habilidades de liderança e trabalho
+                                    em equipe entre jovens Leos.</p>
+                                <a href="https://lionsclubetatui.blogspot.com/2025/11/o-lions-clube-de-tatui-em-parceria-com.html"
+                                    class="related-link" target="_blank">Saiba mais <i
+                                        class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="related-card">
+                                <div class="related-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <h4>Orientamento Vocacional</h4>
+                                <p>Sessões de orientação profissional para ajudar jovens a descobrir seus talentos e
+                                    planejar suas carreiras.</p>
+                                <a href="https://lionsclubetatui.blogspot.com/2025/11/o-lions-clube-de-tatui-em-parceria-com.html"
+                                    class="related-link" target="_blank">Saiba mais <i
+                                        class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="related-card">
+                                <div class="related-icon">
+                                    <i class="fas fa-tree"></i>
+                                </div>
+                                <h4>Projeto Ambiental Juvenil</h4>
+                                <p>Jovens lideram iniciativas de preservação ambiental e educação ecológica em escolas e
+                                    comunidades.</p>
+                                <a href="https://lionsclubetatui.blogspot.com/2025/11/o-lions-clube-de-tatui-em-parceria-com.html"
+                                    class="related-link" target="_blank">Saiba mais <i
+                                        class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Como Ajudar -->
+        <section class="how-help" id="como-ajudar">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Como Você Pode Ajudar</h2>
+                    <p class="section-subtitle">Junte-se a nós nesta causa tão importante. Cada contribuição faz a
+                        diferença!</p>
+                </div>
+
+                <div class="involved-options">
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <h3>Seja um Jovem Voluntário</h3>
+                        <p>Junte-se aos nossos programas como voluntário e desenvolva habilidades enquanto faz a
+                            diferença em sua comunidade.</p>
+                        <div class="option-features">
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Desenvolvimento de habilidades
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Experiência prática
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Certificação de participação
+                            </span>
+                        </div>
+                        <a href="#" class="btn btn-small">
+                            <i class="fas fa-user-plus"></i>
+                            Inscreva-se
+                        </a>
+                    </div>
+
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3>Torne-se um Mentor</h3>
+                        <p>Compartilhe sua experiência e conhecimento orientando jovens em seu desenvolvimento pessoal e
+                            profissional.</p>
+                        <div class="option-features">
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Impacto pessoal direto
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Desenvolvimento de jovens líderes
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Treinamento fornecido
+                            </span>
+                        </div>
+                        <a href="#" class="btn btn-small">
+                            <i class="fas fa-hands-helping"></i>
+                            Seja um Mentor
+                        </a>
+                    </div>
+
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <h3>Divulgue a Causa</h3>
+                        <p>Compartilhe informações sobre nossos programas juvenis. A conscientização é fundamental para
+                            engajar mais apoiadores.</p>
+                        <div class="option-features">
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Compartilhe nas redes
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Organize palestras
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Indique para jovens
+                            </span>
+                        </div>
+                        <div class="share-button">
+                            <a href="#" class="btn btn-small share-main-btn">
+                                <i class="fas fa-share"></i>
+                                Compartilhar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="../src/img/logo.png" alt="Lions Clube Internacional" class="logo-img">
+                        <div class="logo-text">Lions Clube <span>Tatuí</span></div>
+                    </div>
+                    <p>Servindo a comunidade de Tatuí desde 1955. Fazemos parte do Lions Clubs International, a maior
+                        organização de clubes de serviço do mundo.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2025</span> Lions Clube Tatuí. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

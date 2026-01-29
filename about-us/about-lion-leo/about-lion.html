@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O que é ser Leão? | Lions Clube de Tatuí</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../../theme/theme.css">
+    <link rel="stylesheet" href="about-lion-leo.css">
+
+    <!-- JavaScript -->
+    <script src="../../index.js" defer></script>
+    <script src="../../theme/theme.js" defer></script>
+    <script src="about-lion-leo.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../../src/img/logo.png">
+</head>
+
+<body class="lion-page">
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="../../index.html" class="logo-link">
+                    <img src="../../src/img/logo.png" alt="Lions Clube Internacional" class="logo-img">
+                    <div class="logo-text">Lions Clube <span>de Tatuí</span></div>
+                </a>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav" id="mainNav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
+
+                    <!-- Dropdown de Sobre Nós -->
+                    <li class="nav-item dropdown active">
+                        <a href="#" class="nav-link">
+                            Sobre Nós
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../../about-us/who-we-are/who-we-are.html" class="dropdown-item">
+                                    <i class="fa fa-users"></i>Quem Somos?
+                                </a></li>
+                            <li><a href="../../about-us/our-leaders/our-leaders.html" class="dropdown-item">
+                                    <i class="fas fa-crown"></i>Nossos Líderes
+                                </a></li>
+                            <li><a href="https://lionsclubetatui.blogspot.com/" class="dropdown-item" target="blank">
+                                    <i class="fa fa-file-text"></i>Nosso Blog
+                                </a></li>
+                            <li><a href="../../about-us/about-lion-leo/about-lion.html" class="dropdown-item">
+                                    <i class="fas fa-paw"></i>O que é ser Leão?
+                                </a></li>
+                            <li><a href="../../about-us/about-lion-leo/about-leo.html" class="dropdown-item">
+                                    <i class="fas fa-star"></i>O que é um Leo?
+                                </a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Dropdown da Causas -->
+                    <li class="nav-item dropdown">
+                        <a href="#causes" class="nav-link">
+                            Causas
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../../causes/child-cancer.html" class="dropdown-item">
+                                    <i class="fas fa-child"></i>Câncer Infantil
+                                </a></li>
+                            <li><a href="../../causes/diabetes.html" class="dropdown-item">
+                                    <i class="fas fa-heartbeat"></i>Diabetes
+                                </a></li>
+                            <li><a href="../../causes/help-after-disasters.html" class="dropdown-item">
+                                    <i class="fas fa-home"></i>Socorro após catástrofes
+                                </a></li>
+                            <li><a href="../../causes/environment.html" class="dropdown-item">
+                                    <i class="fas fa-leaf"></i>Meio Ambiente
+                                </a></li>
+                            <li><a href="../../causes/humanitarian-efforts.html" class="dropdown-item">
+                                    <i class="fas fa-hands-helping"></i>Esforços Humanitários
+                                </a></li>
+                            <li><a href="../../causes/hunger.html" class="dropdown-item">
+                                    <i class="fas fa-utensils"></i>Fome
+                                </a></li>
+                            <li><a href="../../causes/vision.html" class="dropdown-item">
+                                    <i class="fas fa-eye"></i>Visão
+                                </a></li>
+                            <li><a href="../../causes/youth.html" class="dropdown-item">
+                                    <i class="fas fa-users"></i>Juventude
+                                </a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a href="../../index.html#mission" class="nav-link">Nossa Missão</a></li>
+                    <li class="nav-item"><a href="../../index.html#atividades" class="nav-link">Eventos</a></li>
+                </ul>
+
+                <!-- Links sociais no header -->
+                <div class="nav-social-links">
+                    <a href="https://www.facebook.com/lionsclubedetatui.org.br" target="_blank" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/lionsclubedetatui" target="_blank" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@lionsclubedetatui336" target="_blank" aria-label="YouTube"><i
+                            class="fab fa-youtube"></i></a>
+                </div>
+
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                        <span class="toggle-slider">
+                            <i class="fas fa-sun toggle-icon sun-icon"></i>
+                            <i class="fas fa-moon toggle-icon moon-icon"></i>
+                        </span>
+                    </button>
+
+                    <a href="../../login/login.html" class="btn btn-small nav-involve-btn">
+                        <i class="fas fa-hands-helping"></i>
+                        Envolva-se
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="membership-page">
+
+        <!-- Introdução -->
+        <section class="membership-introduction">
+            <div class="container">
+                <div class="membership-section-header">
+                    <h2 class="membership-section-title">Mais que um membro, um agente de transformação</h2>
+                    <p class="membership-section-subtitle">Ser Leão é abraçar um compromisso de vida com o serviço à
+                        comunidade</p>
+                </div>
+                <div class="introduction-content">
+                    <div class="intro-image">
+                        <img src="https://www.camaratatui.sp.gov.br/images/02-09_Sess%C3%A3o_Solene_Lions_7.jpg"
+                            alt="Reunião do Lions Clube" loading="lazy">
+                    </div>
+                    <div class="intro-text">
+                        <p>Ser Leão é dedicar tempo, habilidades e paixão para criar um mundo melhor, começando pela sua
+                            própria cidade.</p>
+                        <p>Fundado em 1917, o Lions Clubs International cresceu para se tornar a maior organização de
+                            clubes de serviço do mundo, com mais de 1.4 milhão de membros em mais de 200 países.</p>
+                        <div class="quote-box">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"Nós servimos. Não por glória, nem por honras, mas porque acreditamos que cada ato de
+                                bondade constrói um mundo melhor."</p>
+                            <span class="quote-author">- Lema do Lions International</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Os 4 Pilares do Leão -->
+        <section class="membership-pillars">
+            <div class="container">
+                <div class="membership-section-header">
+                    <h2 class="membership-section-title">Os 4 Pilares do Verdadeiro Leão</h2>
+                    <p class="membership-section-subtitle">Os valores fundamentais que guiam cada ação e decisão</p>
+                </div>
+
+                <div class="pillars-grid">
+                    <div class="pillar-card">
+                        <div class="pillar-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Serviço Voluntário</h3>
+                        <p>Doação desinteressada de tempo e talento para o bem comum, sem expectativa de retorno
+                            financeiro.</p>
+                        <ul class="pillar-list">
+                            <li>Compromisso com a comunidade</li>
+                            <li>Ações práticas e mensuráveis</li>
+                            <li>Trabalho em equipe solidário</li>
+                        </ul>
+                    </div>
+
+                    <div class="pillar-card">
+                        <div class="pillar-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Compromisso Humanitário</h3>
+                        <p>Dedicação à melhoria da qualidade de vida das pessoas, especialmente as mais vulneráveis.</p>
+                        <ul class="pillar-list">
+                            <li>Empatia e compaixão</li>
+                            <li>Atenção às necessidades reais</li>
+                            <li>Impacto social duradouro</li>
+                        </ul>
+                    </div>
+
+                    <div class="pillar-card">
+                        <div class="pillar-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Camaradagem</h3>
+                        <p>Fortalecimento de laços de amizade e respeito mútuo entre os membros, criando uma rede de
+                            apoio.</p>
+                        <ul class="pillar-list">
+                            <li>Amizades verdadeiras</li>
+                            <li>Respeito à diversidade</li>
+                            <li>Apoio mútuo constante</li>
+                        </ul>
+                    </div>
+
+                    <div class="pillar-card">
+                        <div class="pillar-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3>Integridade</h3>
+                        <p>Conduta ética e transparente em todas as ações, mantendo a confiança da comunidade.</p>
+                        <ul class="pillar-list">
+                            <li>Transparência nas ações</li>
+                            <li>Ética inquestionável</li>
+                            <li>Responsabilidade social</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Como funciona ser Leão -->
+        <section class="membership-how-it-works">
+            <div class="container">
+                <div class="membership-section-header">
+                    <h2 class="membership-section-title">Como funciona ser Leão?</h2>
+                    <p class="membership-section-subtitle">A estrutura e rotina de um membro ativo do Lions Clube</p>
+                </div>
+
+                <div class="works-timeline">
+                    <div class="timeline-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Filie-se ao Clube</h3>
+                            <p>Participe de reuniões como convidado, conheça os membros e, quando se sentir pronto, faça
+                                sua filiação oficial.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Participe das Reuniões</h3>
+                            <p>Encontros semanais para planejamento, organização de projetos e fortalecimento dos laços
+                                entre os membros.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Engaje-se em Projetos</h3>
+                            <p>Escolha os projetos que mais combinam com seus interesses e habilidades, desde saúde até
+                                educação e meio ambiente.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Desenvolva Liderança</h3>
+                            <p>Assuma cargos de liderança, participe de treinamentos e contribua para a gestão do clube.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3>Expanda seu Impacto</h3>
+                            <p>Participe de eventos distritais, nacionais e internacionais, ampliando sua rede e
+                                aprendizado.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Benefícios de ser Leão -->
+        <section class="membership-benefits">
+            <div class="container">
+                <div class="membership-section-header">
+                    <h2 class="membership-section-title">O que você ganha sendo Leão?</h2>
+                    <p class="membership-section-subtitle">Além de transformar vidas, você transforma a si mesmo</p>
+                </div>
+
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-header">
+                            <div class="benefit-icon">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                            <h3>Desenvolvimento Pessoal</h3>
+                        </div>
+                        <div class="benefit-content">
+                            <ul>
+                                <li>Habilidades de liderança e gestão</li>
+                                <li>Capacidade de falar em público</li>
+                                <li>Organização e planejamento</li>
+                                <li>Resolução de problemas</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-header">
+                            <div class="benefit-icon">
+                                <i class="fas fa-network-wired"></i>
+                            </div>
+                            <h3>Networking Global</h3>
+                        </div>
+                        <div class="benefit-content">
+                            <ul>
+                                <li>1.4 milhão de membros no mundo</li>
+                                <li>Profissionais de diversas áreas</li>
+                                <li>Conexões internacionais</li>
+                                <li>Parcerias estratégicas</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-header">
+                            <div class="benefit-icon">
+                                <i class="fas fa-heartbeat"></i>
+                            </div>
+                            <h3>Saúde e Bem-estar</h3>
+                        </div>
+                        <div class="benefit-content">
+                            <ul>
+                                <li>Satisfação pessoal</li>
+                                <li>Propósito de vida</li>
+                                <li>Redução do estresse</li>
+                                <li>Sentimento de pertencimento</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="benefit-card">
+                        <div class="benefit-header">
+                            <div class="benefit-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <h3>Reconhecimento</h3>
+                        </div>
+                        <div class="benefit-content">
+                            <ul>
+                                <li>Certificações internacionais</li>
+                                <li>Prêmios de mérito</li>
+                                <li>Reconhecimento comunitário</li>
+                                <li>Diferencial no currículo</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Requisitos e Compromissos -->
+        <section class="membership-requirements">
+            <div class="container">
+                <div class="membership-section-header">
+                    <h2 class="membership-section-title">Requisitos e Oportunidades</h2>
+                    <p class="membership-section-subtitle">Descubra o que é necessário para se tornar um Leão e as
+                        oportunidades que te esperam</p>
+                </div>
+
+                <div class="requirements-content">
+                    <div class="requirements-overview">
+                        <div class="overview-card">
+                            <div class="overview-icon">
+                                <i class="fas fa-user-check"></i>
+                            </div>
+                            <h3>Perfil do Leão</h3>
+                            <p>Um Leão é alguém que busca servir, crescer e transformar vidas. Não é necessário
+                                experiência prévia - apenas vontade de fazer a diferença.</p>
+                        </div>
+                        <div class="overview-card">
+                            <div class="overview-icon">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                            <h3>Compromisso Mínimo</h3>
+                            <p>4-6 horas por semana, incluindo reuniões e projetos. Flexibilidade total para participar
+                                conforme sua disponibilidade.</p>
+                        </div>
+                    </div>
+
+                    <!-- Sistema de Abas para Lions -->
+                    <div class="tabs-container">
+                        <div class="tabs-header">
+                            <button class="tab-btn active" data-tab="lion-requirements">
+                                <i class="fas fa-clipboard-check"></i>
+                                Requisitos para Leões
+                            </button>
+                            <button class="tab-btn" data-tab="lion-commitments">
+                                <i class="fas fa-handshake"></i>
+                                O que esperamos de você
+                            </button>
+                            <button class="tab-btn" data-tab="lion-opportunities">
+                                <i class="fas fa-bullseye"></i>
+                                Oportunidades Exclusivas
+                            </button>
+                        </div>
+
+                        <div class="tabs-content">
+                            <!-- Aba 1: Requisitos para Leões -->
+                            <div class="tab-pane active" id="lion-requirements-tab">
+                                <div class="requirements-grid">
+                                    <div class="requirement-card">
+                                        <div class="requirement-card-header">
+                                            <div class="requirement-icon">
+                                                <i class="fas fa-birthday-cake"></i>
+                                            </div>
+                                            <h4>Idade</h4>
+                                        </div>
+                                        <div class="requirement-card-body">
+                                            <p class="requirement-value">18+ anos</p>
+                                            <p class="requirement-desc">Adultos comprometidos com o serviço
+                                                comunitário e transformação social</p>
+                                            <div class="requirement-tip">
+                                                <i class="fas fa-info-circle"></i>
+                                                <span>Excepcionalmente aceitamos jovens a partir de 16 anos
+                                                    com autorização dos pais</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="requirement-card">
+                                        <div class="requirement-card-header">
+                                            <div class="requirement-icon">
+                                                <i class="fas fa-award"></i>
+                                            </div>
+                                            <h4>Caráter e Ética</h4>
+                                        </div>
+                                        <div class="requirement-card-body">
+                                            <p class="requirement-value">Boa reputação</p>
+                                            <p class="requirement-desc">Conduta ética alinhada com os
+                                                valores e princípios Lions</p>
+                                            <div class="requirement-badge">
+                                                <span>Valor fundamental</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="requirement-card">
+                                        <div class="requirement-card-header">
+                                            <div class="requirement-icon">
+                                                <i class="fas fa-clock"></i>
+                                            </div>
+                                            <h4>Disponibilidade</h4>
+                                        </div>
+                                        <div class="requirement-card-body">
+                                            <p class="requirement-value">Compromisso de tempo</p>
+                                            <p class="requirement-desc">Participação ativa em reuniões,
+                                                projetos e atividades do clube</p>
+                                            <div class="requirement-progress">
+                                                <div class="progress-bar">
+                                                    <div class="progress-fill" style="width: 75%"></div>
+                                                </div>
+                                                <span>Recomendado: 75% de participação</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="requirement-card">
+                                        <div class="requirement-card-header">
+                                            <div class="requirement-icon">
+                                                <i class="fas fa-hand-holding-heart"></i>
+                                            </div>
+                                            <h4>Contribuição Anual</h4>
+                                        </div>
+                                        <div class="requirement-card-body">
+                                            <p class="requirement-value">Anuidade acessível</p>
+                                            <p class="requirement-desc">Manutenção do clube local e filiação
+                                                internacional</p>
+                                            <div class="requirement-note">
+                                                <i class="fas fa-comment-dollar"></i>
+                                                <span>Valor simbólico - consulte valores atuais com nosso
+                                                    tesoureiro</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Aba 2: Compromissos Esperados -->
+                            <div class="tab-pane" id="lion-commitments-tab">
+                                <div class="process-intro">
+                                    <h3>Compromissos Essenciais do Leão</h3>
+                                    <p>Como Leão, você assume compromissos que garantem o sucesso do clube e
+                                        o impacto positivo na comunidade.</p>
+                                </div>
+
+                                <div class="process-timeline">
+                                    <div class="process-step">
+                                        <div class="process-step-icon">
+                                            <i class="fas fa-users"></i>
+                                        </div>
+                                        <div class="process-step-content">
+                                            <h4>Trabalho em Equipe</h4>
+                                            <p>Colaboração ativa com outros Leões para alcançar objetivos
+                                                comuns e fortalecer a comunidade. Participação nas reuniões
+                                                mensais e eventos especiais.</p>
+                                            <span class="process-duration">Envolvimento contínuo</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="process-step">
+                                        <div class="process-step-icon">
+                                            <i class="fas fa-balance-scale"></i>
+                                        </div>
+                                        <div class="process-step-content">
+                                            <h4>Ética e Transparência</h4>
+                                            <p>Conduta íntegra em todas as ações e decisões, mantendo a
+                                                confiança da comunidade. Respeito ao código de ética Lions e
+                                                aos estatutos do clube.</p>
+                                            <span class="process-duration">Compromisso permanente</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="process-step">
+                                        <div class="process-step-icon">
+                                            <i class="fas fa-seedling"></i>
+                                        </div>
+                                        <div class="process-step-content">
+                                            <h4>Crescimento Contínuo</h4>
+                                            <p>Disposição para aprender, desenvolver novas habilidades e
+                                                evoluir como líder comunitário. Participação em treinamentos
+                                                e capacitações oferecidas pelo Lions.</p>
+                                            <span class="process-duration">Aprendizado constante</span>
+                                        </div>
+                                    </div>
+
+                                    <div class="process-step">
+                                        <div class="process-step-icon">
+                                            <i class="fas fa-hands-helping"></i>
+                                        </div>
+                                        <div class="process-step-content">
+                                            <h4>Serviço à Comunidade</h4>
+                                            <p>Dedicação genuína para melhorar a vida das pessoas e
+                                                transformar positivamente o entorno. Envolvimento em pelo
+                                                menos um projeto comunitário por trimestre.</p>
+                                            <span class="process-duration">Impacto social permanente</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Aba 3: Oportunidades Exclusivas -->
+                            <div class="tab-pane" id="lion-opportunities-tab">
+                                <div class="process-intro">
+                                    <h3>Oportunidades Exclusivas para Leões</h3>
+                                    <p>Como Leão, você terá acesso a experiências únicas que transformarão
+                                        sua vida pessoal e profissional.</p>
+                                </div>
+
+                                <div class="commitments-grid-alt">
+                                    <div class="commitment-card">
+                                        <div class="commitment-card-header">
+                                            <div class="commitment-card-icon">
+                                                <i class="fas fa-globe-americas"></i>
+                                            </div>
+                                            <h4>Networking Global</h4>
+                                        </div>
+                                        <div class="commitment-card-body">
+                                            <p>Conexões com mais de 1.4 milhão de Leões em 200+ países.
+                                                Acesso a uma rede internacional de profissionais e líderes
+                                                comunitários.</p>
+                                            <ul class="commitment-list">
+                                                <li><i class="fas fa-check-circle"></i> Conferências
+                                                    internacionais</li>
+                                                <li><i class="fas fa-check-circle"></i> Intercâmbio entre
+                                                    clubes</li>
+                                                <li><i class="fas fa-check-circle"></i> Parcerias
+                                                    internacionais</li>
+                                                <li><i class="fas fa-check-circle"></i> Rede de contatos
+                                                    global</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="commitment-card">
+                                        <div class="commitment-card-header">
+                                            <div class="commitment-card-icon">
+                                                <i class="fas fa-graduation-cap"></i>
+                                            </div>
+                                            <h4>Desenvolvimento de Liderança</h4>
+                                        </div>
+                                        <div class="commitment-card-body">
+                                            <p>Programas de liderança reconhecidos internacionalmente.
+                                                Oportunidades de assumir cargos de direção no clube,
+                                                distrito e internacionalmente.</p>
+                                            <ul class="commitment-list">
+                                                <li><i class="fas fa-check-circle"></i> Escola de Liderança
+                                                    Lions</li>
+                                                <li><i class="fas fa-check-circle"></i> Programa de
+                                                    Desenvolvimento de Governadores</li>
+                                                <li><i class="fas fa-check-circle"></i> Treinamentos de
+                                                    gestão de projetos</li>
+                                                <li><i class="fas fa-check-circle"></i> Certificações
+                                                    internacionais</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="commitment-card">
+                                        <div class="commitment-card-header">
+                                            <div class="commitment-card-icon">
+                                                <i class="fas fa-briefcase"></i>
+                                            </div>
+                                            <h4>Crescimento Profissional</h4>
+                                        </div>
+                                        <div class="commitment-card-body">
+                                            <p>Desenvolvimento de habilidades valorizadas no mercado.
+                                                Experiências que agregam valor ao currículo e abrem portas
+                                                profissionais.</p>
+                                            <ul class="commitment-list">
+                                                <li><i class="fas fa-check-circle"></i> Gestão de projetos
+                                                    sociais</li>
+                                                <li><i class="fas fa-check-circle"></i> Captação de recursos
+                                                </li>
+                                                <li><i class="fas fa-check-circle"></i> Comunicação pública
+                                                </li>
+                                                <li><i class="fas fa-check-circle"></i> Liderança de equipes
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="commitment-card">
+                                        <div class="commitment-card-header">
+                                            <div class="commitment-card-icon">
+                                                <i class="fas fa-heart"></i>
+                                            </div>
+                                            <h4>Impacto Social</h4>
+                                        </div>
+                                        <div class="commitment-card-body">
+                                            <p>Participação em projetos que transformam vidas e comunidades.
+                                                Oportunidade de deixar um legado positivo e mensurável na
+                                                sociedade.</p>
+                                            <ul class="commitment-list">
+                                                <li><i class="fas fa-check-circle"></i> Projetos de grande
+                                                    impacto</li>
+                                                <li><i class="fas fa-check-circle"></i> Parcerias com
+                                                    organizações</li>
+                                                <li><i class="fas fa-check-circle"></i> Reconhecimento
+                                                    comunitário</li>
+                                                <li><i class="fas fa-check-circle"></i> Legado de
+                                                    transformação</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- CTA -->
+                    <div class="requirements-cta">
+                        <div class="cta-content">
+                            <h3>Pronto para se tornar um agente de transformação?</h3>
+                            <p>Junte-se a mais de 1.4 milhão de Leões ao redor do mundo que estão fazendo a
+                                diferença em suas comunidades enquanto desenvolvem habilidades para a vida
+                                toda.</p>
+
+                            <div class="cta-stats">
+                                <div class="cta-stat">
+                                    <span class="stat-number">1.4M</span>
+                                    <span class="stat-label">Leões no mundo</span>
+                                </div>
+                                <div class="cta-stat">
+                                    <span class="stat-number">200+</span>
+                                    <span class="stat-label">Países e regiões</span>
+                                </div>
+                                <div class="cta-stat">
+                                    <span class="stat-number">46K</span>
+                                    <span class="stat-label">Clubes ativos</span>
+                                </div>
+                            </div>
+
+                            <div class="cta-buttons">
+                                <a href="/index.html#envolva-se" class="btn btn-primary btn-large">
+                                    <i class="fas fa-paw"></i>
+                                    Quero ser um Leão
+                                </a>
+                                <a href="#faq" class="btn btn-outline">
+                                    <i class="fas fa-question-circle"></i>
+                                    Ainda tenho dúvidas
+                                </a>
+                                <a href="/contact.html" class="btn btn-ghost">
+                                    <i class="fas fa-calendar-alt"></i>
+                                    Agendar visita ao clube
+                                </a>
+                            </div>
+
+                            <p class="cta-note">
+                                <i class="fas fa-handshake"></i>
+                                Primeira reunião gratuita. Venha conhecer nosso trabalho!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        </section>
+
+        <!-- FAQ -->
+        <section class="membership-faq" id="faq">
+            <div class="container">
+                <div class="membership-section-header">
+                    <h2 class="membership-section-title">Perguntas Frequentes</h2>
+                    <p class="membership-section-subtitle">Tire suas dúvidas sobre ser Leão</p>
+                </div>
+
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Quanto tempo preciso dedicar por semana?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Recomendamos 4-6 horas por semana, incluindo reuniões e atividades dos projetos. No
+                                entanto, valorizamos a flexibilidade - você participa conforme sua disponibilidade e
+                                pode escolher projetos que se adequem à sua agenda.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Quais são os custos para ser membro?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Há uma anuidade simbólica que cobre as despesas administrativas do clube local e sua
+                                filiação internacional ao Lions Clubs International. O valor é acessível e transparente
+                                - consulte nosso tesoureiro para detalhes específicos.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Posso participar mesmo com pouco tempo livre?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim! Temos membros com diferentes disponibilidades. Alguns participam ativamente em
+                                projetos, outros apoiam em eventos específicos ou contribuem com suas habilidades de
+                                forma pontual. O importante é o compromisso com os valores Lions.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Como o Lions pode ajudar no meu crescimento profissional?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>O Lions desenvolve habilidades valorizadas no mercado: liderança, gestão de projetos,
+                                comunicação, trabalho em equipe, captação de recursos e resolução de problemas. Além
+                                disso, oferece networking internacional e certificações reconhecidas.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Como é o processo de filiação?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Você participa de algumas reuniões como convidado, conhece os membros e projetos, e se
+                                decidir seguir, preenche a ficha de inscrição. Não há processo seletivo complexo - o
+                                importante é sua identificação com nossos valores e vontade de servir.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            Posso participar de eventos internacionais?
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim! Como Leão, você tem acesso a conferências distritais, nacionais e internacionais.
+                                Esses eventos são excelentes oportunidades para networking, aprendizado e troca de
+                                experiências com Leões de todo o mundo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="../../src/img/logo.png" alt="Lions Clube Internacional" class="logo-img">
+                        <div class="logo-text">Lions Clube <span>Tatuí</span></div>
+                    </div>
+                    <p>Servindo a comunidade de Tatuí desde 1955. Fazemos parte do Lions Clubs International, a maior
+                        organização de clubes de serviço do mundo.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2025</span> Lions Clube Tatuí. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

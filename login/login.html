@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envolva-se | Lions Clube de Tatuí</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../theme/theme.css">
+    <link rel="stylesheet" href="login.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- JavaScript -->
+    <script src="../index.js" defer></script>
+    <script src="../theme/theme.js" defer></script>
+    <script src="login.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../src/img/logo.png">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="../index.html" class="logo-link">
+                    <img src="../src/img/logo.png" alt="Lions Clube Internacional" class="logo-img">
+                    <div class="logo-text">Lions Clube <span>de Tatuí</span></div>
+                </a>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav" id="mainNav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+
+                    <!-- Dropdown de Sobre Nós -->
+                    <li class="nav-item dropdown active">
+                        <a href="#" class="nav-link">
+                            Sobre Nós
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../about-us/who-we-are/who-we-are.html" class="dropdown-item">
+                                    <i class="fa fa-users"></i>Quem Somos?
+                                </a></li>
+                            <li><a href="../about-us/our-leaders/our-leaders.html" class="dropdown-item">
+                                    <i class="fas fa-crown"></i>Nossos Líderes
+                                </a></li>
+                            <li><a href="https://lionsclubetatui.blogspot.com/" class="dropdown-item" target="blank">
+                                    <i class="fa fa-file-text"></i>Nosso Blog
+                                </a></li>
+                            <li><a href="../about-us/about-lion-leo/about-lion.html" class="dropdown-item">
+                                    <i class="fas fa-paw"></i>O que é ser Leão?
+                                </a></li>
+                            <li><a href="../about-us/about-lion-leo/about-leo.html" class="dropdown-item">
+                                    <i class="fas fa-star"></i>O que é um Leo?
+                                </a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Dropdown da Causas -->
+                    <li class="nav-item dropdown">
+                        <a href="#causes" class="nav-link">
+                            Causas
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../causes/child-cancer.html" class="dropdown-item">
+                                    <i class="fas fa-child"></i>Câncer Infantil
+                                </a></li>
+                            <li><a href="../causes/diabetes.html" class="dropdown-item">
+                                    <i class="fas fa-heartbeat"></i>Diabetes
+                                </a></li>
+                            <li><a href="../causes/help-after-disasters.html" class="dropdown-item">
+                                    <i class="fas fa-home"></i>Socorro após catástrofes
+                                </a></li>
+                            <li><a href="../causes/environment.html" class="dropdown-item">
+                                    <i class="fas fa-leaf"></i>Meio Ambiente
+                                </a></li>
+                            <li><a href="../causes/humanitarian-efforts.html" class="dropdown-item">
+                                    <i class="fas fa-hands-helping"></i>Esforços Humanitários
+                                </a></li>
+                            <li><a href="../causes/hunger.html" class="dropdown-item">
+                                    <i class="fas fa-utensils"></i>Fome
+                                </a></li>
+                            <li><a href="../causes/vision.html" class="dropdown-item">
+                                    <i class="fas fa-eye"></i>Visão
+                                </a></li>
+                            <li><a href="../causes/youth.html" class="dropdown-item">
+                                    <i class="fas fa-users"></i>Juventude
+                                </a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a href="../index.html#mission" class="nav-link">Nossa Missão</a></li>
+                    <li class="nav-item"><a href="../index.html#atividades" class="nav-link">Eventos</a></li>
+                </ul>
+
+                <!-- Links sociais no header -->
+                <div class="nav-social-links">
+                    <a href="https://www.facebook.com/lionsclubedetatui.org.br" target="_blank" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/lionsclubedetatui" target="_blank" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@lionsclubedetatui336" target="_blank" aria-label="YouTube"><i
+                            class="fab fa-youtube"></i></a>
+                </div>
+
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                        <span class="toggle-slider">
+                            <i class="fas fa-sun toggle-icon sun-icon"></i>
+                            <i class="fas fa-moon toggle-icon moon-icon"></i>
+                        </span>
+                    </button>
+
+                    <a href="../login/login.html" class="btn btn-small nav-involve-btn">
+                        <i class="fas fa-hands-helping"></i>
+                        Envolva-se
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Conteúdo Principal -->
+    <main class="envolva-se-page">
+        <div class="container">
+
+            <!-- Opções de Envolvimento -->
+            <div class="envolva-se-content">
+                <!-- Formulário de Interesse -->
+                <div class="envolva-se-form-container card">
+                    <div class="envolva-se-header">
+                        <h2 class="section-title">Preencha seu Interesse</h2>
+                        <p class="section-description">Conte-nos como você gostaria de contribuir</p>
+                    </div>
+
+                    <form id="interesse-form" class="envolva-se-form" novalidate>
+                        <div class="form-group">
+                            <label for="nome" class="form-label">Nome Completo *</label>
+                            <input type="text" id="nome" name="nome" class="form-input" placeholder="Seu nome completo"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" class="form-label">E-mail *</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="seu@email.com"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefone" class="form-label">Telefone *</label>
+                            <input type="tel" id="telefone" name="telefone" class="form-input"
+                                placeholder="(11) 99999-9999" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label">Como gostaria de se envolver? *</label>
+                            <div class="envolvimento-options">
+                                <label class="option-checkbox">
+                                    <input type="checkbox" name="envolvimento" value="membro">
+                                    <span class="checkbox-custom"></span>
+                                    <span class="option-text">
+                                        <i class="fas fa-user-plus"></i>
+                                        Tornar-me membro do Lions
+                                    </span>
+                                </label>
+
+                                <label class="option-checkbox">
+                                    <input type="checkbox" name="envolvimento" value="voluntario">
+                                    <span class="checkbox-custom"></span>
+                                    <span class="option-text">
+                                        <i class="fas fa-hands-helping"></i>
+                                        Ser voluntário em eventos
+                                    </span>
+                                </label>
+
+                                <label class="option-checkbox">
+                                    <input type="checkbox" name="envolvimento" value="doacao">
+                                    <span class="checkbox-custom"></span>
+                                    <span class="option-text">
+                                        <i class="fas fa-donate"></i>
+                                        Fazer doações
+                                    </span>
+                                </label>
+
+                                <label class="option-checkbox">
+                                    <input type="checkbox" name="envolvimento" value="parceiro">
+                                    <span class="checkbox-custom"></span>
+                                    <span class="option-text">
+                                        <i class="fas fa-handshake"></i>
+                                        Tornar-me parceiro comercial
+                                    </span>
+                                </label>
+
+                                <label class="option-checkbox">
+                                    <input type="checkbox" name="envolvimento" value="eventos">
+                                    <span class="checkbox-custom"></span>
+                                    <span class="option-text">
+                                        <i class="fas fa-calendar-check"></i>
+                                        Participar de eventos
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="mensagem" class="form-label">Mensagem (opcional)</label>
+                            <textarea id="mensagem" name="mensagem" class="form-input textarea-input"
+                                placeholder="Conte-nos um pouco sobre você e seu interesse em nos ajudar..."
+                                rows="4"></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="newsletter" name="newsletter">
+                                <span class="checkbox-custom"></span>
+                                Desejo receber informações sobre eventos e projetos do Lions Clube
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-full">
+                            <span class="btn-text">Enviar Interesse</span>
+                            <span class="btn-loading" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i>
+                                Enviando...
+                            </span>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Informações sobre envolvimento -->
+                <div class="envolva-se-info card">
+                    <div class="info-content">
+                        <div class="info-header">
+                            <h2 class="section-title">Por que se juntar ao Lions?</h2>
+                            <p>Descubra os benefícios de fazer parte da maior organização de clubes de serviço do mundo
+                            </p>
+                        </div>
+
+                        <div class="info-features-grid">
+                            <div class="info-feature">
+                                <i class="fas fa-globe-americas"></i>
+                                <h4>Impacto Global</h4>
+                                <p>Faça parte de uma rede internacional com mais de 1.4 milhão de membros em 200 países,
+                                    trabalhando em causas que transformam vidas.</p>
+                            </div>
+
+                            <div class="info-feature">
+                                <i class="fas fa-handshake"></i>
+                                <h4>Serviço à Comunidade</h4>
+                                <p>Contribua diretamente para melhorar a qualidade de vida das pessoas em Tatuí e região
+                                    através de projetos sociais e humanitários.</p>
+                            </div>
+
+                            <div class="info-feature">
+                                <i class="fas fa-network-wired"></i>
+                                <h4>Networking Profissional</h4>
+                                <p>Conecte-se com líderes comunitários, empresários e profissionais locais, expandindo
+                                    sua rede de contatos e oportunidades.</p>
+                            </div>
+
+                            <div class="info-feature">
+                                <i class="fas fa-graduation-cap"></i>
+                                <h4>Desenvolvimento Pessoal</h4>
+                                <p>Desenvolva habilidades de liderança, organização pública, trabalho em equipe e gestão
+                                    de projetos enquanto serve a comunidade.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ -->
+            <section class="faq-section">
+                <h2 class="section-title">Perguntas Frequentes</h2>
+
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Como posso me tornar um membro do Lions Clube?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Para se tornar membro, você precisa ser convidado por um Leão atual ou expressar seu
+                                interesse através deste formulário. Após o contato inicial, você será convidado para uma
+                                reunião para conhecer melhor nosso trabalho e, se houver interesse mútuo, será
+                                formalizada sua adesão.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Há algum custo para ser membro?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim, há uma mensalidade que ajuda a custear as atividades do clube, eventos e
+                                contribuições para as causas globais do Lions International. O valor é acessível e
+                                discutido durante o processo de adesão.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Posso ser voluntário sem ser membro?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sim! Temos muitos voluntários que participam de eventos específicos sem serem membros
+                                formais. Você pode ajudar em ações pontuais conforme sua disponibilidade.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Quanto tempo preciso dedicar?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Como membro, espera-se a participação em reuniões mensais e eventos. Como voluntário,
+                                você pode escolher os eventos e projetos que se encaixam na sua agenda. A flexibilidade
+                                é uma de nossas características.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="../src/img/logo.png" alt="Lions Clube Internacional" class="logo-img">
+                        <div class="logo-text">Lions Clube <span>Tatuí</span></div>
+                    </div>
+                    <p>Servindo a comunidade de Tatuí desde 1955. Fazemos parte do Lions Clubs International, a maior
+                        organização de clubes de serviço do mundo.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2025</span> Lions Clube Tatuí. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

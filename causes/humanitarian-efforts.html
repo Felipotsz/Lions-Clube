@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esforços Humanitários | Lions Clube de Tatuí</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../theme/theme.css">
+    <link rel="stylesheet" href="causes.css">
+
+    <!-- JavaScript -->
+    <script src="../index.js" defer></script>
+    <script src="../theme/theme.js" defer></script>
+    <script src="causes.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../src/img/logo.png">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="../index.html" class="logo-link">
+                    <img src="../src/img/logo.png" alt="Lions Clube Internacional" class="logo-img">
+                    <div class="logo-text">Lions Clube <span>de Tatuí</span></div>
+                </a>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav" id="mainNav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+
+                    <!-- Dropdown de Sobre Nós -->
+                    <li class="nav-item dropdown active">
+                        <a href="#" class="nav-link">
+                            Sobre Nós
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../about-us/who-we-are/who-we-are.html" class="dropdown-item">
+                                    <i class="fa fa-users"></i>Quem Somos?
+                                </a></li>
+                            <li><a href="../about-us/our-leaders/our-leaders.html" class="dropdown-item">
+                                    <i class="fas fa-crown"></i>Nossos Líderes
+                                </a></li>
+                            <li><a href="https://lionsclubetatui.blogspot.com/" class="dropdown-item" target="blank">
+                                    <i class="fa fa-file-text"></i>Nosso Blog
+                                </a></li>
+                            <li><a href="../about-us/about-lion-leo/about-lion.html" class="dropdown-item">
+                                    <i class="fas fa-paw"></i>O que é ser Leão?
+                                </a></li>
+                            <li><a href="../about-us/about-lion-leo/about-leo.html" class="dropdown-item">
+                                    <i class="fas fa-star"></i>O que é um Leo?
+                                </a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Dropdown da Causas -->
+                    <li class="nav-item dropdown">
+                        <a href="#causes" class="nav-link">
+                            Causas
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../causes/child-cancer.html" class="dropdown-item">
+                                    <i class="fas fa-child"></i>Câncer Infantil
+                                </a></li>
+                            <li><a href="../causes/diabetes.html" class="dropdown-item">
+                                    <i class="fas fa-heartbeat"></i>Diabetes
+                                </a></li>
+                            <li><a href="../causes/help-after-disasters.html" class="dropdown-item">
+                                    <i class="fas fa-home"></i>Socorro após catástrofes
+                                </a></li>
+                            <li><a href="../causes/environment.html" class="dropdown-item">
+                                    <i class="fas fa-leaf"></i>Meio Ambiente
+                                </a></li>
+                            <li><a href="../causes/humanitarian-efforts.html" class="dropdown-item">
+                                    <i class="fas fa-hands-helping"></i>Esforços Humanitários
+                                </a></li>
+                            <li><a href="../causes/hunger.html" class="dropdown-item">
+                                    <i class="fas fa-utensils"></i>Fome
+                                </a></li>
+                            <li><a href="../causes/vision.html" class="dropdown-item">
+                                    <i class="fas fa-eye"></i>Visão
+                                </a></li>
+                            <li><a href="../causes/youth.html" class="dropdown-item">
+                                    <i class="fas fa-users"></i>Juventude
+                                </a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a href="../index.html#mission" class="nav-link">Nossa Missão</a></li>
+                    <li class="nav-item"><a href="../index.html#atividades" class="nav-link">Eventos</a></li>
+                </ul>
+
+                <!-- Links sociais no header -->
+                <div class="nav-social-links">
+                    <a href="https://www.facebook.com/lionsclubedetatui.org.br" target="_blank" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/lionsclubedetatui" target="_blank" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@lionsclubedetatui336" target="_blank" aria-label="YouTube"><i
+                            class="fab fa-youtube"></i></a>
+                </div>
+
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                        <span class="toggle-slider">
+                            <i class="fas fa-sun toggle-icon sun-icon"></i>
+                            <i class="fas fa-moon toggle-icon moon-icon"></i>
+                        </span>
+                    </button>
+
+                    <a href="../login/login.html" class="btn btn-small nav-involve-btn">
+                        <i class="fas fa-hands-helping"></i>
+                        Envolva-se
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="cause-page">
+
+        <!-- Banner da Causa -->
+        <section class="cause-hero"
+            style="--hero-image: url('https://simcoelions.com/wp-content/uploads/2018/07/disaster-relief-700x394.jpg')">
+            <div class="container">
+                <h1 class="cause-title">Esforços Humanitários</h1>
+                <p class="cause-subtitle">Esforços Humanitários – Solidariedade que se transforma em impacto real.
+                    Alinhado à Causa Global Esforços Humanitários do Lions Internacional, o Lions Clube de Tatuí
+                    contribui de forma contínua para ações de alcance local e global por meio de doações destinadas à
+                    Lions Clubs International Foundation (LCIF). Esses recursos possibilitam a viabilização de projetos
+                    estruturantes que fortalecem serviços essenciais e promovem a dignidade humana.</p>
+                <div class="hero-divider"></div>
+            </div>
+        </section>
+
+        <!-- Seção de Fatos -->
+        <section class="cause-facts">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Fatos sobre Esforços Humanitários</h2>
+                    <p class="section-subtitle">O impacto global das ações humanitárias organizadas:</p>
+                </div>
+
+                <div class="facts-grid">
+                    <!-- Card 1 -->
+                    <div class="fact-card">
+                        <div class="fact-card-inner">
+                            <div class="fact-number">
+                                5.9M
+                            </div>
+                            <div class="fact-label">
+                                em subsídios concedidos
+                            </div>
+                            <div class="fact-icon">
+                                <i class="fas fa-hand-holding-usd"></i>
+                            </div>
+                            <div class="fact-description">
+                                A LCIF concedeu US$ 5.9 milhões em subsídios para esforços humanitários em 2025
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="fact-card">
+                        <div class="fact-card-inner">
+                            <div class="fact-number">
+                                100+
+                            </div>
+                            <div class="fact-label">
+                                países impactados
+                            </div>
+                            <div class="fact-icon">
+                                <i class="fas fa-globe-americas"></i>
+                            </div>
+                            <div class="fact-description">
+                                Ações humanitárias dos Lions alcançam comunidades em mais de 100 países
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="fact-card">
+                        <div class="fact-card-inner">
+                            <div class="fact-number">
+                                94
+                            </div>
+                            <div class="fact-label">
+                                projetos financiados
+                            </div>
+                            <div class="fact-icon">
+                                <i class="fas fa-hands-helping"></i>
+                            </div>
+                            <div class="fact-description">
+                                94 subsídios para esforços humanitários concedidos pela LCIF em 2025
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Áreas de Serviço -->
+        <section class="service-areas">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Áreas de Serviço</h2>
+                    <p class="section-subtitle">Nossas principais frentes de atuação em esforços humanitários</p>
+                </div>
+
+                <div class="service-content">
+                    <div class="service-section">
+                        <div class="service-header">
+                            <i class="fas fa-hospital service-section-icon"></i>
+                            <h3>Infraestrutura de Saúde</h3>
+                        </div>
+                        <p>Investimento em infraestrutura médica essencial, como a ampliação do Banco de Sangue
+                            "Fortunato Minghini" em Tatuí. Esses projetos fortalecem redes de saúde pública e garantem
+                            acesso a serviços vitais para a população.</p>
+                    </div>
+
+                    <div class="service-section">
+                        <div class="service-header">
+                            <i class="fas fa-hand-holding-heart service-section-icon"></i>
+                            <h3>Doações Estratégicas</h3>
+                        </div>
+                        <p>Contribuições regulares para o LCIF que se transformam em projetos humanitários globais
+                            enquanto também financiam iniciativas locais de grande impacto, criando um ciclo virtuoso de
+                            solidariedade.</p>
+                    </div>
+
+                    <div class="service-section">
+                        <div class="service-header">
+                            <i class="fas fa-users service-section-icon"></i>
+                            <h3>Apoio Comunitário</h3>
+                        </div>
+                        <p>Desenvolvimento de parcerias sustentáveis com instituições públicas e privadas para atender
+                            às necessidades mais urgentes da comunidade, com foco em projetos de longo prazo e impacto
+                            mensurável.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nossa Ação -->
+        <section class="story-highlight" id="nossa-acao">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nossa Ação</h2>
+                    <p class="section-subtitle">Ampliação do Banco de Sangue "Fortunato Minghini" - Solidariedade que se
+                        transforma em impacto real</p>
+                </div>
+
+                <div class="activities-list">
+                    <!-- Atividade Principal -->
+                    <div class="activity-item">
+                        <div class="activity-image">
+                            <!-- Carrossel -->
+                            <div class="carousel">
+                                <!-- Container das imagens -->
+                                <div class="carousel-track">
+                                    <!-- Slide 1 -->
+                                    <div class="carousel-slide active">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjcJJ6DQizMhVDYYV2tKWWvyTZ48AiRd9jq6MlJlJqpr46KJxM0iUzvIqos7DIYu7ZjvIsAF5baTOi9gN4LG80l6uKYt4daK40wdMgMLK3BJmhRrjqAUQPrU3q0PIqbitz6mDWgpCbGsemHO2xuu2tQqhBElm2pHWyzIgCKTyvySnH-RNE3UJgfpdjj-DcX/s600/35%20-%20037.JPG"
+                                            alt="Banco de Sangue Fortunato Minghini - Estrutura ampliada"
+                                            loading="lazy">
+                                    </div>
+                                    <!-- Slide 2 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiA2O0sCmT-y2t1ajkDSJoc5HgaACFR3hpc_Eidc0g-Wkm4xAY2kfONvxJucxfS7I6xpJvkc2O2Wc-vOgzjk2aMDdHXglO3caLnermWcev-cDZ9m_c1mJCOT-gxp0-RuaAzJYB2mGDVKrKTTR6Oy1xU7X56biAda_sRc7kEQ1MUI18k_yXK-QP-oPZk1aAn/s600/36%20-%20038.JPG"
+                                            alt="Equipamentos modernizados do banco de sangue" loading="lazy">
+                                    </div>
+                                    <!-- Slide 3 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgCXH53Z8g4GwQ4KxoAtdEaNHMbCJcossw5vthh-_ZI57VG6vdqhrdqiTUyxSNyAzs0yYifK82fzdgm4R8QeSsK9o9fZZW0lcdsP0gVaSY70J8H0TBvn-0UE2n56QB8GQn5dafTnjzkJc-dDk4SSR4sVBjQt6Sl_wIbcXZqU9u9kU-2CtdJPYBG-lqH2cum/s600/37%20-%20040.JPG"
+                                            alt="Novas instalações para processamento de sangue" loading="lazy">
+                                    </div>
+                                    <!-- Slide 4 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEih7ZFph8I7p_rT8ohTaJ4DXvzLmYBqSgCD_1KZ1vRIGtN6XKr9qk185_zUAHjjVXHwLBA8nTiBfinup4Y2UofNsRa_artnpOlXR7vsQKTscGctphEtCM083RwTsc0hgwG844ZJs8sEwlifM7LZqbLnQZpqP3nBaJvwZXzY1Rhf8CjPlrAvucOMOmEAYvcA/s600/38%20-%20043.JPG"
+                                            alt="Área de armazenamento e conservação ampliada" loading="lazy">
+                                    </div>
+                                    <!-- Slide 5 -->
+                                    <div class="carousel-slide">
+                                        <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjjlmaLUWAVVlFo8npsDSDCqKYccdbt9FL0MxAsoxDOubjIikPpfx1itEl65Qd0LnOuwgvYflp0YjlcAbxmIuzKlaejr8x_IytVuXOhD_h74vDpP_pi-f144yyOFyKkdmqNQ1jcGb-IplI7FIr2b7cZgf2dmbA-SSjBZrhs0vWRorL69L8OWNq-xbBzLhFT/s600/39%20-%20042.JPG"
+                                            alt="Espaço para atendimento aos doadores" loading="lazy">
+                                    </div>
+                                </div>
+
+                                <!-- Controles -->
+                                <button class="carousel-btn prev" aria-label="Imagem anterior">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button class="carousel-btn next" aria-label="Próxima imagem">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+
+                            <!-- Badge de data -->
+                            <div class="activity-date-badge">
+                                <span class="badge-day">15</span>
+                                <span class="badge-month">Jun</span>
+                            </div>
+                        </div>
+
+                        <!-- Conteúdo -->
+                        <div class="activity-content">
+                            <div class="activity-header">
+                                <h3>Ampliação do Banco de Sangue "Fortunato Minghini" - Impacto que salva vidas</h3>
+                                <div class="activity-datetime">
+                                    <i class="far fa-calendar-alt"></i>
+                                    <span class="date-text">sáb., 15 de jun. de 2024</span>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="location-text">Tatuí, São Paulo</span>
+                                </div>
+                            </div>
+
+                            <div class="activity-description">
+                                <p>Como exemplo do impacto das nossas ações humanitárias, o Lions Clube de Tatuí, por
+                                    meio de doações destinadas à Lions Clubs International Foundation (LCIF), contribuiu
+                                    significativamente para o projeto de ampliação do Banco de Sangue "Fortunato
+                                    Minghini". Esta iniciativa resultou no fortalecimento da capacidade de atendimento
+                                    da instituição, ampliando o acesso da população a um serviço vital para a
+                                    preservação da vida e para o suporte às redes de saúde da região.</p>
+
+                                <p>A iniciativa permitiu a expansão da infraestrutura do banco de sangue, com a
+                                    aquisição de novos equipamentos, ampliação do espaço físico e melhoria nas condições
+                                    para processamento e armazenamento de hemoderivados. Com essas melhorias, o banco
+                                    pode atender uma demanda crescente e oferecer serviços com maior eficiência,
+                                    segurança e qualidade.</p>
+
+                                <p>O projeto foi desenvolvido em parceria com a prefeitura municipal e outras
+                                    instituições locais, demonstrando como o trabalho conjunto pode gerar resultados
+                                    transformadores para a comunidade. A ampliação incluiu novas salas para coleta,
+                                    áreas de processamento modernizadas e sistema de armazenamento com tecnologia
+                                    atualizada.</p>
+
+                                <p>O impacto deste investimento humanitário é imensurável: cada bolsa de sangue
+                                    armazenada representa uma vida que pode ser salva, cada procedimento realizado com
+                                    maior qualidade significa melhor atendimento para pacientes em situações críticas.
+                                    Esta ação demonstra como os esforços humanitários do Lions se traduzem em benefícios
+                                    concretos e duradouros para toda a comunidade.</p>
+
+                                <p>Essa ação representa apenas parte de um compromisso permanente com os esforços
+                                    humanitários, reafirmando o papel do Lions Clube de Tatuí como integrante de uma
+                                    rede global de solidariedade. Ao investir em projetos sustentáveis e de longo
+                                    alcance, o Lions reforça sua missão de servir com responsabilidade, empatia e
+                                    impacto duradouro na comunidade.</p>
+
+                                <!-- Botão Saber Mais -->
+                                <div class="activity-actions">
+                                    <a href="https://oprogressodetatui.com.br/prefeitura-e-lions-encerram-projeto-que-mobiliza-cidade-e-amplia-banco/"
+                                        target="_blank" class="btn-know-more">
+                                        Saber mais sobre esta ação
+                                        <i class="fas fa-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Outras Ações Relacionadas -->
+                    <div class="related-actions">
+                        <h3 class="related-title">Outras Ações Realizadas</h3>
+                        <div class="related-grid">
+                            <div class="related-card">
+                                <div class="related-icon">
+                                    <i class="fas fa-clinic-medical"></i>
+                                </div>
+                                <h4>Equipamentos Hospitalares</h4>
+                                <p>Doação de equipamentos médicos para unidades de saúde públicas em Tatuí e região.</p>
+                                <a href="#" class="related-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="related-card">
+                                <div class="related-icon">
+                                    <i class="fas fa-home"></i>
+                                </div>
+                                <h4>Infraestrutura Comunitária</h4>
+                                <p>Apoio a projetos de melhoria em espaços públicos e instituições de assistência
+                                    social.</p>
+                                <a href="#" class="related-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="related-card">
+                                <div class="related-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <h4>Educação e Capacitação</h4>
+                                <p>Investimento em programas educacionais e de capacitação profissional para
+                                    comunidades.</p>
+                                <a href="#" class="related-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Como Ajudar -->
+        <section class="how-help" id="como-ajudar">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Como Você Pode Ajudar</h2>
+                    <p class="section-subtitle">Junte-se a nós nesta causa humanitária. Cada contribuição transforma
+                        vidas!</p>
+                </div>
+
+                <div class="involved-options">
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-donate"></i>
+                        </div>
+                        <h3>Faça uma Doação</h3>
+                        <p>Suas doações para o LCIF financiam projetos humanitários globais que também retornam como
+                            benefícios para nossa comunidade local. Cada contribuição é um investimento em dignidade
+                            humana.</p>
+                        <div class="option-features">
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Impacto duplo
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Projetos monitorados
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Transparência garantida
+                            </span>
+                        </div>
+                        <a href="#" class="btn btn-small">
+                            <i class="fas fa-heart"></i>
+                            Doar para o LCIF
+                        </a>
+                    </div>
+
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>Torne-se Voluntário</h3>
+                        <p>Contribua com seu tempo e habilidades profissionais para projetos humanitários que requerem
+                            expertise técnica e comprometimento. Voluntários são essenciais para o sucesso de nossas
+                            ações.</p>
+                        <div class="option-features">
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Habilidades aplicadas
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Projetos específicos
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Impacto mensurável
+                            </span>
+                        </div>
+                        <a href="#" class="btn btn-small">
+                            <i class="fas fa-user-plus"></i>
+                            Voluntariar-se
+                        </a>
+                    </div>
+
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-share-alt"></i>
+                        </div>
+                        <h3>Divulgue a Causa</h3>
+                        <p>Compartilhe informações sobre nossos projetos humanitários e ajude a engajar mais apoiadores.
+                            A conscientização é fundamental para ampliar nosso impacto na comunidade.</p>
+                        <div class="option-features">
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Compartilhe nas redes
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Organize palestras
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Distribua material
+                            </span>
+                        </div>
+                        <div class="share-button">
+                            <a href="#" class="btn btn-small share-main-btn">
+                                <i class="fas fa-share"></i>
+                                Compartilhar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="../src/img/logo.png" alt="Lions Clube Internacional" class="logo-img">
+                        <div class="logo-text">Lions Clube <span>Tatuí</span></div>
+                    </div>
+                    <p>Servindo a comunidade de Tatuí desde 1955. Fazemos parte do Lions Clubs International, a maior
+                        organização de clubes de serviço do mundo.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2025</span> Lions Clube Tatuí. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

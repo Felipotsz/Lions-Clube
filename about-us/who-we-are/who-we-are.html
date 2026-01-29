@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quem Somos | Lions Clube de Tatuí</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../../theme/theme.css">
+    <link rel="stylesheet" href="who-we-are.css">
+
+    <!-- JavaScript -->
+    <script src="../../index.js" defer></script>
+    <script src="../../theme/theme.js" defer></script>
+    <script src="who-we-are.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../../src/img/logo.png">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="../../index.html" class="logo-link">
+                    <img src="../../src/img/logo.png" alt="Lions Clube Internacional" class="logo-img">
+                    <div class="logo-text">Lions Clube <span>de Tatuí</span></div>
+                </a>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav" id="mainNav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
+
+                    <!-- Dropdown de Sobre Nós -->
+                    <li class="nav-item dropdown active">
+                        <a href="#" class="nav-link">
+                            Sobre Nós
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../../about-us/who-we-are/who-we-are.html" class="dropdown-item">
+                                    <i class="fa fa-users"></i>Quem Somos?
+                                </a></li>
+                            <li><a href="../../about-us/our-leaders/our-leaders.html" class="dropdown-item">
+                                    <i class="fas fa-crown"></i>Nossos Líderes
+                                </a></li>
+                            <li><a href="https://lionsclubetatui.blogspot.com/" class="dropdown-item" target="blank">
+                                    <i class="fa fa-file-text"></i>Nosso Blog
+                                </a></li>
+                            <li><a href="../../about-us/about-lion-leo/about-lion.html" class="dropdown-item">
+                                    <i class="fas fa-paw"></i>O que é ser Leão?
+                                </a></li>
+                            <li><a href="../../about-us/about-lion-leo/about-leo.html" class="dropdown-item">
+                                    <i class="fas fa-star"></i>O que é um Leo?
+                                </a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Dropdown da Causas -->
+                    <li class="nav-item dropdown">
+                        <a href="#causes" class="nav-link">
+                            Causas
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../../causes/child-cancer.html" class="dropdown-item">
+                                    <i class="fas fa-child"></i>Câncer Infantil
+                                </a></li>
+                            <li><a href="../../causes/diabetes.html" class="dropdown-item">
+                                    <i class="fas fa-heartbeat"></i>Diabetes
+                                </a></li>
+                            <li><a href="../../causes/help-after-disasters.html" class="dropdown-item">
+                                    <i class="fas fa-home"></i>Socorro após catástrofes
+                                </a></li>
+                            <li><a href="../../causes/environment.html" class="dropdown-item">
+                                    <i class="fas fa-leaf"></i>Meio Ambiente
+                                </a></li>
+                            <li><a href="../../causes/humanitarian-efforts.html" class="dropdown-item">
+                                    <i class="fas fa-hands-helping"></i>Esforços Humanitários
+                                </a></li>
+                            <li><a href="../../causes/hunger.html" class="dropdown-item">
+                                    <i class="fas fa-utensils"></i>Fome
+                                </a></li>
+                            <li><a href="../../causes/vision.html" class="dropdown-item">
+                                    <i class="fas fa-eye"></i>Visão
+                                </a></li>
+                            <li><a href="../../causes/youth.html" class="dropdown-item">
+                                    <i class="fas fa-users"></i>Juventude
+                                </a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a href="../../index.html#mission" class="nav-link">Nossa Missão</a></li>
+                    <li class="nav-item"><a href="../../index.html#atividades" class="nav-link">Eventos</a></li>
+                </ul>
+
+                <!-- Links sociais no header -->
+                <div class="nav-social-links">
+                    <a href="https://www.facebook.com/lionsclubedetatui.org.br" target="_blank" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/lionsclubedetatui" target="_blank" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@lionsclubedetatui336" target="_blank" aria-label="YouTube"><i
+                            class="fab fa-youtube"></i></a>
+                </div>
+
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                        <span class="toggle-slider">
+                            <i class="fas fa-sun toggle-icon sun-icon"></i>
+                            <i class="fas fa-moon toggle-icon moon-icon"></i>
+                        </span>
+                    </button>
+
+                    <a href="../../login/login.html" class="btn btn-small nav-involve-btn">
+                        <i class="fas fa-hands-helping"></i>
+                        Envolva-se
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="about-page">
+
+        <!-- Nossa História -->
+        <section class="our-history">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nossa História</h2>
+                    <p class="section-subtitle">Uma jornada de quase 70 anos transformando vidas em Tatuí</p>
+                </div>
+
+                <div class="history-content">
+                    <div class="history-image">
+                        <img src="../../src/img/lions-mural.jpeg" alt="Fundação do Lions Clube de Tatuí" loading="lazy">
+                    </div>
+
+                    <div class="history-text">
+                        <p>Fundado em <strong>7 de setembro de 1955</strong>, o Lions Clube de Tatuí surgiu como uma
+                            resposta às necessidades da comunidade local, trazendo para nossa cidade os ideais de
+                            serviço voluntário e compromisso comunitário do Lions Clubs International.</p>
+
+                        <p>Desde então, temos trabalhado incansavelmente para melhorar a qualidade de vida dos
+                            tatuianos através de projetos nas áreas de saúde, educação, assistência social e proteção ao
+                            meio ambiente.</p>
+
+                        <div class="highlight-box">
+                            <i class="fas fa-quote-left"></i>
+                            <p>"Ser Leão é mais do que pertencer a um clube; é abraçar um estilo de vida baseado no
+                                serviço, na compaixão e no desejo genuíno de fazer a diferença na vida das pessoas."</p>
+                            <span class="highlight-author">- Primeiro Presidente do Lions Clube de Tatuí</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Marcos Históricos -->
+        <section class="animated-timeline">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Marcos Históricos</h2>
+                    <p class="section-subtitle">Principais conquistas e momentos que marcaram nossa trajetória</p>
+                </div>
+
+                <div class="timeline-container">
+                    <!-- Linha central da timeline -->
+                    <div class="timeline-line">
+                        <div class="line-progress" id="timelineProgress"></div>
+                    </div>
+
+                    <!-- Itens da timeline -->
+                    <div class="timeline-item animated-item" data-year="1955">
+                        <div class="timeline-marker">
+                            <div class="marker-dot"></div>
+                            <div class="marker-year">1955</div>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="card-icon">
+                                <i class="fas fa-flag"></i>
+                            </div>
+                            <h3>Fundação do Lions Clube de Tatuí</h3>
+                            <p>Estabelecimento do clube com 35 membros fundadores, iniciando oficialmente nossas
+                                atividades de serviço à comunidade.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item animated-item" data-year="1960">
+                        <div class="timeline-marker">
+                            <div class="marker-dot"></div>
+                            <div class="marker-year">1960</div>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="card-icon">
+                                <i class="fas fa-eye"></i>
+                            </div>
+                            <h3>Primeira Campanha de Saúde Visual</h3>
+                            <p>Lançamento do programa de saúde visual, proporcionando exames oftalmológicos e óculos
+                                gratuitos para pessoas carentes.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item animated-item" data-year="1975">
+                        <div class="timeline-marker">
+                            <div class="marker-dot"></div>
+                            <div class="marker-year">1975</div>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="card-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Implementação do Programa Leo Clube</h3>
+                            <p>Criação do primeiro Leo Clube em Tatuí, engajando jovens de 12 a 30 anos em atividades de
+                                serviço comunitário.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item animated-item" data-year="1985">
+                        <div class="timeline-marker">
+                            <div class="marker-dot"></div>
+                            <div class="marker-year">1985</div>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="card-icon">
+                                <i class="fas fa-award"></i>
+                            </div>
+                            <h3>Reconhecimento como Utilidade Pública</h3>
+                            <p>Recebimento do título de Utilidade Pública Municipal, reconhecendo nosso trabalho de
+                                impacto social.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item animated-item" data-year="2000">
+                        <div class="timeline-marker">
+                            <div class="marker-dot"></div>
+                            <div class="marker-year">2000</div>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="card-icon">
+                                <i class="fas fa-heart"></i>
+                            </div>
+                            <h3>Início do Programa de Apoio ao Câncer Infantil</h3>
+                            <p>Implementação de programa específico para apoio a crianças com câncer e suas famílias.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item animated-item" data-year="2015">
+                        <div class="timeline-marker">
+                            <div class="marker-dot"></div>
+                            <div class="marker-year">2015</div>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="card-icon">
+                                <i class="fas fa-trophy"></i>
+                            </div>
+                            <h3>Celebração de 60 Anos</h3>
+                            <p>Comemoração de seis décadas de serviços ininterruptos à comunidade tatuiana.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item animated-item" data-year="2020">
+                        <div class="timeline-marker">
+                            <div class="marker-dot"></div>
+                            <div class="marker-year">2020</div>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="card-icon">
+                                <i class="fas fa-hands-helping"></i>
+                            </div>
+                            <h3>Ampliação durante a Pandemia</h3>
+                            <p>Expansão dos projetos de combate à fome e distribuição de alimentos durante a crise
+                                sanitária.</p>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item animated-item" data-year="2025">
+                        <div class="timeline-marker">
+                            <div class="marker-dot"></div>
+                            <div class="marker-year">2025</div>
+                        </div>
+                        <div class="timeline-card">
+                            <div class="card-icon">
+                                <i class="fas fa-birthday-cake"></i>
+                            </div>
+                            <h3>70 Anos de Transformação</h3>
+                            <p>Celebração de sete décadas dedicadas a transformar vidas e construir uma comunidade
+                                melhor.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Galeria de Momentos -->
+        <section class="moments-gallery">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Momentos Memoráveis</h2>
+                    <p class="section-subtitle">Algumas das muitas histórias que construímos juntos</p>
+                </div>
+
+                <div class="gallery-section">
+                    <!-- Botões de navegação -->
+                    <button class="gallery-nav prev" id="galleryPrev" aria-label="Imagem anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="gallery-nav next" id="galleryNext" aria-label="Próxima imagem">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+
+                    <!-- Container do slider -->
+                    <div class="gallery-slider" id="gallerySlider">
+                        <!-- Slide 1 -->
+                        <div class="gallery-slide">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjDeIu0TTjsnHoabTcIo4STTrNJO3CzK4GQpldjzK9yfXqAJhxrUoZkKFSXpIjp30dcU0x9_voR_gUtbJoGkGVsijFaTMfan-n5gWDv4aVXHBfA7no_T0-Yw7q_1xbEoeY3XRi4o7MtzaBeTByh6t6vS8XRRrqJYmthjtnDwmRdGAC2o-T6fLDKEoCFFxBQ/s600/2%20-%20ca8c9780-3ba4-4aa8-bf2b-0620fb8e15d8.jpg"
+                                alt="" loading="lazy">
+                            <div class="gallery-caption">
+                                <h4>Fatec Games - 2025</h4>
+                                <p>11ª Edição do FATEC games nas dependências da Faculdade com objetivo de promover o bem-estar através dos jogos de videogame</p>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="gallery-slide">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh5AhbLusdHiaTXVAmOs6XdP8F4O8T81znnWpxkvA1YAxrCPKU8mRGOhv6DCukNwRGZTN4n5aQTRc_EJNy9X_Fle761xL7kSqx3Wk47wa7-WQmeScQzTV0zOM9L6YebRcVxEraU_Ntk9yBomNQNV7gDFpfVPdVj3kEXIiTIktLMyz0jgHy5Weown0kKBn-Z/s600/7%20-%20Mac%20dia%20feliz%20004.JPG"
+                                alt="" loading="lazy">
+                            <div class="gallery-caption">
+                                <h4>Mc Dia Feliz 2025</h4>
+                                <p>Campanha de arrecadação de fundos para instituições sociais que atuam com saúde e educação de crianças e adolescentes</p>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="gallery-slide">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjUYglcJqYpgDxA4Jo723GqrXXO1k-E3GXsZjZCY2jCRg3BNG99ACyknEtAoSw7nSU43ea-9YFFju7e6jz7fOqTDkesomqFkEUv_BS2iYfjkim05P1c9LAjwOg4Rj4pFnUXOqk1QXxCbfSNJk7XObze1wFmXPcb5oxq9CA4ECYkppUo42epmzRIYIL3IROr/s600/3%20-%20Sementeira%20%283%29.jpg"
+                                alt="" loading="lazy">
+                            <div class="gallery-caption">
+                                <h4>Projetos Educacionais Ambientais</h4>
+                                <p>Promovendo a educação ambiental na cidade, envolvendo a coleta, seleção, organização e germinação de sementes</p>
+                            </div>
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="gallery-slide">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhUHBrvuLc4kNp1JiUtmHQezyv_Tt4FL7o35E-BDojucFzWlidWMWX9hImD6gXiWC3013lhVoZ2JFxyFMyqj2AAVLlVDqxv3DXqFIoYovRyFzl10WWF11THSL8wG2H_71b53NDXo59yW3RM3FbIz-fRvcwwdBvxptBBPgrgtkt4EropahiFcP5HvoN8Y-dZ/s600/3%20-%206563dac6-6f61-4d67-bfad-453896150251.jpg"
+                                alt="" loading="lazy">
+                            <div class="gallery-caption">
+                                <h4>Caminhada "MULHER, NÃO SE CALE"</h4>
+                                <p>O LC Tatuí esteve presente na caminhada para conscientização e apoio à luta contra a violência contra a mulher</p>
+                            </div>
+                        </div>
+                        <!-- Slide 5 -->
+                        <div class="gallery-slide">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEibsm9BkhsTdG79mMgw3qs011Gycjda9GKUjMhcpKGP7GI43yZmTrrAWl_mkDlb1SiS7ZJwLZDXXZhyphenhyphenC7YnW-3UWIm2zoWtFcLeUhzWKQYm3b0gb8IWVOK5C66_ZSh-q3uWwsNncIlw-IZ802ARNREcxW3QBgrMgE7iqKQN_5fK9SNOtucahMxb6OEv8Rgm/s600/2%20-%202a468277-5540-47a4-b954-f72a489e42c6.jpg"
+                                alt="" loading="lazy">
+                            <div class="gallery-caption">
+                                <h4>Visita ao Clube de Mães</h4>
+                                <p>A equipe Feminina RENOVAÇÃO visitaram o Clube de Mães "Clélia Carrara" do Lions Clube de Votorantim</p>
+                            </div>
+                        </div>
+                        <!-- Slide 6 -->
+                        <div class="gallery-slide">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhhUslAnA0DafGd-zMO7rOdPUloLl-Xo4hSaf_f-Blhl2Ahzt5KkdAU8YlqxgI2jIo6Rh73HALk0Zp3J0QocdZ9mX7JU8Z6_T3YwJLugGt8OCb2LT-HuAg003dwv4ZzSlvFpWu6KuVHhyrwZSPO5RY8EJr1LgKdK3cK2FUP5jYilvP9DMPe3ZrXZ5aPbgHS/s600/7%20-%20cartaz%20sobre%20a%20paz%20006.JPG" alt="" loading="lazy">
+                            <div class="gallery-caption">
+                                <h4>Cartaz Sobre a Paz</h4>
+                                <p>Concurso proposto aos jovens para compartilhar o que a PAZ significa para eles por meio da arte</p>
+                            </div>
+                        </div>
+                        <!-- Slide 6 -->
+                        <div class="gallery-slide">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgX-IePIRhk0GkoGfJFUC1IDt78OS6oksSxpbuQfc18U3Mq7HYV696otwQ3r6PC8owJkstBp42HGi_LgrJf7eqEpZAxyi6aoN3PvmD0TuSZc7AQnjj3hBOcAW0c-8KHBImkLqYdoNXmSkRp7K0RmJCM7_wHHg11tBqnzAx0R_8nQPvcB3M3gjKfJ7bbI6pr/s600/1%20-%2025%20de%20Outubro%20036.JPG" alt="" loading="lazy">
+                            <div class="gallery-caption">
+                                <h4>7º Festa Beneficente</h4>
+                                <p>No Clube de Campo de Tatuí, foi realizada a festa para arrecadação de fundos para o Recanto do Bom Velhinho</p>
+                            </div>
+                        </div>
+                        <!-- Slide 7 -->
+                        <div class="gallery-slide">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgu4k150GbB9Keaakjx5uvFU6_HJ8GjKaZp8ywb3SV4R-2U-PMVMKQ42E3dPC9bzFjoUAnZqgAYv9KAC-8yda0CeAWKznOQoaR5qh256yUa8rPItTQD54jXARFU_YWa7miQ-_4zaCSKq2j_u8JTpPKJCMXSPLMsm9kL3tGDXUrkNWWPbcRnEZxaTba0JpBa/s600/19%20-%20Festival%20de%20Jud+%C2%A6%20020.JPG" alt="" loading="lazy">
+                            <div class="gallery-caption">
+                                <h4>Festival de Judô Biriba</h4>
+                                <p>Reuniram-se na sede do Lions Clube de Tatuí crianças de até 7anos par a uma apresentação de judô</p>
+                            </div>
+                        </div>
+                        <!-- Slide 8 -->
+                        <div class="gallery-slide">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEju3LDvYX_NVWGQrLhYt1C0l10u34ovBokOxmdN5E6FVGLGx_dGpNJ_Ih4Cxx0jnVLHFAHA1T5GKbcVN0Nf_MZLO_bz7Rcnfhxjm38-i42UAWPCyiXDztWE2o1DvxzHF_J7CtfZfVJR5ktm98ZvdgAR2feFepj59UVv2WYBAO_e4qGXdBi0t7BFl63Og7Ds/s600/4%20-%200046c7af-6ad0-4421-a213-538930ee9ec8.jpg" alt="" loading="lazy">
+                            <div class="gallery-caption">
+                                <h4>Feira da Saúde</h4>
+                                <p>Companheiros do LC Tatuí prestigiaram a Feira da Saúde em Boituva</p>
+                            </div>
+                        </div>
+                        <!-- Slide 9 -->
+                        <div class="gallery-slide">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhfrypOx0wmfAKhsoNQSL-tQOPy6e7yZjmTTkL1V_dV4vJ8W4GLzxzh43dMmbFSbxOZw6Nb17Olc-gDaD6BObYaHbVVlcW1NqpEAT91tkwiYjMlT2YFDOkQ0wmPWjnPxeTwsqg7feCPMn5xhi59aWyZF8q2LePfnWp1jKNzvk9_L-q07Qo3oWjVIO0D8p2H/s600/3%20-%206fd6243c-ca2a-4c87-934e-fd769944b013.jpg"
+                                alt="" loading="lazy">
+                            <div class="gallery-caption">
+                                <h4>Desfile de Inclusão</h4>
+                                <p>Desfile de Inclusão da Escola Estadual Prof. Ary de Almeida Sinisgalli</p>
+                            </div>
+                        </div>
+                        <!-- Slide 10 -->
+                        <div class="gallery-slide">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjH7CALVrwKVbQZIqyAB-AahMj8KwudKGzSEOMw2idLLRfGZxw1-Bm_tkTA8tll0NpHLFbuWEqryD4Mt17GQf55iYj35fFt0OYAb48Lr4NZ7L563VSCj0ZMK6qZOd8632uHNSWmnnP_iP6gYZdjDlgyISfamoRZ3oP_izXuwFjRkmTk2SarYvyy_fU-4Tgv/s600/25%20-%20Baile%2070%20anos%20028.JPG"
+                                alt="" loading="lazy">
+                            <div class="gallery-caption">
+                                <h4>Baile de Gala de 70 Anos do Lions Clube de Tatuí</h4>
+                                <p> Noite agradável do baile de gala com participação de Dirigentes Leonísticos</p>
+                            </div>
+                        </div>
+                        <!-- Slide 11 -->
+                        <div class="gallery-slide">
+                            <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh1qUScXr6fqMGAWVFHaWy0_F87agOCMDTS_CS3i2n1chbGykbukUDRCxbPV_kthbzyptQL_z3fNGMIKbF1DAtcpqg3zCx8dhSomOYWmbJd7DD3nUGKeh56cZE1RTxCGiZ9ogICa7kS2obxPchczrMGKuBFEnHcIaHiXcFgxFZBcK45czvrQJ2-YeC-5q7Y/s600/18%20-%20fdcc4949-5e94-4cc2-a23e-3324d0cb9c5d.jpg"
+                                alt="" loading="lazy">
+                            <div class="gallery-caption">
+                                <h4>Festival de Xadrez</h4>
+                                <p>5º Festival de Xadrez coordenado pela Comissão de Esporte e Lazer do Lions Clube de
+                                    Tatuí</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- Nossos Objetivos -->
+        <section class="current-objectives">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nossos Objetivos</h2>
+                    <p class="section-subtitle">Continuamos a tradição de serviço com olhos no futuro</p>
+                </div>
+
+                <div class="objectives-grid">
+                    <div class="objectives-card">
+                        <div class="objectives-icon">
+                            <i class="fas fa-hands-helping"></i>
+                        </div>
+                        <h3>Servir a Comunidade</h3>
+                        <p>Identificar e atender às necessidades mais urgentes de Tatuí através de projetos sociais,
+                            educacionais e de saúde.</p>
+                    </div>
+
+                    <div class="objectives-card">
+                        <div class="objectives-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Apoiar as Causas Globais</h3>
+                        <p>Contribuir para as causas globais do Lions Internacional, adaptando-as ao contexto local com
+                            iniciativas que realmente impactam nossa cidade.</p>
+                    </div>
+
+                    <div class="objectives-card">
+                        <div class="objectives-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Formar Novos Líderes</h3>
+                        <p>Desenvolver habilidades de liderança e serviço comunitário entre nossos membros, preparando a
+                            próxima geração de voluntários.</p>
+                    </div>
+
+                    <div class="objectives-card">
+                        <div class="objectives-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h3>Fortalecer Parcerias</h3>
+                        <p>Trabalhar em conjunto com outras organizações, empresas e órgãos públicos para maximizar o
+                            impacto de nossas ações.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Comparativo: Leão vs Leo -->
+        <section class="comparison-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Leão ou Leo: Qual é o seu perfil?</h2>
+                    <p class="section-subtitle">Descubra qual programa se encaixa melhor com sua idade, disponibilidade
+                        e objetivos</p>
+                </div>
+
+                <div class="comparison-container">
+                    <!-- Card Leão (Adulto) -->
+                    <div class="comparison-card lion-card">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-paw"></i>
+                            </div>
+                            <h3 class="card-title">Leão</h3>
+                            <div class="card-subtitle">Serviço Comunitário Adulto</div>
+                            <div class="card-age-range">18+ anos</div>
+                        </div>
+
+                        <div class="card-features">
+                            <h4>Benefícios Exclusivos</h4>
+                            <ul class="features-list">
+                                <li class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span><strong>Liderança Executiva:</strong> Presidir comitês e tomar decisões
+                                        estratégicas</span>
+                                </li>
+                                <li class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span><strong>Mentoria:</strong> Orientar e desenvolver jovens LEOs</span>
+                                </li>
+                                <li class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span><strong>Networking Profissional:</strong> Conexões com empresários e
+                                        líderes</span>
+                                </li>
+                                <li class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span><strong>Desenvolvimento Avançado:</strong> Workshops e certificações
+                                        especializadas</span>
+                                </li>
+                                <li class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span><strong>Impacto Estratégico:</strong> Planejar e executar projetos de grande
+                                        escala</span>
+                                </li>
+                                <li class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span><strong>Reconhecimento:</strong> Prêmios e certificações internacionais</span>
+                                </li>
+                                <li class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span><strong>Viagens:</strong> Participação em convenções nacionais e
+                                        internacionais</span>
+                                </li>
+                                <li class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span><strong>Legado:</strong> Construir uma história de serviço à comunidade</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card-stats">
+                            <div class="stat">
+                                <div class="stat-number">70</div>
+                                <div class="stat-label">Anos em Tatuí</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">1.4M</div>
+                                <div class="stat-label">Membros Globais</div>
+                            </div>
+                        </div>
+
+                        <div class="card-cta">
+                            <a href="../index.html#envolva-se" class="btn btn-primary">
+                                <i class="fas fa-user-plus"></i>
+                                Tornar-me Leão
+                            </a>
+                            <p class="cta-note">Ideal para adultos que buscam impacto social e crescimento profissional
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Separador -->
+                    <div class="comparison-divider">
+                        <div class="divider-text">VS</div>
+                        <div class="divider-line"></div>
+                    </div>
+
+                    <!-- Card Leo (Jovem) -->
+                    <div class="comparison-card leo-card">
+                        <div class="card-header">
+                            <div class="card-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3 class="card-title">Leo</h3>
+                            <div class="card-subtitle">Liderança, Experiência, Oportunidade</div>
+                            <div class="card-age-range">12-30 anos</div>
+                        </div>
+
+                        <div class="card-features">
+                            <h4>Benefícios Exclusivos</h4>
+                            <ul class="features-list">
+                                <li class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span><strong>Primeira Liderança:</strong> Experiência inicial em gestão de
+                                        projetos</span>
+                                </li>
+                                <li class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span><strong>Desenvolvimento Jovem:</strong> Habilidades para vida e
+                                        carreira</span>
+                                </li>
+                                <li class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span><strong>Networking Juvenil:</strong> Amizades com jovens de todo o
+                                        mundo</span>
+                                </li>
+                                <li class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span><strong>Orientação Vocacional:</strong> Descobrir talentos e interesses</span>
+                                </li>
+                                <li class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span><strong>Projetos Criativos:</strong> Implementar ideias inovadoras</span>
+                                </li>
+                                <li class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span><strong>Certificação:</strong> Comprovar experiência em voluntariado</span>
+                                </li>
+                                <li class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span><strong>Diversão:</strong> Atividades sociais e eventos divertidos</span>
+                                </li>
+                                <li class="feature-item">
+                                    <i class="fas fa-check-circle"></i>
+                                    <span><strong>Preparação:</strong> Base sólida para se tornar um Leão no
+                                        futuro</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="card-stats">
+                            <div class="stat">
+                                <div class="stat-number">47</div>
+                                <div class="stat-label">Anos do Programa</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">180K</div>
+                                <div class="stat-label">Jovens Globais</div>
+                            </div>
+                        </div>
+
+                        <div class="card-cta">
+                            <a href="what-is-leo.html" class="btn btn-secondary">
+                                <i class="fas fa-star"></i>
+                                Tornar-me Leo
+                            </a>
+                            <p class="cta-note">Perfeito para jovens que querem desenvolver habilidades e fazer amigos
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Comparativo em Tabela para Mobile -->
+                <div class="comparison-table">
+                    <h3>Comparativo Detalhado</h3>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Característica</th>
+                                    <th>Leão</th>
+                                    <th>Leo</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Faixa Etária</td>
+                                    <td>18+ anos</td>
+                                    <td>12-30 anos</td>
+                                </tr>
+                                <tr>
+                                    <td>Foco Principal</td>
+                                    <td>Serviço comunitário e liderança</td>
+                                    <td>Desenvolvimento de liderança jovem</td>
+                                </tr>
+                                <tr>
+                                    <td>Compromisso de Tempo</td>
+                                    <td>Reuniões semanais + projetos</td>
+                                    <td>Flexível conforme disponibilidade</td>
+                                </tr>
+                                <tr>
+                                    <td>Contribuição Financeira</td>
+                                    <td>Anuidade + contribuições</td>
+                                    <td>Simbolica ou gratuita</td>
+                                </tr>
+                                <tr>
+                                    <td>Benefício para Carreira</td>
+                                    <td>Networking profissional</td>
+                                    <td>Experiência no currículo</td>
+                                </tr>
+                                <tr>
+                                    <td>Eventos</td>
+                                    <td>Convenções e reuniões formais</td>
+                                    <td>Atividades sociais e workshops</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- CTA Final -->
+                <div class="comparison-final-cta">
+                    <div class="final-content">
+                        <h3>Ainda em dúvida?</h3>
+                        <p>Entre em contato conosco para uma conversa personalizada e descubra qual programa é ideal
+                            para você.</p>
+                        <div class="final-buttons">
+                            <a href="../index.html#contato" class="btn btn-outline">
+                                <i class="fas fa-comments"></i>
+                                Falar com um Leão
+                            </a>
+                            <a href="what-is-lion.html" class="btn btn-outline">
+                                <i class="fas fa-book"></i>
+                                Saber mais sobre Leões
+                            </a>
+                            <a href="what-is-leo.html" class="btn btn-outline">
+                                <i class="fas fa-book"></i>
+                                Saber mais sobre Leos
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nossos Reconhecimentos -->
+        <section class="recognition-modern" id="reconhecimentos">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nossos Reconhecimentos</h2>
+                    <p class="section-subtitle">Premiações e certificações que atestam a excelência do nosso trabalho
+                    </p>
+
+                    <div class="recognition-filters">
+                        <button class="filter-btn active" data-filter="all">Todos</button>
+                        <button class="filter-btn" data-filter="municipal">Municipal</button>
+                        <button class="filter-btn" data-filter="estadual">Estadual</button>
+                        <button class="filter-btn" data-filter="nacional">Nacional</button>
+                        <button class="filter-btn" data-filter="international">Internacional</button>
+                    </div>
+                </div>
+
+                <!-- Cards de Reconhecimento -->
+                <div class="recognition-cards">
+                    <!-- Card 1985 -->
+                    <div class="recognition-card" data-category="municipal" data-year="1985">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="card-year">1985</div>
+                                <div class="card-icon">
+                                    <i class="fas fa-city"></i>
+                                </div>
+                                <h3 class="card-title">Utilidade Pública Municipal</h3>
+                                <div class="card-badge municipal">Municipal</div>
+                                <button class="card-flip-btn">
+                                    <i class="fas fa-exchange-alt"></i>
+                                    Ver detalhes
+                                </button>
+                            </div>
+                            <div class="card-back">
+                                <div class="card-back-content">
+                                    <h4>Título de Utilidade Pública</h4>
+                                    <p class="card-description">Reconhecimento oficial concedido pela Prefeitura
+                                        Municipal de Tatuí pelos serviços relevantes prestados à comunidade local.</p>
+
+                                    <div class="card-details">
+                                        <div class="detail-item">
+                                            <i class="fas fa-calendar"></i>
+                                            <span><strong>Data:</strong> 15/03/1985</span>
+                                        </div>
+                                        <div class="detail-item">
+                                            <i class="fas fa-building"></i>
+                                            <span><strong>Concedido por:</strong> Prefeitura de Tatuí</span>
+                                        </div>
+                                        <div class="detail-item">
+                                            <i class="fas fa-clock"></i>
+                                            <span><strong>Validade:</strong> Permanente</span>
+                                        </div>
+                                    </div>
+
+                                    <button class="card-action-btn">
+                                        <i class="fas fa-file-pdf"></i>
+                                        Ver Documento
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2000 -->
+                    <div class="recognition-card" data-category="municipal" data-year="2000">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="card-year">2000</div>
+                                <div class="card-icon">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <h3 class="card-title">Mérito Comunitário</h3>
+                                <div class="card-badge municipal">Municipal</div>
+                                <button class="card-flip-btn">
+                                    <i class="fas fa-exchange-alt"></i>
+                                    Ver detalhes
+                                </button>
+                            </div>
+                            <div class="card-back">
+                                <div class="card-back-content">
+                                    <h4>Mérito Comunitário</h4>
+                                    <p class="card-description">Concedido pela Câmara Municipal de Tatuí em
+                                        reconhecimento ao trabalho social desenvolvido por 45 anos.</p>
+
+                                    <div class="card-details">
+                                        <div class="detail-item">
+                                            <i class="fas fa-calendar"></i>
+                                            <span><strong>Data:</strong> 07/09/2000</span>
+                                        </div>
+                                        <div class="detail-item">
+                                            <i class="fas fa-landmark"></i>
+                                            <span><strong>Concedido por:</strong> Câmara Municipal</span>
+                                        </div>
+                                        <div class="detail-item">
+                                            <i class="fas fa-gift"></i>
+                                            <span><strong>Tipo:</strong> Comemorativo</span>
+                                        </div>
+                                    </div>
+
+                                    <button class="card-action-btn">
+                                        <i class="fas fa-file-pdf"></i>
+                                        Ver Documento
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2015 -->
+                    <div class="recognition-card" data-category="international" data-year="2015">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="card-year">2015</div>
+                                <div class="card-icon">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                                <h3 class="card-title">Excelência em Serviço</h3>
+                                <div class="card-badge international">Internacional</div>
+                                <button class="card-flip-btn">
+                                    <i class="fas fa-exchange-alt"></i>
+                                    Ver detalhes
+                                </button>
+                            </div>
+                            <div class="card-back">
+                                <div class="card-back-content">
+                                    <h4>Prêmio Lions de Excelência</h4>
+                                    <p class="card-description">Reconhecimento internacional do Lions Clubs pelos 60
+                                        anos de serviços ininterruptos à comunidade de Tatuí.</p>
+
+                                    <div class="card-details">
+                                        <div class="detail-item">
+                                            <i class="fas fa-calendar"></i>
+                                            <span><strong>Data:</strong> 07/09/2015</span>
+                                        </div>
+                                        <div class="detail-item">
+                                            <i class="fas fa-globe-americas"></i>
+                                            <span><strong>Concedido por:</strong> Lions International</span>
+                                        </div>
+                                        <div class="detail-item">
+                                            <i class="fas fa-medal"></i>
+                                            <span><strong>Nível:</strong> Diamante</span>
+                                        </div>
+                                    </div>
+
+                                    <button class="card-action-btn">
+                                        <i class="fas fa-file-pdf"></i>
+                                        Ver Documento
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2020 -->
+                    <div class="recognition-card" data-category="municipal" data-year="2020">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="card-year">2020</div>
+                                <div class="card-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <h3 class="card-title">Homenagem Especial</h3>
+                                <div class="card-badge municipal">Municipal</div>
+                                <button class="card-flip-btn">
+                                    <i class="fas fa-exchange-alt"></i>
+                                    Ver detalhes
+                                </button>
+                            </div>
+                            <div class="card-back">
+                                <div class="card-back-content">
+                                    <h4>Serviços na Pandemia</h4>
+                                    <p class="card-description">Reconhecimento especial pelos serviços prestados durante
+                                        a pandemia de COVID-19.</p>
+
+                                    <div class="card-details">
+                                        <div class="detail-item">
+                                            <i class="fas fa-calendar"></i>
+                                            <span><strong>Data:</strong> 15/12/2020</span>
+                                        </div>
+                                        <div class="detail-item">
+                                            <i class="fas fa-users"></i>
+                                            <span><strong>Concedido por:</strong> Câmara Municipal</span>
+                                        </div>
+                                        <div class="detail-item">
+                                            <i class="fas fa-star"></i>
+                                            <span><strong>Menção:</strong> Honrosa</span>
+                                        </div>
+                                    </div>
+
+                                    <button class="card-action-btn">
+                                        <i class="fas fa-file-pdf"></i>
+                                        Ver Documento
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2023 -->
+                    <div class="recognition-card" data-category="estadual" data-year="2023">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="card-year">2023</div>
+                                <div class="card-icon">
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <h3 class="card-title">Impacto Social</h3>
+                                <div class="card-badge estadual">Estadual</div>
+                                <button class="card-flip-btn">
+                                    <i class="fas fa-exchange-alt"></i>
+                                    Ver detalhes
+                                </button>
+                            </div>
+                            <div class="card-back">
+                                <div class="card-back-content">
+                                    <h4>Impacto Social</h4>
+                                    <p class="card-description">Certificação concedida pela Secretaria de Assistência
+                                        Social do Estado de São Paulo.</p>
+
+                                    <div class="card-details">
+                                        <div class="detail-item">
+                                            <i class="fas fa-calendar"></i>
+                                            <span><strong>Data:</strong> 10/11/2023</span>
+                                        </div>
+                                        <div class="detail-item">
+                                            <i class="fas fa-university"></i>
+                                            <span><strong>Concedido por:</strong> Governo do Estado</span>
+                                        </div>
+                                        <div class="detail-item">
+                                            <i class="fas fa-clock"></i>
+                                            <span><strong>Validade:</strong> 2 anos</span>
+                                        </div>
+                                    </div>
+
+                                    <button class="card-action-btn">
+                                        <i class="fas fa-file-pdf"></i>
+                                        Ver Documento
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2024 -->
+                    <div class="recognition-card" data-category="nacional" data-year="2024">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <div class="card-year">2024</div>
+                                <div class="card-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <h3 class="card-title">Transparência e Gestão</h3>
+                                <div class="card-badge nacional">Nacional</div>
+                                <button class="card-flip-btn">
+                                    <i class="fas fa-exchange-alt"></i>
+                                    Ver detalhes
+                                </button>
+                            </div>
+                            <div class="card-back">
+                                <div class="card-back-content">
+                                    <h4>Transparência e Gestão</h4>
+                                    <p class="card-description">Certificação de boas práticas administrativas e
+                                        transparência financeira.</p>
+
+                                    <div class="card-details">
+                                        <div class="detail-item">
+                                            <i class="fas fa-calendar"></i>
+                                            <span><strong>Data:</strong> 15/01/2024</span>
+                                        </div>
+                                        <div class="detail-item">
+                                            <i class="fas fa-certificate"></i>
+                                            <span><strong>Concedido por:</strong> Instituto Nacional</span>
+                                        </div>
+                                        <div class="detail-item">
+                                            <i class="fas fa-clock"></i>
+                                            <span><strong>Validade:</strong> 1 ano</span>
+                                        </div>
+                                    </div>
+
+                                    <button class="card-action-btn">
+                                        <i class="fas fa-file-pdf"></i>
+                                        Ver Documento
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Estatísticas -->
+                <div class="recognition-stats-modern">
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-history"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">40+</div>
+                            <div class="stat-label">Anos de Reconhecimento</div>
+                            <div class="stat-description">Desde nosso primeiro título em 1985</div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-layer-group"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">4</div>
+                            <div class="stat-label">Níveis de Governo</div>
+                            <div class="stat-description">Municipal, estadual, nacional e internacional</div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">6</div>
+                            <div class="stat-label">Títulos Oficiais</div>
+                            <div class="stat-description">Premiações e certificações conquistadas</div>
+                        </div>
+                    </div>
+
+                    <div class="stat-card">
+                        <div class="stat-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <div class="stat-content">
+                            <div class="stat-number">5</div>
+                            <div class="stat-label">Décadas Ativas</div>
+                            <div class="stat-description">Serviços reconhecidos continuamente</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato -->
+        <section class="contact-section" id="contato">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Entre em Contato</h2>
+                    <p class="section-subtitle">Tem dúvidas ou quer saber mais sobre nosso trabalho?</p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Nossa Localização</h4>
+                                <p>Rua Sete de Setembro, 735, no centro de Tatuí, SP</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>secretaria@lionsclubedetatui.org.br</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Reuniões</h4>
+                                <p>Todas as segundas-feiras, 20h</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Telefone</h4>
+                                <p>(15) 3305-4785</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" placeholder="Seu nome" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" placeholder="Seu email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" placeholder="Seu telefone">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" placeholder="Sua mensagem" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                                Enviar Mensagem
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="../../src/img/logo.png" alt="Lions Clube Internacional" class="logo-img">
+                        <div class="logo-text">Lions Clube <span>Tatuí</span></div>
+                    </div>
+                    <p>Servindo a comunidade de Tatuí desde 1955. Fazemos parte do Lions Clubs International, a maior
+                        organização de clubes de serviço do mundo.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2025</span> Lions Clube Tatuí. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

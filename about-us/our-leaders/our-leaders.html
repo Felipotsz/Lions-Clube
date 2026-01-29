@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nossos Líderes | Lions Clube de Tatuí</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../../index.css">
+    <link rel="stylesheet" href="../../theme/theme.css">
+    <link rel="stylesheet" href="our-leaders.css">
+
+    <!-- JavaScript -->
+    <script src="../../index.js" defer></script>
+    <script src="../../theme/theme.js" defer></script>
+    <script src="our-leader.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../../src/img/logo.png">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="../../index.html" class="logo-link">
+                    <img src="../../src/img/logo.png" alt="Lions Clube Internacional" class="logo-img">
+                    <div class="logo-text">Lions Clube <span>de Tatuí</span></div>
+                </a>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav" id="mainNav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="../../index.html" class="nav-link">Início</a></li>
+
+                    <!-- Dropdown de Sobre Nós -->
+                    <li class="nav-item dropdown active">
+                        <a href="#" class="nav-link">
+                            Sobre Nós
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../../about-us/who-we-are/who-we-are.html" class="dropdown-item">
+                                    <i class="fa fa-users"></i>Quem Somos?
+                                </a></li>
+                            <li><a href="../../about-us/our-leaders/our-leaders.html" class="dropdown-item">
+                                    <i class="fas fa-crown"></i>Nossos Líderes
+                                </a></li>
+                            <li><a href="https://lionsclubetatui.blogspot.com/" class="dropdown-item" target="blank">
+                                    <i class="fa fa-file-text"></i>Nosso Blog
+                                </a></li>
+                            <li><a href="../../about-us/about-lion-leo/about-lion.html" class="dropdown-item">
+                                    <i class="fas fa-paw"></i>O que é ser Leão?
+                                </a></li>
+                            <li><a href="../../about-us/about-lion-leo/about-leo.html" class="dropdown-item">
+                                    <i class="fas fa-star"></i>O que é um Leo?
+                                </a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Dropdown da Causas -->
+                    <li class="nav-item dropdown">
+                        <a href="#causes" class="nav-link">
+                            Causas
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../../causes/child-cancer.html" class="dropdown-item">
+                                    <i class="fas fa-child"></i>Câncer Infantil
+                                </a></li>
+                            <li><a href="../../causes/diabetes.html" class="dropdown-item">
+                                    <i class="fas fa-heartbeat"></i>Diabetes
+                                </a></li>
+                            <li><a href="../../causes/help-after-disasters.html" class="dropdown-item">
+                                    <i class="fas fa-home"></i>Socorro após catástrofes
+                                </a></li>
+                            <li><a href="../../causes/environment.html" class="dropdown-item">
+                                    <i class="fas fa-leaf"></i>Meio Ambiente
+                                </a></li>
+                            <li><a href="../../causes/humanitarian-efforts.html" class="dropdown-item">
+                                    <i class="fas fa-hands-helping"></i>Esforços Humanitários
+                                </a></li>
+                            <li><a href="../../causes/hunger.html" class="dropdown-item">
+                                    <i class="fas fa-utensils"></i>Fome
+                                </a></li>
+                            <li><a href="../../causes/vision.html" class="dropdown-item">
+                                    <i class="fas fa-eye"></i>Visão
+                                </a></li>
+                            <li><a href="../../causes/youth.html" class="dropdown-item">
+                                    <i class="fas fa-users"></i>Juventude
+                                </a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a href="../../index.html#mission" class="nav-link">Nossa Missão</a></li>
+                    <li class="nav-item"><a href="../../index.html#atividades" class="nav-link">Eventos</a></li>
+                </ul>
+
+                <!-- Links sociais no header -->
+                <div class="nav-social-links">
+                    <a href="https://www.facebook.com/lionsclubedetatui.org.br" target="_blank" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/lionsclubedetatui" target="_blank" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@lionsclubedetatui336" target="_blank" aria-label="YouTube"><i
+                            class="fab fa-youtube"></i></a>
+                </div>
+
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                        <span class="toggle-slider">
+                            <i class="fas fa-sun toggle-icon sun-icon"></i>
+                            <i class="fas fa-moon toggle-icon moon-icon"></i>
+                        </span>
+                    </button>
+
+                    <a href="../../login/login.html" class="btn btn-small nav-involve-btn">
+                        <i class="fas fa-hands-helping"></i>
+                        Envolva-se
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="leaders-page">
+        <!-- Seção do Diretor Atual -->
+        <section class="current-director-section">
+            <div class="container">
+                <div class="director-hero-content">
+                    <div class="director-hero-text">
+                        <h3 class="director-name">Presidente Atual - Ademir Polis</h3>
+                        <div class="director-description">
+                            <p>O presidente atual do Lions Clube de Tatuí tem se destacado por sua liderança visionária
+                                e
+                                compromisso com os valores de serviço à comunidade. Sob sua direção, temos ampliado
+                                nosso impacto social e fortalecido parcerias importantes para o desenvolvimento de
+                                projetos humanitários em nossa região.</p>
+                            <p>Com anos de experiência em trabalho voluntário e uma paixão genuína por servir ao
+                                próximo, nosso diretor guia a equipe com sabedoria, inspirando todos os membros a darem
+                                o seu melhor em cada iniciativa desenvolvida pelo clube.</p>
+                        </div>
+
+                        <div class="director-quote-hero">
+                            <i class="fas fa-quote-left quote-icon"></i>
+                            <blockquote>"Frase inspiradora do atual diretor do Lions Clube de Tatuí que representa nossa
+                                missão e valores."</blockquote>
+                            <i class="fas fa-quote-right quote-icon"></i>
+                        </div>
+                    </div>
+
+                    <div class="director-hero-profile">
+                        <div class="director-photo-container">
+                            <img src="../../src/img/ademir-polis.jpeg"
+                                alt="Diretor Atual do Lions Clube Tatuí" class="director-main-photo">
+                        </div>
+                        <h3 class="director-name">Ademir Polis</h3>
+                        <div class="director-title">
+                            <i class="fas fa-crown"></i>
+                            <span>Presidente Atual</span>
+                        </div>
+                        <div class="director-info">
+                            <div class="director-info-item">
+                                <i class="fas fa-calendar-alt"></i>
+                                <span>Mandato: 2024-2025</span>
+                            </div>
+                            <div class="director-info-item">
+                                <i class="fas fa-star"></i>
+                                <span>Lions desde: 2010</span>
+                            </div>
+                            <div class="director-info-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>Formação: Administração</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção da Diretoria -->
+        <section class="leadership-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nossa Diretoria</h2>
+                    <p class="section-subtitle">A equipe dedicada que coordena nossas atividades e projetos</p>
+                </div>
+
+                <div class="leader-carousel-container">
+                    <button class="leader-carousel-btn prev" aria-label="Slide anterior">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+
+                    <div class="leader-carousel-wrapper">
+                        <div class="leader-carousel">
+                            <!-- Presidente -->
+                            <div class="leader-card">
+                                <div class="leader-avatar">
+                                    <img src="../../src/img/ademir-polis.jpeg" alt="Ademir Polis">
+                                </div>
+                                <div class="leader-content">
+                                    <h3 class="leader-name">Ademir Polis</h3>
+                                    <p class="leader-role">Presidente</p>
+                                    <p class="leader-description">
+                                        Lidera a diretoria e representa o clube, coordenando todas as atividades e
+                                        projetos em
+                                        prol da comunidade de Tatuí.
+                                    </p>
+                                    <div class="leader-contacts">
+                                        <a href="mailto:presidente@lionsclubetatui.org.br" class="contact-link"
+                                            aria-label="Enviar email">
+                                            <i class="fas fa-envelope"></i>
+                                            <span>Email</span>
+                                        </a>
+                                        <a href="tel:+5515999999999" class="contact-link" aria-label="Ligar">
+                                            <i class="fas fa-phone"></i>
+                                            <span>Telefone</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Vice-Presidente -->
+                            <div class="leader-card">
+                                <div class="leader-avatar">
+                                    <img src="../../src/img/altar-benedito-vieira.jpeg" alt="Altar Benedito Vieira">
+                                </div>
+                                <div class="leader-content">
+                                    <h3 class="leader-name">Altar Benedito Vieira</h3>
+                                    <p class="leader-role">Vice-Presidente</p>
+                                    <p class="leader-description">
+                                        Auxilia o presidente em suas funções e assume suas responsabilidades quando
+                                        necessário,
+                                        garantindo a continuidade das ações.
+                                    </p>
+                                    <div class="leader-contacts">
+                                        <a href="mailto:vicepresidente@lionsclubetatui.org.br" class="contact-link"
+                                            aria-label="Enviar email">
+                                            <i class="fas fa-envelope"></i>
+                                            <span>Email</span>
+                                        </a>
+                                        <a href="tel:+5515999999999" class="contact-link" aria-label="Ligar">
+                                            <i class="fas fa-phone"></i>
+                                            <span>Telefone</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 2º Vice-Presidente -->
+                            <div class="leader-card">
+                                <div class="leader-avatar">
+                                    <img src="../../src/img/justino-faustino-neto.jpeg" alt="Justino Faustino Neto">
+                                </div>
+                                <div class="leader-content">
+                                    <h3 class="leader-name">Justino Fautino Neto</h3>
+                                    <p class="leader-role">2º Vice-Presidente</p>
+                                    <p class="leader-description">
+                                        Responsável pela documentação, atas de reuniões e comunicação interna, mantendo
+                                        a
+                                        organização e transparência do clube.
+                                    </p>
+                                    <div class="leader-contacts">
+                                        <a href="mailto:secretario@lionsclubetatui.org.br" class="contact-link"
+                                            aria-label="Enviar email">
+                                            <i class="fas fa-envelope"></i>
+                                            <span>Email</span>
+                                        </a>
+                                        <a href="tel:+5515999999999" class="contact-link" aria-label="Ligar">
+                                            <i class="fas fa-phone"></i>
+                                            <span>Telefone</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Secretário e 3º Vice-Presidente-->
+                            <div class="leader-card">
+                                <div class="leader-avatar">
+                                    <img src="https://media.licdn.com/dms/image/v2/D4D03AQFt7q5JzOjFCA/profile-displayphoto-scale_200_200/B4DZoxm0vZG8AY-/0/1761768856175?e=2147483647&v=beta&t=7xoJAypqhvUhnSZmo2YW19HVKV9XsCVTbzUoXu1xuho"
+                                        alt="Jeferson Nedelciu">
+                                </div>
+                                <div class="leader-content">
+                                    <h3 class="leader-name">Jeferson Nedelciu</h3>
+                                    <p class="leader-role">Secretário e 3º Vice-Presidente</p>
+                                    <p class="leader-description">
+                                        Gerencia as finanças do clube, controlando receitas e despesas, garantindo a
+                                        sustentabilidade dos projetos sociais.
+                                    </p>
+                                    <div class="leader-contacts">
+                                        <a href="mailto:tesoureiro@lionsclubetatui.org.br" class="contact-link"
+                                            aria-label="Enviar email">
+                                            <i class="fas fa-envelope"></i>
+                                            <span>Email</span>
+                                        </a>
+                                        <a href="tel:+5515999999999" class="contact-link" aria-label="Ligar">
+                                            <i class="fas fa-phone"></i>
+                                            <span>Telefone</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Tesoureiro -->
+                            <div class="leader-card">
+                                <div class="leader-avatar">
+                                    <img src="../../src/img/adauto-pereira-sobrinho.jpeg" alt="Adauto Pereira Sobrinho">
+                                </div>
+                                <div class="leader-content">
+                                    <h3 class="leader-name">Adauto Pereira Sobrinho</h3>
+                                    <p class="leader-role">Tesoureiro</p>
+                                    <p class="leader-description">
+                                        Oferece orientação estratégica e aconselhamento baseado em experiência,
+                                        contribuindo
+                                        para o crescimento e desenvolvimento do clube.
+                                    </p>
+                                    <div class="leader-contacts">
+                                        <a href="mailto:conselheiro@lionsclubetatui.org.br" class="contact-link"
+                                            aria-label="Enviar email">
+                                            <i class="fas fa-envelope"></i>
+                                            <span>Email</span>
+                                        </a>
+                                        <a href="tel:+5515999999999" class="contact-link" aria-label="Ligar">
+                                            <i class="fas fa-phone"></i>
+                                            <span>Telefone</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Diretor Social -->
+                            <div class="leader-card">
+                                <div class="leader-avatar">
+                                    <img src="../../src/img/luis-fernando-de-oliveira.jpeg"
+                                        alt="Luis Fernando de Oliveira">
+                                </div>
+                                <div class="leader-content">
+                                    <h3 class="leader-name">Luis Fernando de Oliveira</h3>
+                                    <p class="leader-role">Diretor Social</p>
+                                    <p class="leader-description">
+                                        Planeja, organiza e supervisiona a execução dos projetos sociais e eventos
+                                        beneficentes
+                                        do clube.
+                                    </p>
+                                    <div class="leader-contacts">
+                                        <a href="mailto:projetos@lionsclubetatui.org.br" class="contact-link"
+                                            aria-label="Enviar email">
+                                            <i class="fas fa-envelope"></i>
+                                            <span>Email</span>
+                                        </a>
+                                        <a href="tel:+5515999999999" class="contact-link" aria-label="Ligar">
+                                            <i class="fas fa-phone"></i>
+                                            <span>Telefone</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Presidente da Comissão de Eventos -->
+                            <div class="leader-card">
+                                <div class="leader-avatar">
+                                    <img src="../../src/img/marisa-de-campos-bueno-de-almeida.jpeg"
+                                        alt="Marisa de Campos Bueno de Almeida">
+                                </div>
+                                <div class="leader-content">
+                                    <h3 class="leader-name">Marisa de Campos Bueno de Almeida</h3>
+                                    <p class="leader-role">Presidente da Comissão de Eventos</p>
+                                    <p class="leader-description">
+                                        Organiza e supervisiona eventos sociais e beneficentes do clube.
+                                    </p>
+                                    <div class="leader-contacts">
+                                        <a href="mailto:projetos@lionsclubetatui.org.br" class="contact-link"
+                                            aria-label="Enviar email">
+                                            <i class="fas fa-envelope"></i>
+                                            <span>Email</span>
+                                        </a>
+                                        <a href="tel:+5515999999999" class="contact-link" aria-label="Ligar">
+                                            <i class="fas fa-phone"></i>
+                                            <span>Telefone</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Presidente da Comissão de Meio Ambiente -->
+                            <div class="leader-card">
+                                <div class="leader-avatar">
+                                    <img src="../../src/img/marcelo-coelho.jpeg" alt="Marcelo Coelho">
+                                </div>
+                                <div class="leader-content">
+                                    <h3 class="leader-name">Marcelo Coelho</h3>
+                                    <p class="leader-role">Presidente da Comissão de Meio Ambiente</p>
+                                    <p class="leader-description">
+                                        Coordena projetos ambientais e iniciativas de sustentabilidade do clube.
+                                    </p>
+                                    <div class="leader-contacts">
+                                        <a href="mailto:projetos@lionsclubetatui.org.br" class="contact-link"
+                                            aria-label="Enviar email">
+                                            <i class="fas fa-envelope"></i>
+                                            <span>Email</span>
+                                        </a>
+                                        <a href="tel:+5515999999999" class="contact-link" aria-label="Ligar">
+                                            <i class="fas fa-phone"></i>
+                                            <span>Telefone</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Presidente da Comissão de Patrimônio -->
+                            <div class="leader-card">
+                                <div class="leader-avatar">
+                                    <img src="../../src/img/mario-celestino-peixoto.jpeg" alt="Mario Celestino Peixoto">
+                                </div>
+                                <div class="leader-content">
+                                    <h3 class="leader-name">Mario Celestino Peixoto</h3>
+                                    <p class="leader-role">Presidente da Comissão de Patrimônio</p>
+                                    <p class="leader-description">
+                                        Responsável pela gestão e conservação do patrimônio do clube.
+                                    </p>
+                                    <div class="leader-contacts">
+                                        <a href="mailto:projetos@lionsclubetatui.org.br" class="contact-link"
+                                            aria-label="Enviar email">
+                                            <i class="fas fa-envelope"></i>
+                                            <span>Email</span>
+                                        </a>
+                                        <a href="tel:+5515999999999" class="contact-link" aria-label="Ligar">
+                                            <i class="fas fa-phone"></i>
+                                            <span>Telefone</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Presidente da Comissão do Banco de Sangue -->
+                            <div class="leader-card">
+                                <div class="leader-avatar">
+                                    <img src="../../src/img/sandra-maria-giorno-dantas.jpeg"
+                                        alt="Sandra Maria Giorno Dantas">
+                                </div>
+                                <div class="leader-content">
+                                    <h3 class="leader-name">Sandra Maria Giorno Dantas</h3>
+                                    <p class="leader-role">Presidente da Comissão do Banco de Sangue</p>
+                                    <p class="leader-description">
+                                        Coordena campanhas e atividades relacionadas à doação de sangue.
+                                    </p>
+                                    <div class="leader-contacts">
+                                        <a href="mailto:projetos@lionsclubetatui.org.br" class="contact-link"
+                                            aria-label="Enviar email">
+                                            <i class="fas fa-envelope"></i>
+                                            <span>Email</span>
+                                        </a>
+                                        <a href="tel:+5515999999999" class="contact-link" aria-label="Ligar">
+                                            <i class="fas fa-phone"></i>
+                                            <span>Telefone</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!--  Presidente do Clube de Mães Vera Peixoto -->
+                            <div class="leader-card">
+                                <div class="leader-avatar">
+                                    <img src="../../src/img/isabel-olivia-cresciulo-pereira.jpeg"
+                                        alt="Isabel Olivia Cresciulo Pereira">
+                                </div>
+                                <div class="leader-content">
+                                    <h3 class="leader-name">Isabel Olivia Cresciulo Pereira</h3>
+                                    <p class="leader-role"> Presidente do Clube de Mães Vera Peixoto</p>
+                                    <p class="leader-description">
+                                        Lidera as atividades do Clube de Mães vinculado ao Lions Clube.
+                                    </p>
+                                    <div class="leader-contacts">
+                                        <a href="mailto:projetos@lionsclubetatui.org.br" class="contact-link"
+                                            aria-label="Enviar email">
+                                            <i class="fas fa-envelope"></i>
+                                            <span>Email</span>
+                                        </a>
+                                        <a href="tel:+5515999999999" class="contact-link" aria-label="Ligar">
+                                            <i class="fas fa-phone"></i>
+                                            <span>Telefone</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Presidente da Comissão de Civismo -->
+                            <div class="leader-card">
+                                <div class="leader-avatar">
+                                    <img src="../../src/img/antonio-arlindo-lisboa.jpeg" alt="Antonio Arlindo Lisboa">
+                                </div>
+                                <div class="leader-content">
+                                    <h3 class="leader-name">Antonio Arlindo Lisboa</h3>
+                                    <p class="leader-role">Presidente da Comissão de Civismo</p>
+                                    <p class="leader-description">
+                                        Promove atividades cívicas e patrióticas do clube.
+                                    </p>
+                                    <div class="leader-contacts">
+                                        <a href="mailto:projetos@lionsclubetatui.org.br" class="contact-link"
+                                            aria-label="Enviar email">
+                                            <i class="fas fa-envelope"></i>
+                                            <span>Email</span>
+                                        </a>
+                                        <a href="tel:+5515999999999" class="contact-link" aria-label="Ligar">
+                                            <i class="fas fa-phone"></i>
+                                            <span>Telefone</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Diretor do Banco de Cadeira de Rodas -->
+                            <div class="leader-card">
+                                <div class="leader-avatar">
+                                    <img src="../../src/img/francisco-pereira.jpeg" alt="Francisco Pereira">
+                                </div>
+                                <div class="leader-content">
+                                    <h3 class="leader-name">Francisco Pereira</h3>
+                                    <p class="leader-role">Diretor do Banco de Cadeira de Rodas</p>
+                                    <p class="leader-description">
+                                        Gerencia o programa de empréstimo de cadeiras de rodas do clube.
+                                    </p>
+                                    <div class="leader-contacts">
+                                        <a href="mailto:projetos@lionsclubetatui.org.br" class="contact-link"
+                                            aria-label="Enviar email">
+                                            <i class="fas fa-envelope"></i>
+                                            <span>Email</span>
+                                        </a>
+                                        <a href="tel:+5515999999999" class="contact-link" aria-label="Ligar">
+                                            <i class="fas fa-phone"></i>
+                                            <span>Telefone</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="leader-carousel-btn next" aria-label="Próximo slide">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+
+                    <!-- Indicadores do carousel -->
+                    <div class="leader-carousel-indicators"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline de Ex-Diretores -->
+        <section class="ex-directors-timeline-section" id="timelineSection">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Linha do Tempo da Liderança</h2>
+                    <p class="section-subtitle">A evolução da direção do Lions Clube de Tatuí desde 1955</p>
+                </div>
+
+                <div class="timeline-container-directors" id="timelineContainer">
+                    <!-- Linha central da timeline -->
+                    <div class="timeline-line-directors" id="timelineLine">
+                        <div class="line-progress-directors" id="timelineProgressDirectors"></div>
+                    </div>
+
+                    <!-- Diretor Atual (2024-2025) -->
+                    <div class="timeline-item-director" data-year="2024">
+                        <div class="timeline-marker-director">
+                            <div class="marker-dot-director"></div>
+                            <div class="marker-year-director">2024</div>
+                        </div>
+                        <div class="timeline-card-director">
+                            <div class="director-photo-timeline">
+                                <img src="../../src/img/ademir-polis.jpeg"
+                                    alt="Ademir Polis">
+                            </div>
+                            <div class="director-info-timeline">
+                                <h3 class="director-name-timeline">Ademir Polis</h3>
+                                <div class="director-period-timeline">2024 - Atual</div>
+                                <p class="director-quote-timeline">"Liderar é servir com humildade e inspirar com
+                                    exemplo. Nosso maior legado é o impacto positivo na vida das pessoas."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ex-Diretor (2020-2021) -->
+                    <div class="timeline-item-director" data-year="2020">
+                        <div class="timeline-marker-director">
+                            <div class="marker-dot-director"></div>
+                            <div class="marker-year-director">2020</div>
+                        </div>
+                        <div class="timeline-card-director">
+                            <div class="director-photo-timeline">
+                                <img src="../../src/img/aparecida-maria-millen-de-miranda.jpeg"
+                                    alt="Aparecida Maria Millen de Miranda">
+                            </div>
+                            <div class="director-info-timeline">
+                                <h3 class="director-name-timeline">Aparecida Maria Millen de Miranda</h3>
+                                <div class="director-period-timeline">2020 - 2021</div>
+                                <p class="director-quote-timeline">"Celebrar 60 anos de história foi honrar todos que
+                                    dedicaram sua vida ao serviço da comunidade tatuiana."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ex-Diretor (2017-2018) -->
+                    <div class="timeline-item-director" data-year="2017">
+                        <div class="timeline-marker-director">
+                            <div class="marker-dot-director"></div>
+                            <div class="marker-year-director">2017</div>
+                        </div>
+                        <div class="timeline-card-director">
+                            <div class="director-photo-timeline">
+                                <img src="../../src/img/rubens-mesadri.jpeg"
+                                    alt="Rubens Mesadri">
+                            </div>
+                            <div class="director-info-timeline">
+                                <h3 class="director-name-timeline">Rubens Mesadri</h3>
+                                <div class="director-period-timeline">2017 - 2018</div>
+                                <p class="director-quote-timeline">"Liderar durante tempos desafiadores nos ensina que a
+                                    resiliência é a base de toda transformação positiva."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ex-Diretor (2011-2012) -->
+                    <div class="timeline-item-director" data-year="2011">
+                        <div class="timeline-marker-director">
+                            <div class="marker-dot-director"></div>
+                            <div class="marker-year-director">2011</div>
+                        </div>
+                        <div class="timeline-card-director">
+                            <div class="director-photo-timeline">
+                                <img src="../../src/img/daniel-cubas.jpeg"
+                                    alt="Daniel Cubas">
+                            </div>
+                            <div class="director-info-timeline">
+                                <h3 class="director-name-timeline">Daniel Cubas</h3>
+                                <div class="director-period-timeline">2011 - 2012</div>
+                                <p class="director-quote-timeline">"O verdadeiro sucesso de uma gestão se mede pelo
+                                    fortalecimento das instituições e pelo crescimento coletivo."</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Nota histórica -->
+                    <div class="historical-note-timeline">
+                        <div class="note-content-timeline">
+                            <i class="fas fa-history"></i>
+                            <p>Esta timeline homenageia alguns dos mais de 30 diretores que guiaram o Lions Clube de
+                                Tatuí
+                                desde sua fundação. Cada um contribuiu de forma única para nosso crescimento e impacto
+                                comunitário, construindo uma história de quase 70 anos de serviço voluntário.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="../../src/img/logo.png" alt="Lions Clube Internacional" class="logo-img">
+                        <div class="logo-text">Lions Clube <span>Tatuí</span></div>
+                    </div>
+                    <p>Servindo a comunidade de Tatuí desde 1955. Fazemos parte do Lions Clubs International, a maior
+                        organização de clubes de serviço do mundo.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2025</span> Lions Clube Tatuí. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>

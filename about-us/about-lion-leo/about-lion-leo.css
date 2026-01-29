@@ -1,0 +1,1508 @@
+/* ===== PÁGINAS "O QUE É SER LEÃO?" E "O QUE É SER LEO?" ===== */
+.membership-page {
+    padding-top: 80px;
+}
+
+/* ===== INTRODUÇÃO ===== */
+.membership-introduction {
+    padding: 40px 0;
+    background-color: var(--light);
+}
+
+.membership-section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.membership-section-title {
+    font-size: 2.2rem;
+    color: var(--primary);
+    margin-bottom: 15px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.membership-section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--secondary));
+    border-radius: 2px;
+}
+
+.membership-section-subtitle {
+    font-size: 1.2rem;
+    color: var(--text-light);
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.introduction-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.intro-image {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px var(--shadow);
+    transition: transform 0.3s ease;
+}
+
+.intro-image:hover {
+    transform: translateY(-10px);
+}
+
+.intro-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s ease;
+}
+
+.intro-image:hover img {
+    transform: scale(1.05);
+}
+
+.intro-text p {
+    color: var(--text);
+    line-height: 1.7;
+    margin-bottom: 20px;
+    font-size: 1.1rem;
+}
+
+.quote-box {
+    background-color: rgba(0, 84, 164, 0.08);
+    border-left: 4px solid var(--secondary);
+    border-radius: 12px;
+    padding: 30px;
+    margin-top: 30px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+[data-theme="dark"] .quote-box {
+    background-color: rgba(0, 84, 164, 0.1);
+    border-left-color: var(--secondary);
+}
+
+.quote-box:hover {
+    transform: translateX(10px);
+}
+
+.quote-box i.fa-quote-left {
+    color: var(--secondary);
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.quote-box p {
+    font-style: italic;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: var(--primary);
+    font-weight: 500;
+    line-height: 1.6;
+}
+
+.quote-author {
+    color: var(--text-light);
+    font-size: 1rem;
+    font-weight: 600;
+    display: block;
+    text-align: right;
+}
+
+/* ===== PILLARS ===== */
+.membership-pillars {
+    padding: 40px 0;
+    background-color: var(--surface);
+}
+
+.pillars-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.pillar-card {
+    background-color: var(--light);
+    border-radius: 16px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: all 0.4s ease;
+    border-top: 4px solid var(--secondary);
+    box-shadow: 0 10px 30px var(--shadow);
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.pillar-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent), var(--secondary));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.pillar-card:hover::before {
+    transform: scaleX(1);
+}
+
+.pillar-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px var(--shadow);
+}
+
+.pillar-icon {
+    font-size: 3.5rem;
+    color: var(--secondary);
+    margin-bottom: 25px;
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.pillar-card:hover .pillar-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.pillar-card h3 {
+    color: var(--primary);
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.pillar-card p {
+    color: var(--text);
+    line-height: 1.6;
+    margin-bottom: 25px;
+    font-size: 1.05rem;
+}
+
+.pillar-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+.pillar-list li {
+    padding: 10px 0;
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    padding-left: 30px;
+    font-size: 1rem;
+}
+
+.pillar-list li:last-child {
+    border-bottom: none;
+}
+
+.pillar-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* ===== COMO FUNCIONA ===== */
+.membership-how-it-works {
+    padding: 40px 0;
+    background-color: var(--light);
+}
+
+.works-timeline {
+    max-width: 900px;
+    margin: 60px auto 0;
+    position: relative;
+}
+
+.works-timeline::before {
+    content: '';
+    position: absolute;
+    left: 25px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(to bottom, var(--secondary), var(--accent));
+    border-radius: 2px;
+}
+
+.timeline-step {
+    display: flex;
+    margin-bottom: 40px;
+    position: relative;
+    align-items: flex-start;
+}
+
+.step-number {
+    width: 60px;
+    height: 60px;
+    background: var(--secondary);
+    border-radius: 50%;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-right: 30px;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 2;
+    box-shadow: 0 8px 20px rgba(0, 84, 164, 0.4);
+    transition: all 0.3s ease;
+}
+
+.timeline-step:hover .step-number {
+    transform: scale(1.15);
+    box-shadow: 0 12px 25px rgba(0, 84, 164, 0.5);
+}
+
+.step-content {
+    flex: 1;
+    background-color: var(--surface);
+    border-radius: 12px;
+    padding: 25px;
+    box-shadow: 0 8px 25px var(--shadow);
+    border-left: 4px solid var(--secondary);
+    transition: all 0.3s ease;
+}
+
+.timeline-step:hover .step-content {
+    transform: translateX(15px);
+    box-shadow: 0 15px 35px var(--shadow);
+}
+
+.step-content h3 {
+    color: var(--primary);
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.step-content p {
+    color: var(--text);
+    line-height: 1.7;
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+/* ===== BENEFÍCIOS ===== */
+.membership-benefits {
+    padding: 40px 0;
+    background-color: var(--surface);
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.benefit-card {
+    background-color: var(--light);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px var(--shadow);
+    transition: all 0.4s ease;
+    border-top: 4px solid var(--secondary);
+    height: 100%;
+}
+
+.benefit-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 20px 40px var(--shadow);
+}
+
+.benefit-header {
+    background: linear-gradient(135deg, var(--secondary), var(--accent));
+    padding: 35px 25px;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.benefit-header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.15) 50%, transparent 70%);
+    transform: rotate(45deg);
+    transition: transform 0.8s ease;
+}
+
+.benefit-card:hover .benefit-header::before {
+    transform: rotate(45deg) translate(20%, 20%);
+}
+
+.benefit-icon {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.benefit-header h3 {
+    font-size: 1.4rem;
+    margin: 0;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+}
+
+.benefit-content {
+    padding: 30px;
+}
+
+.benefit-content ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.benefit-content li {
+    padding: 12px 0;
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+    position: relative;
+    padding-left: 30px;
+    font-size: 1.05rem;
+    transition: all 0.3s ease;
+}
+
+.benefit-content li:last-child {
+    border-bottom: none;
+}
+
+.benefit-content li:hover {
+    color: var(--secondary);
+    padding-left: 35px;
+}
+
+.benefit-content li::before {
+    content: '▶';
+    position: absolute;
+    left: 0;
+    color: var(--secondary);
+    font-size: 1rem;
+}
+
+/* ===== REQUISITOS E COMPROMISSOS ===== */
+.membership-requirements {
+    padding: 40px 0;
+    background-color: var(--light);
+    position: relative;
+    overflow: hidden;
+}
+
+.membership-requirements::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(circle at 20% 80%, rgba(0, 84, 164, 0.05) 0%, transparent 50%),
+        radial-gradient(circle at 80% 20%, rgba(0, 84, 164, 0.05) 0%, transparent 50%);
+    pointer-events: none;
+}
+
+.requirements-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* Overview Cards */
+.requirements-overview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    margin-bottom: 80px;
+}
+
+.overview-card {
+    background: var(--surface);
+    border-radius: 20px;
+    padding: 50px 40px;
+    text-align: center;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--border);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.overview-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent), var(--secondary));
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.4s ease;
+}
+
+.overview-card:hover::before {
+    transform: scaleX(1);
+}
+
+.overview-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 25px 50px rgba(0, 84, 164, 0.15);
+    border-color: var(--secondary);
+}
+
+.overview-icon {
+    font-size: 3.5rem;
+    color: var(--secondary);
+    margin-bottom: 25px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.overview-card:hover .overview-icon {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.overview-card h3 {
+    color: var(--primary);
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.overview-card p {
+    color: var(--text);
+    line-height: 1.7;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+/* Sistema de Abas para Leos */
+.tabs-container {
+    background: var(--surface);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    margin-bottom: 80px;
+}
+
+.tabs-header {
+    display: flex;
+    background: linear-gradient(135deg, var(--secondary), var(--accent));
+    padding: 0;
+    border-bottom: 1px solid var(--border);
+}
+
+.tab-btn {
+    flex: 1;
+    background: none;
+    border: none;
+    color: white;
+    padding: 25px 20px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    position: relative;
+    overflow: hidden;
+}
+
+.tab-btn::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: white;
+    transform: translateY(4px);
+    transition: transform 0.3s ease;
+}
+
+.tab-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.tab-btn.active {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+.tab-btn.active::before {
+    transform: translateY(0);
+}
+
+.tabs-content {
+    padding: 40px;
+}
+
+.tab-pane {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.requirements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.requirement-card {
+    background: var(--light);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border-top: 4px solid var(--secondary);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.requirement-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 84, 164, 0.15);
+}
+
+.requirement-card-header {
+    background: var(--primary);
+    padding: 30px;
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+.requirement-card-header::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(45deg, transparent 30%, rgba(255, 255, 255, 0.15) 50%, transparent 70%);
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: all 0.6s ease;
+}
+
+.requirement-card:hover .requirement-card-header::before {
+    opacity: 1;
+    transform: rotate(45deg) translate(20%, 20%);
+}
+
+.requirement-icon {
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+.requirement-card-header h4 {
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+}
+
+.requirement-card-body {
+    padding: 30px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.requirement-value {
+    color: var(--secondary);
+    font-size: 1.6rem;
+    font-weight: 800;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.requirement-desc {
+    color: var(--text);
+    text-align: center;
+    margin-bottom: 25px;
+    line-height: 1.6;
+    flex: 1;
+    font-size: 1.05rem;
+}
+
+.requirement-tip,
+.requirement-note {
+    background: rgba(0, 84, 164, 0.08);
+    border-radius: 12px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 0.95rem;
+    color: var(--text);
+    border-left: 4px solid var(--accent);
+}
+
+.requirement-tip i,
+.requirement-note i {
+    color: var(--accent);
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+
+.requirement-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--accent), var(--secondary));
+    color: white;
+    padding: 8px 20px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-top: 15px;
+    align-self: center;
+}
+
+.requirement-progress {
+    margin-top: 20px;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 10px;
+    background: var(--border);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--secondary), var(--accent));
+    border-radius: 5px;
+    transition: width 1.2s ease;
+}
+
+.requirement-progress span {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    display: block;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Compromissos Esperados (Lions) */
+.commitments-section {
+    margin-bottom: 80px;
+}
+
+.commitments-title {
+    text-align: center;
+    color: var(--primary);
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.commitments-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(90deg, var(--accent), var(--secondary));
+    border-radius: 2px;
+}
+
+.commitments-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.commitment-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    background: var(--light);
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid var(--border);
+    transition: all 0.3s ease;
+}
+
+.commitment-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 84, 164, 0.15);
+    border-color: var(--secondary);
+}
+
+.commitment-icon {
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--secondary), var(--accent));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.commitment-item:hover .commitment-icon {
+    transform: scale(1.1) rotate(10deg);
+}
+
+.commitment-content h4 {
+    color: var(--primary);
+    font-size: 1.3rem;
+    margin-bottom: 12px;
+    font-weight: 700;
+}
+
+.commitment-content p {
+    color: var(--text);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Processo de Admissão (Leos) */
+.process-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.process-intro h3 {
+    color: var(--primary);
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.process-intro p {
+    color: var(--text);
+    font-size: 1.1rem;
+    max-width: 700px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.process-timeline {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.process-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 25px;
+    margin-bottom: 40px;
+    padding: 30px;
+    background: var(--light);
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border-left: 4px solid var(--secondary);
+}
+
+.process-step:hover {
+    transform: translateX(10px);
+    box-shadow: 0 15px 40px rgba(0, 84, 164, 0.15);
+}
+
+.process-step-icon {
+    flex-shrink: 0;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--secondary), var(--accent));
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+}
+
+.process-step:hover .process-step-icon {
+    transform: scale(1.1) rotate(10deg);
+}
+
+.process-step-content {
+    flex: 1;
+}
+
+.process-step-content h4 {
+    color: var(--primary);
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.process-step-content p {
+    color: var(--text);
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 1.05rem;
+}
+
+.process-duration {
+    display: inline-block;
+    background: rgba(0, 84, 164, 0.1);
+    color: var(--secondary);
+    padding: 6px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+/* Oportunidades (Leos) */
+.commitments-intro {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.commitments-grid-alt {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 30px;
+}
+
+.commitment-card {
+    background: var(--light);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    border-top: 4px solid var(--secondary);
+    height: 100%;
+}
+
+.commitment-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 84, 164, 0.15);
+}
+
+.commitment-card-header {
+    background: linear-gradient(135deg, var(--secondary), var(--accent));
+    padding: 30px;
+    text-align: center;
+    color: white;
+}
+
+.commitment-card-icon {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.commitment-card-header h4 {
+    font-size: 1.3rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+.commitment-card-body {
+    padding: 30px;
+}
+
+.commitment-card-body p {
+    color: var(--text);
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+}
+
+.commitment-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.commitment-list li {
+    padding: 10px 0;
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1rem;
+}
+
+.commitment-list li:last-child {
+    border-bottom: none;
+}
+
+.commitment-list li i {
+    color: var(--accent);
+    font-size: 1rem;
+}
+
+/* CTA */
+.requirements-cta {
+    text-align: center;
+    padding: 40px 60px;
+    background: linear-gradient(135deg, rgba(0, 84, 164, 0.1), rgba(0, 84, 164, 0.05));
+    border-radius: 25px;
+    border-top: 4px solid var(--secondary);
+    position: relative;
+    overflow: hidden;
+}
+
+.requirements-cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        radial-gradient(circle at 10% 20%, rgba(0, 84, 164, 0.08) 0%, transparent 40%),
+        radial-gradient(circle at 90% 80%, rgba(0, 84, 164, 0.08) 0%, transparent 40%);
+    pointer-events: none;
+}
+
+.cta-content {
+    position: relative;
+    z-index: 2;
+}
+
+.requirements-cta h3 {
+    color: var(--primary);
+    font-size: 2.2rem;
+    margin-bottom: 25px;
+    font-weight: 800;
+}
+
+.requirements-cta .cta-content > p {
+    color: var(--text);
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 50px;
+    line-height: 1.7;
+}
+
+.cta-stats {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin: 50px 0;
+    flex-wrap: wrap;
+}
+
+.cta-stat {
+    text-align: center;
+    min-width: 140px;
+}
+
+.cta-stat .stat-number {
+    display: block;
+    font-size: 3rem;
+    font-weight: 900;
+    color: var(--secondary);
+    margin-bottom: 10px;
+    line-height: 1;
+}
+
+.cta-stat .stat-label {
+    font-size: 1rem;
+    color: var(--text-light);
+    font-weight: 600;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.btn-large {
+    padding: 18px 40px;
+    font-size: 1.2rem;
+    border-radius: 35px;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid var(--secondary);
+    color: var(--secondary);
+}
+
+.btn-outline:hover {
+    background-color: var(--secondary);
+    color: white;
+}
+
+.btn-ghost {
+    background: transparent;
+    color: var(--primary);
+    border: 2px solid var(--border);
+    padding: 15px 35px;
+    border-radius: 35px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-ghost:hover {
+    background: var(--border);
+    transform: translateY(-3px);
+}
+
+.cta-note {
+    color: var(--secondary);
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+.cta-note i {
+    color: var(--secondary);
+    font-size: 1.2rem;
+}
+
+/* ===== FAQ ===== */
+.membership-faq {
+    padding: 40px 0;
+    background-color: var(--surface);
+}
+
+.faq-container {
+    max-width: 900px;
+    margin: 60px auto 0;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: var(--light);
+    transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+    border-color: var(--secondary);
+    box-shadow: 0 10px 25px var(--shadow);
+}
+
+.faq-question {
+    width: 100%;
+    padding: 25px;
+    background: none;
+    border: none;
+    text-align: left;
+    color: var(--primary);
+    font-size: 1.2rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.faq-question:hover {
+    background-color: rgba(0, 84, 164, 0.05);
+}
+
+.faq-question i {
+    color: var(--secondary);
+    transition: transform 0.3s ease;
+    font-size: 1rem;
+}
+
+.faq-question.active i {
+    transform: rotate(180deg);
+}
+
+.faq-answer {
+    padding: 0 25px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-answer.active {
+    padding: 0 25px 25px;
+    max-height: 500px;
+}
+
+.faq-answer p {
+    color: var(--text);
+    line-height: 1.7;
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+/* Rodapé com crédito Leo */
+.leo-credit {
+    color: var(--secondary);
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    font-size: 1.1rem;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .membership-section-title {
+        font-size: 2rem;
+    }
+
+    .membership-section-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .introduction-content {
+        gap: 40px;
+    }
+
+    .pillars-grid,
+    .benefits-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .tabs-header {
+        flex-direction: column;
+    }
+
+    .requirements-overview {
+        grid-template-columns: 1fr;
+    }
+
+    .requirements-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .commitments-grid,
+    .commitments-grid-alt {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-ghost,
+    .btn-primary,
+    .btn-outline {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .membership-hero {
+        padding: 80px 0;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .introduction-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .intro-image img {
+        height: 350px;
+    }
+
+    .pillars-grid,
+    .benefits-grid,
+    .requirements-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .commitments-grid,
+    .commitments-grid-alt {
+        grid-template-columns: 1fr;
+    }
+
+    .works-timeline::before {
+        left: 30px;
+    }
+
+    .step-number {
+        width: 60px;
+        height: 60px;
+        margin-right: 30px;
+    }
+
+    .process-step,
+    .commitment-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .process-step-icon,
+    .commitment-icon {
+        margin: 0 auto;
+    }
+
+    .requirements-cta {
+        padding: 60px 30px;
+    }
+
+    .requirements-cta h3 {
+        font-size: 1.8rem;
+    }
+
+    .cta-stats {
+        gap: 40px;
+    }
+
+    .cta-stat {
+        min-width: 120px;
+    }
+
+    .cta-stat .stat-number {
+        font-size: 2.5rem;
+    }
+
+    .faq-question {
+        font-size: 1.1rem;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0 20px;
+    }
+
+    .membership-hero {
+        padding: 70px 0;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .membership-section-title {
+        font-size: 1.6rem;
+    }
+
+    .membership-section-subtitle {
+        font-size: 1rem;
+    }
+
+    .membership-introduction,
+    .membership-pillars,
+    .membership-how-it-works,
+    .membership-benefits,
+    .membership-requirements,
+    .membership-faq {
+        padding: 60px 0;
+    }
+
+    .pillar-card,
+    .benefit-card {
+        padding: 30px 25px;
+    }
+
+    .overview-card {
+        padding: 40px 25px;
+    }
+
+    .overview-icon {
+        font-size: 3rem;
+    }
+
+    .step-number {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+        margin-right: 25px;
+    }
+
+    .step-content {
+        padding: 20px;
+    }
+
+    .works-timeline::before {
+        left: 25px;
+    }
+
+    .tabs-content {
+        padding: 25px;
+    }
+
+    .requirement-card-header,
+    .commitment-card-header {
+        padding: 25px;
+    }
+
+    .requirement-card-body,
+    .commitment-card-body {
+        padding: 25px;
+    }
+
+    .process-step {
+        padding: 25px;
+    }
+
+    .requirements-cta {
+        padding: 50px 20px;
+    }
+
+    .requirements-cta h3 {
+        font-size: 1.6rem;
+    }
+
+    .cta-stats {
+        gap: 30px;
+    }
+
+    .cta-stat {
+        min-width: 100px;
+    }
+
+    .cta-stat .stat-number {
+        font-size: 2rem;
+    }
+
+    .cta-stat .stat-label {
+        font-size: 0.9rem;
+    }
+
+    .faq-question {
+        font-size: 1rem;
+        padding: 20px;
+    }
+
+    .faq-answer {
+        padding: 0 20px;
+    }
+
+    .faq-answer.active {
+        padding: 0 20px 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-title {
+        font-size: 1.6rem;
+    }
+
+    .membership-section-title {
+        font-size: 1.4rem;
+    }
+
+    .step-number {
+        width: 45px;
+        height: 45px;
+        font-size: 1.2rem;
+        margin-right: 20px;
+    }
+
+    .tabs-header {
+        padding: 0;
+    }
+
+    .tab-btn {
+        padding: 20px 15px;
+        font-size: 1rem;
+    }
+
+    .cta-stats {
+        gap: 25px;
+    }
+
+    .cta-stat {
+        min-width: 90px;
+    }
+
+    .cta-stat .stat-number {
+        font-size: 1.8rem;
+    }
+}

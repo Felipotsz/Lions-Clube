@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Socorro após Catástrofes | Lions Clube de Tatuí</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../theme/theme.css">
+    <link rel="stylesheet" href="causes.css">
+
+    <!-- JavaScript -->
+    <script src="../index.js" defer></script>
+    <script src="../theme/theme.js" defer></script>
+    <script src="causes.js" defer></script>
+
+    <!-- Favicon -->
+    <link rel="icon" href="../src/img/logo.png">
+</head>
+
+<body>
+    <!-- Cabeçalho -->
+    <header class="header">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="../index.html" class="logo-link">
+                    <img src="../src/img/logo.png" alt="Lions Clube Internacional" class="logo-img">
+                    <div class="logo-text">Lions Clube <span>de Tatuí</span></div>
+                </a>
+            </div>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <nav class="nav" id="mainNav">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Início</a></li>
+
+                    <!-- Dropdown de Sobre Nós -->
+                    <li class="nav-item dropdown active">
+                        <a href="#" class="nav-link">
+                            Sobre Nós
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../about-us/who-we-are/who-we-are.html" class="dropdown-item">
+                                    <i class="fa fa-users"></i>Quem Somos?
+                                </a></li>
+                            <li><a href="../about-us/our-leaders/our-leaders.html" class="dropdown-item">
+                                    <i class="fas fa-crown"></i>Nossos Líderes
+                                </a></li>
+                            <li><a href="https://lionsclubetatui.blogspot.com/" class="dropdown-item" target="blank">
+                                    <i class="fa fa-file-text"></i>Nosso Blog
+                                </a></li>
+                            <li><a href="../about-us/about-lion-leo/about-lion.html" class="dropdown-item">
+                                    <i class="fas fa-paw"></i>O que é ser Leão?
+                                </a></li>
+                            <li><a href="../about-us/about-lion-leo/about-leo.html" class="dropdown-item">
+                                    <i class="fas fa-star"></i>O que é um Leo?
+                                </a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Dropdown da Causas -->
+                    <li class="nav-item dropdown">
+                        <a href="#causes" class="nav-link">
+                            Causas
+                            <i class="fas fa-chevron-down dropdown-icon"></i>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a href="../causes/child-cancer.html" class="dropdown-item">
+                                    <i class="fas fa-child"></i>Câncer Infantil
+                                </a></li>
+                            <li><a href="../causes/diabetes.html" class="dropdown-item">
+                                    <i class="fas fa-heartbeat"></i>Diabetes
+                                </a></li>
+                            <li><a href="../causes/help-after-disasters.html" class="dropdown-item">
+                                    <i class="fas fa-home"></i>Socorro após catástrofes
+                                </a></li>
+                            <li><a href="../causes/environment.html" class="dropdown-item">
+                                    <i class="fas fa-leaf"></i>Meio Ambiente
+                                </a></li>
+                            <li><a href="../causes/humanitarian-efforts.html" class="dropdown-item">
+                                    <i class="fas fa-hands-helping"></i>Esforços Humanitários
+                                </a></li>
+                            <li><a href="../causes/hunger.html" class="dropdown-item">
+                                    <i class="fas fa-utensils"></i>Fome
+                                </a></li>
+                            <li><a href="../causes/vision.html" class="dropdown-item">
+                                    <i class="fas fa-eye"></i>Visão
+                                </a></li>
+                            <li><a href="../causes/youth.html" class="dropdown-item">
+                                    <i class="fas fa-users"></i>Juventude
+                                </a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item"><a href="../index.html#mission" class="nav-link">Nossa Missão</a></li>
+                    <li class="nav-item"><a href="../index.html#atividades" class="nav-link">Eventos</a></li>
+                </ul>
+
+                <!-- Links sociais no header -->
+                <div class="nav-social-links">
+                    <a href="https://www.facebook.com/lionsclubedetatui.org.br" target="_blank" aria-label="Facebook"><i
+                            class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/lionsclubedetatui" target="_blank" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/@lionsclubedetatui336" target="_blank" aria-label="YouTube"><i
+                            class="fab fa-youtube"></i></a>
+                </div>
+
+                <div class="nav-actions">
+                    <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema">
+                        <span class="toggle-slider">
+                            <i class="fas fa-sun toggle-icon sun-icon"></i>
+                            <i class="fas fa-moon toggle-icon moon-icon"></i>
+                        </span>
+                    </button>
+
+                    <a href="../login/login.html" class="btn btn-small nav-involve-btn">
+                        <i class="fas fa-hands-helping"></i>
+                        Envolva-se
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main class="cause-page">
+
+        <!-- Banner da Causa -->
+        <section class="cause-hero"
+            style="--hero-image: url('https://imagens.ebc.com.br/dOXAgvV-Vo2PTVtvPj_mRLogQFY=/1170x700/smart/https://agenciabrasil.ebc.com.br/sites/default/files/thumbnails/image/2024/05/12/chuva_rs5.jpg?itok=GxsD4Yf6')">
+            <div class="container">
+                <h1 class="cause-title">Socorro às Vítimas de Catástrofes</h1>
+                <p class="cause-subtitle">Onde e quando uma catástrofe acontece, os Leões estão com frequência entre os
+                    primeiros a oferecer ajuda. E a LCIF está presente ao lado deles, pronta para apoiar seus esforços
+                    com assistência para angariação de fundos por meio de programas de subsídio para ajuda às vítimas de
+                    catástrofes.</p>
+                <div class="hero-divider"></div>
+            </div>
+        </section>
+
+        <!-- Seção de Fatos -->
+        <section class="cause-facts">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Fatos sobre Catástrofes</h2>
+                    <p class="section-subtitle">Estatísticas globais sobre desastres naturais e seu impacto</p>
+                </div>
+
+                <div class="facts-grid">
+                    <!-- Card 1 -->
+                    <div class="fact-card">
+                        <div class="fact-card-inner">
+                            <div class="fact-number">
+                                90%
+                            </div>
+                            <div class="fact-label">
+                                Das catástrofes naturais se relacionam à água
+                            </div>
+                            <div class="fact-icon">
+                                <i class="fas fa-water"></i>
+                            </div>
+                            <div class="fact-description">
+                                Inundações, tempestades e secas representam a maioria dos desastres naturais em todo o
+                                mundo
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="fact-card">
+                        <div class="fact-card-inner">
+                            <div class="fact-number">
+                                25,3 milhões
+                            </div>
+                            <div class="fact-label">
+                                Pessoas desabrigadas anualmente
+                            </div>
+                            <div class="fact-icon">
+                                <i class="fas fa-home"></i>
+                            </div>
+                            <div class="fact-description">
+                                Catástrofes repentinas deixam milhões de pessoas desabrigadas a cada ano em todo o mundo
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="fact-card">
+                        <div class="fact-card-inner">
+                            <div class="fact-number">
+                                US$ 250-300 bi
+                            </div>
+                            <div class="fact-label">
+                                Perdas econômicas anuais
+                            </div>
+                            <div class="fact-icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="fact-description">
+                                Estimativa de perdas econômicas anuais causadas por catástrofes em todo o mundo
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Áreas de Serviço -->
+        <section class="service-areas">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Áreas de Serviço</h2>
+                    <p class="section-subtitle">Direcionados para socorro após catástrofes</p>
+                </div>
+
+                <div class="service-content">
+                    <div class="service-section">
+                        <div class="service-header">
+                            <i class="fas fa-hand-holding-usd service-section-icon"></i>
+                            <h3>Subsídios Concedidos pela LCIF</h3>
+                        </div>
+                        <p>De julho de 2025 a agosto de 2025 a LCIF concedeu 67 subsídios relacionados a socorro após
+                            catástrofes, totalizando US$ 1.575.930. Veja os subsídios que capacitam os Leões a apoiarem
+                            vários estágios das operações de socorro após catástrofes.</p>
+                    </div>
+
+                    <div class="service-section">
+                        <div class="service-header">
+                            <i class="fas fa-first-aid service-section-icon"></i>
+                            <h3>Resposta Imediata</h3>
+                        </div>
+                        <p>Os Leões estão frequentemente entre os primeiros a responder em situações de emergência,
+                            fornecendo assistência imediata como alimentos, água, abrigo e cuidados médicos para as
+                            vítimas de catástrofes.</p>
+                    </div>
+
+                    <div class="service-section">
+                        <div class="service-header">
+                            <i class="fas fa-home service-section-icon"></i>
+                            <h3>Reconstrução e Reabilitação</h3>
+                        </div>
+                        <p>Após a fase de emergência, os Leões apoiam a reconstrução de comunidades, incluindo a
+                            reconstrução de casas, escolas e infraestruturas essenciais para ajudar as comunidades a se
+                            recuperarem a longo prazo.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Nossa Ação -->
+        <section class="story-highlight" id="nossa-acao">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Nossa Ação</h2>
+                    <p class="section-subtitle">Socorro após catástrofes: não importa onde e nem quando</p>
+                </div>
+
+                <div class="activities-list">
+                    <!-- Atividade Principal -->
+                    <div class="activity-item">
+                        <div class="activity-image">
+                            <!-- Carrossel -->
+                            <div class="carousel">
+                                <!-- Container das imagens -->
+                                <div class="carousel-track">
+                                    <!-- Slide 1 -->
+                                    <div class="carousel-slide active">
+                                        <img src="https://oprogressodetatui.com.br/wp-content/uploads/2024/05/Doacoes-RS-1024x853.jpg"
+                                            alt="" loading="lazy">
+                                    </div>
+                                </div>
+
+                                <!-- Controles -->
+                                <button class="carousel-btn prev" aria-label="Imagem anterior">
+                                    <i class="fas fa-chevron-left"></i>
+                                </button>
+                                <button class="carousel-btn next" aria-label="Próxima imagem">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+
+                            <!-- Badge de data -->
+                            <div class="activity-date-badge">
+                                <span class="badge-day">15</span>
+                                <span class="badge-month">Mar</span>
+                            </div>
+                        </div>
+
+                        <!-- Conteúdo -->
+                        <div class="activity-content">
+                            <div class="activity-header">
+                                <h3>Resposta às Enchentes em Tatuí - Março 2025</h3>
+                                <div class="activity-datetime">
+                                    <i class="far fa-calendar-alt"></i>
+                                    <span class="date-text">sáb., 15 de mar. de 2025</span>
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span class="location-text">Tatuí, São Paulo</span>
+                                </div>
+                            </div>
+
+                            <div class="activity-description">
+                                <p>Durante as fortes chuvas de março de 2025 que causaram enchentes em várias regiões de
+                                    Tatuí, o Lions Clube de Tatuí mobilizou-se imediatamente para prestar socorro às
+                                    famílias afetadas.</p>
+
+                                <p>Nossa ação incluiu a distribuição de mais de 500 cestas básicas, kits de higiene
+                                    pessoal, colchões, cobertores e água potável para as famílias que perderam seus
+                                    pertences. Organizamos também um centro de apoio temporário na escola municipal para
+                                    abrigar aqueles que ficaram desabrigados.</p>
+
+                                <p>Em parceria com a Defesa Civil municipal, nossos voluntários trabalharam na limpeza
+                                    de ruas e residências, além de fornecer apoio psicológico para as famílias
+                                    traumatizadas pela experiência. Esta ação demonstra nosso compromisso em estar
+                                    presente quando a comunidade mais precisa.</p>
+                            </div>
+
+                            <!-- Botão Saber Mais -->
+                            <div class="activity-actions">
+                                <a href="#" class="btn-know-more">
+                                    Saber mais sobre esta ação
+                                    <i class="fas fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Outras Ações Relacionadas -->
+                    <div class="related-actions">
+                        <h3 class="related-title">Outras Ações Realizadas</h3>
+                        <div class="related-grid">
+                            <div class="related-card">
+                                <div class="related-icon">
+                                    <i class="fas fa-fire"></i>
+                                </div>
+                                <h4>Incêndios Rurais 2024</h4>
+                                <p>Apoio a agricultores afetados por incêndios em zonas rurais de Tatuí, com
+                                    distribuição de alimentos e suprimentos.</p>
+                                <a href="#" class="related-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="related-card">
+                                <div class="related-icon">
+                                    <i class="fas fa-wind"></i>
+                                </div>
+                                <h4>Tempestade de Vento 2023</h4>
+                                <p>Assistência a famílias com danos estruturais após forte tempestade que atingiu a
+                                    região.</p>
+                                <a href="#" class="related-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                            <div class="related-card">
+                                <div class="related-icon">
+                                    <i class="fas fa-hands-helping"></i>
+                                </div>
+                                <h4>Treinamento de Preparação</h4>
+                                <p>Workshops sobre preparação para desastres naturais para comunidades vulneráveis.</p>
+                                <a href="#" class="related-link">Saiba mais <i class="fas fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Como Ajudar -->
+        <section class="how-help" id="como-ajudar">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Como Você Pode Ajudar</h2>
+                    <p class="section-subtitle">Prepare-se conosco para ajudar quando as catástrofes acontecerem</p>
+                </div>
+
+                <div class="involved-options">
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-donate"></i>
+                        </div>
+                        <h3>Fundo de Emergência</h3>
+                        <p>Contribua para nosso fundo de emergência que nos permite responder imediatamente a
+                            catástrofes. Seu apoio financeiro garante que teremos recursos para fornecer assistência
+                            vital quando necessário.</p>
+                        <div class="option-features">
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Resposta imediata
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Compra de suprimentos
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Apoio logístico
+                            </span>
+                        </div>
+                        <a href="#" class="btn btn-small">
+                            <i class="fas fa-heart"></i>
+                            Doar para o Fundo
+                        </a>
+                    </div>
+
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-first-aid"></i>
+                        </div>
+                        <h3>Voluntário de Emergência</h3>
+                        <p>Junte-se à nossa equipe de resposta a emergências. Treinamos voluntários para atuar em
+                            situações de catástrofe, fornecendo assistência prática e apoio emocional às vítimas.</p>
+                        <div class="option-features">
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Treinamento especializado
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Kit de emergência
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Seguro voluntário
+                            </span>
+                        </div>
+                        <a href="#" class="btn btn-small">
+                            <i class="fas fa-user-plus"></i>
+                            Tornar-se Voluntário
+                        </a>
+                    </div>
+
+                    <div class="option-card">
+                        <div class="option-icon">
+                            <i class="fas fa-box-open"></i>
+                        </div>
+                        <h3>Doação de Suprimentos</h3>
+                        <p>Doe itens essenciais para nossos kits de emergência: alimentos não perecíveis, água, produtos
+                            de higiene, cobertores e material de primeiros socorro.</p>
+                        <div class="option-features">
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Itens não perecíveis
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Produtos de higiene
+                            </span>
+                            <span class="feature-item">
+                                <i class="fas fa-check-circle"></i>
+                                Material médico
+                            </span>
+                        </div>
+                        <div class="share-button">
+                            <a href="#" class="btn btn-small">
+                                <i class="fas fa-box"></i>
+                                Ver Lista de Itens
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="../src/img/logo.png" alt="Lions Clube Internacional" class="logo-img">
+                        <div class="logo-text">Lions Clube <span>Tatuí</span></div>
+                    </div>
+                    <p>Servindo a comunidade de Tatuí desde 1955. Fazemos parte do Lions Clubs International, a maior
+                        organização de clubes de serviço do mundo.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="currentYear">2025</span> Lions Clube Tatuí. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
