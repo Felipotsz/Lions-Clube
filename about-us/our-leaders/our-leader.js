@@ -1,3 +1,26 @@
+// Animação dos cards de Governadores
+document.addEventListener('DOMContentLoaded', function () {
+    const governorCards = document.querySelectorAll('.governor-card');
+    
+    function checkGovernorCards() {
+        const triggerBottom = window.innerHeight * 0.8;
+        
+        governorCards.forEach(card => {
+            const cardTop = card.getBoundingClientRect().top;
+            
+            if (cardTop < triggerBottom) {
+                card.style.opacity = '1';
+                card.style.transform = 'translateY(0)';
+            }
+        });
+    }
+    
+    // Verificar no scroll
+    window.addEventListener('scroll', checkGovernorCards);
+    // Verificar no carregamento
+    checkGovernorCards();
+});
+
 // Animação de scroll para timeline de ex-diretores
 document.addEventListener('DOMContentLoaded', function () {
 
